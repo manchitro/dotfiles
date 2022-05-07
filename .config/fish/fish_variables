@@ -12,6 +12,7 @@ SETUVAR _fish_abbr_ccjar:nohup\x20java\x20\x2djar\x20/home/s/orion/callcenter/Pr
 SETUVAR _fish_abbr_clone:git\x20clone\x20
 SETUVAR _fish_abbr_clr:clear
 SETUVAR _fish_abbr_copy:xclip\x20\x2dselection\x20clipboard
+SETUVAR _fish_abbr_da:dots\x20add
 SETUVAR _fish_abbr_dc:dots\x20commit\x20\x2dm\x20\x22
 SETUVAR _fish_abbr_dd:dots\x20diff
 SETUVAR _fish_abbr_dp:dots\x20push

@@ -1,1 +1,3 @@
-/home/s/dots//home/s/.config/fish/functions/redo.fish
+function redo
+    eval command sudo $history[1]
+end

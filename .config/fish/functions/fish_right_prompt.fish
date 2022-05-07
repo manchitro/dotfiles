@@ -1,1 +1,0 @@
-/home/s/dots//home/s/.config/fish/functions/fish_right_prompt.fish
