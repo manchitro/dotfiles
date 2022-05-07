@@ -12,6 +12,10 @@ SETUVAR _fish_abbr_ccjar:nohup\x20java\x20\x2djar\x20/home/s/orion/callcenter/Pr
 SETUVAR _fish_abbr_clone:git\x20clone\x20
 SETUVAR _fish_abbr_clr:clear
 SETUVAR _fish_abbr_copy:xclip\x20\x2dselection\x20clipboard
+SETUVAR _fish_abbr_dc:dots\x20commit\x20\x2dm\x20\x22
+SETUVAR _fish_abbr_dd:dots\x20diff
+SETUVAR _fish_abbr_dp:dots\x20push
+SETUVAR _fish_abbr_ds:dots\x20status
 SETUVAR _fish_abbr_eap:gnome\x2dterminal\x20\x2d\x2dtitle\x20Admin\x20EAP\x20\x2d\x2d\x20/home/s/orion/eap7\x2dweb/bin/standalone\x2esh
 SETUVAR _fish_abbr_eapg:gnome\x2dterminal\x20\x2d\x2dtitle\x20Gateway\x20EAP\x20\x2d\x2d\x20/home/s/orion/eap7\x2dgateway/bin/standalone\x2esh
 SETUVAR _fish_abbr_eapi:gnome\x2dterminal\x20\x2d\x2dtitle\x20Issuer\x20EAP\x20\x2d\x2d\x20/home/s/orion/eap7\x2dissuer/bin/standalone\x2esh
