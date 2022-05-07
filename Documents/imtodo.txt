@@ -1,3 +1,0 @@
-reconfigure fish everything
-backup by moving files to repo then creating symlink OR git init at home, gitignore everything then git add -f dotfiles
-
