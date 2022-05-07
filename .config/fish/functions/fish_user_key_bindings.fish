@@ -1,0 +1,1 @@
+/home/s/dots//home/s/.config/fish/functions/fish_user_key_bindings.fish

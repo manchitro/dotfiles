@@ -1,0 +1,1 @@
+/home/s/dots//home/s/.config/fish/functions/redo.fish

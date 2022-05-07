@@ -1,0 +1,1 @@
+/home/s/dots//home/s/.config/fish/functions/fish_mode_prompt.fish
