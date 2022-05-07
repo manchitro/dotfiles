@@ -1,0 +1,37 @@
+[/]
+minimize=['<Super>Down']
+move-to-workspace-down=['<Primary><Super>J']
+move-to-workspace-up=['<Primary><Super>K']
+panel-run-dialog=['<Alt>F2', '<Super>r', '<Alt>r']
+switch-to-workspace-down=['<Super>j']
+switch-to-workspace-up=['<Super>k']
+
+[custom0]
+binding='<Shift><Super>o'
+command='bash /home/s/scripts/switch_orion_vpn.sh'
+name='Switch Orion VPNbash /home/s/scripts/switch_orion_vpn.sh'
+
+[custom1]
+binding='<Super>d'
+command='xdotool mousemove 1920 1080'
+name='Show Desktop'
+
+[custom2]
+binding='<Super>o'
+command='bash /home/s/scripts/cooler_boost.sh'
+name='Cooler Booster'
+
+[custom3]
+binding='<Shift><Super>v'
+command='bash /home/s/scripts/protonvpn.sh'
+name='Proton CLI Connect'
+
+[custom4]
+binding='<Shift><Super>b'
+command='bash /home/s/scripts/tws_switch.sh'
+name='TWS Switch'
+
+[custom5]
+binding='<Shift><Super>p'
+command='bash /home/s/scripts/tws_profile_switch.sh'
+name='TWS Profile Switch'
