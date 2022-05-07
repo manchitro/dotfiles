@@ -7,7 +7,7 @@ SETUVAR _fish_abbr_abbs:abbr\x20\x2ds
 SETUVAR _fish_abbr_admin:nohup\x20intellij\x2didea\x2dultimate\x20/home/s/orion/proxy\x2dus/source/proxy\x2dvoting/Client/\x20\x26
 SETUVAR _fish_abbr_aliases:vim\x20/home/s/\x2econfig/fish/config\x2efish
 SETUVAR _fish_abbr_btb:bluetooth_battery\x20FC\x3aE8\x3a06\x3a16\x3a0C\x3aAA
-SETUVAR _fish_abbr_c:clear\x20\x26\x26\x20fish_greeting
+SETUVAR _fish_abbr_c:clear
 SETUVAR _fish_abbr_ccjar:nohup\x20java\x20\x2djar\x20/home/s/orion/callcenter/ProxyIQ_Cliet/dist/nuarca\x2ejar\x20\x26
 SETUVAR _fish_abbr_clone:git\x20clone\x20
 SETUVAR _fish_abbr_clr:clear
