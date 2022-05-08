@@ -1,6 +1,6 @@
 function fish_greeting
     pfetch | lolcat
-    echo (date +%a' '%b' '%d', '%Y) | lolcat
     fortune | lolcat
+    echo (date +%a' '%b' '%d', '%Y) | lolcat
 end
 

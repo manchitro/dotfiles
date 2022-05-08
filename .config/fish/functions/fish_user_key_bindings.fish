@@ -11,8 +11,6 @@ function fish_user_key_bindings
 
     bind -M default V beginning-of-line begin-selection end-of-line
     bind -M visual V beginning-of-line begin-selection end-of-line
-
-    bind -M visual c kill-selection
 end
 
 
