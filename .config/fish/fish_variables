@@ -17,11 +17,12 @@ SETUVAR _fish_abbr_db:sudo\x20docker\x20container\x20start\x20sql1
 SETUVAR _fish_abbr_dbs:sudo\x20docker\x20container\x20stop\x20sql1
 SETUVAR _fish_abbr_dc:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/dotfiles/\x20\x2d\x2dwork\x2dtree\x3d/home/s\x20commit\x20\x2dm\x20\x22
 SETUVAR _fish_abbr_dd:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/dotfiles/\x20\x2d\x2dwork\x2dtree\x3d/home/s\x20diff
+SETUVAR _fish_abbr_delete:rm\x20\x2drf
 SETUVAR _fish_abbr_dots:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/dotfiles/\x20\x2d\x2dwork\x2dtree\x3d/home/s
 SETUVAR _fish_abbr_dp:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/dotfiles/\x20\x2d\x2dwork\x2dtree\x3d/home/s\x20push
 SETUVAR _fish_abbr_ds:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/dotfiles/\x20\x2d\x2dwork\x2dtree\x3d/home/s\x20status
 SETUVAR _fish_abbr_eap:gnome\x2dterminal\x20\x2d\x2dtitle\x20Admin\x20EAP\x20\x2d\x2d\x20/home/s/orion/eap7\x2dweb/bin/standalone\x2esh
-SETUVAR _fish_abbr_eapg:gnome\x2dterminal\x20\x2d\x2dtitle\x20Gateway\x20EAP\x20\x2d\x2d\x20/home/s/orion/eap7\x2dgateway/bin/standalone\x2esh
+SETUVAR _fish_abbr_eapg:gnome\x2dterminal\x20\x2d\x2dtitle\x20Gateway\x20EAP\x20\x2d\x2d\x20/home/s/orion/eap7\x2dapigateway/bin/standalone\x2esh
 SETUVAR _fish_abbr_eapi:gnome\x2dterminal\x20\x2d\x2dtitle\x20Issuer\x20EAP\x20\x2d\x2d\x20/home/s/orion/eap7\x2dissuer/bin/standalone\x2esh
 SETUVAR _fish_abbr_exa:exa\x20\x2dl
 SETUVAR _fish_abbr_fd:fdfind
@@ -54,6 +55,7 @@ SETUVAR _fish_abbr_rmstreams:sudo\x20rm\x20\x2drf\x20/tmp/kafka\x2dstreams/
 SETUVAR _fish_abbr_service:nohup\x20intellij\x2didea\x2dultimate\x20/home/s/orion/proxy\x2dus/source/proxy\x2dvoting/ShareHolderPortal/Service/\x20\x26
 SETUVAR _fish_abbr_snapi:sudo\x20snap\x20install
 SETUVAR _fish_abbr_todo:vim\x20/home/s/Documents/imtodo\x2etxt
+SETUVAR _fish_abbr_v:vim
 SETUVAR _fish_abbr_zks:sudo\x20/opt/kafka/bin/zookeeper\x2dserver\x2dstop\x2esh\x20/opt/kafka/config/zookeeper\x2eproperties
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:/home/s/\x2econfig/fish/functions/fisher\x2efish\x1e/home/s/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_plugins:jorgebucaran/fisher
