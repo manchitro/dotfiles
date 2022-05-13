@@ -1,0 +1,3 @@
+[ 05/11/2022 18:56:15.992 win_mark_client ERROR ] Failed to get client window attributes (X error 3 WINDOW request 3 minor 0 serial 52579)
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":1"
+      after 52532 requests (107 known processed) with 0 events remaining.

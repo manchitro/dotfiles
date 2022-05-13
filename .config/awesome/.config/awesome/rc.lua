@@ -65,19 +65,19 @@ modkey = "Mod4"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
-    awful.layout.suit.floating,
+--  awful.layout.suit.floating,
     awful.layout.suit.tile,
-    awful.layout.suit.tile.left,
-    awful.layout.suit.tile.bottom,
-    awful.layout.suit.tile.top,
-    awful.layout.suit.fair,
-    awful.layout.suit.fair.horizontal,
-    awful.layout.suit.spiral,
-    awful.layout.suit.spiral.dwindle,
-    awful.layout.suit.max,
-    awful.layout.suit.max.fullscreen,
-    awful.layout.suit.magnifier,
-    awful.layout.suit.corner.nw,
+--  awful.layout.suit.tile.left,
+--  awful.layout.suit.tile.bottom,
+--  awful.layout.suit.tile.top,
+--  awful.layout.suit.fair,
+--  awful.layout.suit.fair.horizontal,
+--  awful.layout.suit.spiral,
+--  awful.layout.suit.spiral.dwindle,
+--  awful.layout.suit.max,
+--  awful.layout.suit.max.fullscreen,
+--  awful.layout.suit.magnifier,
+--  awful.layout.suit.corner.nw,
     -- awful.layout.suit.corner.ne,
     -- awful.layout.suit.corner.sw,
     -- awful.layout.suit.corner.se,
@@ -573,13 +573,38 @@ client.connect_signal("request::titlebars", function(c)
 end)
 
 -- Enable sloppy focus, so that focus follows mouse.
-client.connect_signal("mouse::enter", function(c)
-    c:emit_signal("request::activate", "mouse_enter", {raise = false})
-end)
+-- client.connect_signal("mouse::enter", function(c)
+--     c:emit_signal("request::activate", "mouse_enter", {raise = false})
+-- end)
 
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 --
--- Gaps
-beautiful.useless_gap = 2
+--
+-- Volume Control
+-- load the widget code
+local volume_control = require("volume-control")
+
+
+-- define your volume control, using default settings:
+volumecfg = volume_control {device="pulse"}
+
+
+-- add the widget to your wibox
+...
+right_layout:add(volumecfg.widget)
+...
+
+
+-- add key bindings
+local globalkeys = awful.util.table.join(
+    ...
+    awful.key({}, "XF86AudioRaiseVolume", function() volumecfg:up() end),
+    awful.key({}, "XF86AudioLowerVolume", function() volumecfg:down() end),
+    awful.key({}, "XF86AudioMute",        function() volumecfg:toggle() end),
+    ...
+)
+
+-- Autostart
+awlful.spawn.with_shell("nitrogen --restore --set-zoom-fill")

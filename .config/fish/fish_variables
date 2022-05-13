@@ -46,9 +46,10 @@ SETUVAR _fish_abbr_off:shutdown\x20\x2dh\x200
 SETUVAR _fish_abbr_oi:omf\x20install
 SETUVAR _fish_abbr_open:xdg\x2dopen
 SETUVAR _fish_abbr_ot:omf\x20theme
+SETUVAR _fish_abbr_purge:sudo\x20apt\x20purge
 SETUVAR _fish_abbr_r:reset\x20\x26\x26\x20fish
 SETUVAR _fish_abbr_re:shutdown\x20\x2dr\x200
-SETUVAR _fish_abbr_remove:sudo\x20apt\x20remove
+SETUVAR _fish_abbr_remove:sudo\x20apt\x20remove\x20\x2dy
 SETUVAR _fish_abbr_reset_2D_store:sudo\x20/opt/kafka/bin/kafka\x2dstreams\x2dapplication\x2dreset\x2esh\x20\x2d\x2dapplication\x2did\x20streams\x2dapp\x20\x2d\x2dbootstrap\x2dservers\x20localhost\x3a9093\x2clocalhost\x3a9094\x2clocalhost\x3a9095\x20\x2d\x2dforce
 SETUVAR _fish_abbr_rmkafka:sudo\x20rm\x20\x2drf\x20/var/lib/kafka/data/
 SETUVAR _fish_abbr_rmstreams:sudo\x20rm\x20\x2drf\x20/tmp/kafka\x2dstreams/
