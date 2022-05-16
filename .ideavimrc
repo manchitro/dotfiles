@@ -1,1 +1,7 @@
-imap kj <Esc>
+"kj to esc
+:imap kj <Esc>
+
+"H to start of line end L to end of line
+:map H ^
+:map L $
+
