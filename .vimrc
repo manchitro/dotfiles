@@ -24,6 +24,3 @@ map <F6> :setlocal spell! spelllang=en_us<CR>
 "H to start of line end L to end of line
 :map H ^
 :map L $
-
-"exit visual mode with kj
-:xnoremap kj <Esc>
