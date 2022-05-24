@@ -14,6 +14,12 @@ map <F6> :setlocal spell! spelllang=en_us<CR>
 "show line numbers
 :set number
 
+"enable mouse
+:set mouse=a
+
+"syntax highlighting
+:set syntax=on
+
 "Smartcase search
 :set ignorecase
 :set smartcase
@@ -24,3 +30,9 @@ map <F6> :setlocal spell! spelllang=en_us<CR>
 "H to start of line end L to end of line
 :map H ^
 :map L $
+
+"plugins
+call plug#begin('~/.vim/plugged')
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+call plug#end()
