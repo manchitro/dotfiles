@@ -33,6 +33,7 @@ map <F6> :setlocal spell! spelllang=en_us<CR>
 
 "plugins
 call plug#begin('~/.vim/plugged')
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
+    Plug 'preservim/nerdtree'
 call plug#end()
