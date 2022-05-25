@@ -7,6 +7,7 @@ SETUVAR _fish_abbr_abbs:abbr\x20\x2ds
 SETUVAR _fish_abbr_admin:nohup\x20intellij\x2didea\x2dultimate\x20/home/s/orion/proxy\x2dus/source/proxy\x2dvoting/Client/\x20\x26
 SETUVAR _fish_abbr_aliases:vim\x20/home/s/\x2econfig/fish/config\x2efish
 SETUVAR _fish_abbr_btb:bluetooth_battery\x20FC\x3aE8\x3a06\x3a16\x3a0C\x3aAA
+SETUVAR _fish_abbr_bts:sudo\x20rmmod\x20btusb\x20\x26\x26\x20sudo\x20modprobe\x20btusb
 SETUVAR _fish_abbr_c:clear
 SETUVAR _fish_abbr_ccjar:nohup\x20java\x20\x2djar\x20/home/s/orion/callcenter/ProxyIQ_Cliet/dist/nuarca\x2ejar\x20\x26
 SETUVAR _fish_abbr_clone:git\x20clone\x20
@@ -22,8 +23,10 @@ SETUVAR _fish_abbr_dots:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/dotfiles/\
 SETUVAR _fish_abbr_dp:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/dotfiles/\x20\x2d\x2dwork\x2dtree\x3d/home/s\x20push
 SETUVAR _fish_abbr_ds:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/dotfiles/\x20\x2d\x2dwork\x2dtree\x3d/home/s\x20status
 SETUVAR _fish_abbr_eap:gnome\x2dterminal\x20\x2d\x2dtitle\x20Admin\x20EAP\x20\x2d\x2d\x20/home/s/orion/eap7\x2dweb/bin/standalone\x2esh
+SETUVAR _fish_abbr_eapc:gnome\x2dterminal\x20\x2d\x2dtitle\x20Shareholder\x20EAP\x20\x2d\x2d\x20/home/s/orion/eap7\x2dcc/bin/standalone\x2esh
 SETUVAR _fish_abbr_eapg:gnome\x2dterminal\x20\x2d\x2dtitle\x20Gateway\x20EAP\x20\x2d\x2d\x20/home/s/orion/eap7\x2dapigateway/bin/standalone\x2esh
 SETUVAR _fish_abbr_eapi:gnome\x2dterminal\x20\x2d\x2dtitle\x20Issuer\x20EAP\x20\x2d\x2d\x20/home/s/orion/eap7\x2dissuer/bin/standalone\x2esh
+SETUVAR _fish_abbr_eaps:gnome\x2dterminal\x20\x2d\x2dtitle\x20Shareholder\x20EAP\x20\x2d\x2d\x20/home/s/orion/jboss\x2deap\x2d7\x2e0/bin/standalone\x2esh
 SETUVAR _fish_abbr_exa:exa\x20\x2dl
 SETUVAR _fish_abbr_fd:fdfind
 SETUVAR _fish_abbr_fishcon:vim\x20/home/s/\x2econfig/fish/config\x2efish
