@@ -17,9 +17,6 @@ map <F6> :setlocal spell! spelllang=en_us<CR>
 "enable mouse
 :set mouse=a
 
-"syntax highlighting
-:set syntax=on
-
 "Smartcase search
 :set ignorecase
 :set smartcase

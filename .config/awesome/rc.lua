@@ -24,6 +24,10 @@ local hotkeys_popup = require("awful.hotkeys_popup")
                       require("awful.hotkeys_popup.keys")
 local mytable       = awful.util.table or gears.table -- 4.{0,1} compatibility
 
+--blueyed/awesome-cyclefocus plugin
+local cyclefocus = require('cyclefocus')
+
+
 -- }}}
 
 -- {{{ Error handling
@@ -110,10 +114,10 @@ awful.util.terminal = terminal
 awful.util.tagnames = { "1", "2", "3", "4", "5" }
 awful.layout.layouts = {
     awful.layout.suit.floating,
-    awful.layout.suit.tile,
-    awful.layout.suit.tile.left,
-    awful.layout.suit.tile.bottom,
-    awful.layout.suit.tile.top,
+    --awful.layout.suit.tile,
+    --awful.layout.suit.tile.left,
+    --awful.layout.suit.tile.bottom,
+    --awful.layout.suit.tile.top,
     --awful.layout.suit.fair,
     --awful.layout.suit.fair.horizontal,
     --awful.layout.suit.spiral,
@@ -350,18 +354,29 @@ globalkeys = mytable.join(
               {description = "focus the previous screen", group = "screen"}),
     awful.key({ modkey,           }, "u", awful.client.urgent.jumpto,
               {description = "jump to urgent client", group = "client"}),
-    awful.key({ modkey,           }, "Tab",
-        function ()
-            if cycle_prev then
-                awful.client.focus.history.previous()
-            else
-                awful.client.focus.byidx(-1)
-            end
-            if client.focus then
-                client.focus:raise()
-            end
-        end,
-        {description = "cycle with previous/go back", group = "client"}),
+    --awful.key({ modkey,           }, "Tab",
+        --function ()
+            --if cycle_prev then
+                --awful.client.focus.history.previous()
+            --else
+                --awful.client.focus.byidx(-1)
+            --end
+            --if client.focus then
+                --client.focus:raise()
+            --end
+        --end,
+        --{description = "cycle with previous/go back", group = "client"}),
+       
+    -- cyclefocus
+    -- modkey+Tab: cycle through all clients.
+    awful.key({ altkey }, "Tab", function(c)
+        cyclefocus.cycle({modifier="Super_L"})
+    end),
+    -- modkey+Shift+Tab: backwards
+    awful.key({ modkey, "Shift" }, "Tab", function(c)
+        cyclefocus.cycle({modifier="Super_L"})
+    end),
+
 
     -- Show/hide wibox
     awful.key({ modkey }, "b", function ()
@@ -404,7 +419,7 @@ globalkeys = mytable.join(
               {description = "delete tag", group = "tag"}),
 
     -- Standard program
-    awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
+    awful.key({ modkey,           }, "t", function () awful.spawn(terminal) end,
               {description = "open a terminal", group = "launcher"}),
     awful.key({ modkey, "Control" }, "r", awesome.restart,
               {description = "reload awesome", group = "awesome"}),
@@ -423,8 +438,8 @@ globalkeys = mytable.join(
               {description = "increase the number of columns", group = "layout"}),
     awful.key({ modkey, "Control" }, "l",     function () awful.tag.incncol(-1, nil, true)    end,
               {description = "decrease the number of columns", group = "layout"}),
-    awful.key({ modkey,           }, "space", function () awful.layout.inc( 1)                end,
-              {description = "select next", group = "layout"}),
+    awful.key({ modkey,           }, "space", function () awful.spawn("rofi -show drun")      end,
+              {description = "Show rofi applications", group = "layout"}),
     awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(-1)                end,
               {description = "select previous", group = "layout"}),
 
@@ -449,19 +464,23 @@ globalkeys = mytable.join(
               {description = "show weather", group = "widgets"}),
 
     -- Screen brightness
-    awful.key({ }, "XF86MonBrightnessUp", function () os.execute("xbacklight -inc 10") end,
-              {description = "+10%", group = "hotkeys"}),
-    awful.key({ }, "XF86MonBrightnessDown", function () os.execute("xbacklight -dec 10") end,
+    awful.key({ }, "XF86MonBrightnessUp", function () os.execute("xbacklight -inc 1") end,
+              {description = "+1%", group = "hotkeys"}),
+    awful.key({ }, "XF86MonBrightnessDown", function () os.execute("xbacklight -dec 1") end,
+              {description = "-1%", group = "hotkeys"}),
+    awful.key({ modkey, altkey, "Control" }, "l", function () os.execute("xbacklight -inc 1") end,
+              {description = "+1%", group = "hotkeys"}),
+    awful.key({ modkey, altkey, "Control" }, "h", function () os.execute("xbacklight -dec 1") end,
               {description = "-10%", group = "hotkeys"}),
 
     -- ALSA volume control
-    awful.key({ altkey }, "Up",
+    awful.key({ modkey, altkey, "Control" }, "k",
         function ()
             os.execute(string.format("amixer -q set %s 1%%+", beautiful.volume.channel))
             beautiful.volume.update()
         end,
         {description = "volume up", group = "hotkeys"}),
-    awful.key({ altkey }, "Down",
+    awful.key({ modkey, altkey, "Control" }, "j",
         function ()
             os.execute(string.format("amixer -q set %s 1%%-", beautiful.volume.channel))
             beautiful.volume.update()
@@ -829,10 +848,11 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 --
 --
 -- startup programs
-awful.util.spawn("conky")
-awful.util.spawn("bash /home/s/scripts/ofc.sh") -- OpenFreezeCenter
-awful.util.spawn("blueman-applet") -- Bluetooth manager
-awful.util.spawn("guake") -- Guake Dropdown Terminal
-awful.util.spawn("sh -c '/usr/bin/nvidia-settings --load-config-only'") -- NVIDIA X Server Settings
-awful.util.spawn("transmission-gtk") -- Tranmission Torrect Client
-awful.util.spawn("nitrogen --restore") -- Restore last wallpaper
+awful.spawn("conky")
+awful.spawn("bash /home/s/scripts/ofc.sh") -- OpenFreezeCenter
+awful.spawn("blueman-applet") -- Bluetooth manager
+awful.spawn("guake") -- Guake Dropdown Terminal
+awful.spawn("sh -c '/usr/bin/nvidia-settings --load-config-only'") -- NVIDIA X Server Settings
+awful.spawn("transmission-gtk -m") -- Tranmission Torrect Client minimized
+awful.spawn("nitrogen --restore") -- Restore last wallpaper
+awful.spawn("keynav") -- Mouse control with keyboard

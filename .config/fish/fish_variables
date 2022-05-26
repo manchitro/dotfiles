@@ -45,6 +45,7 @@ SETUVAR _fish_abbr_lt:exa\x20\x2dlhmaFUT\x20\x2d\x2dgroup\x2ddirectories\x2dfirs
 SETUVAR _fish_abbr_madison:apt\x2dcache\x20madison
 SETUVAR _fish_abbr_mc:prime\x2drun\x20java\x20\x2djar\x20/home/s/Downloads/Game\x5c\x20Setup\x5c\x20Files/TLauncher\x2d2\x2e841\x2ejar
 SETUVAR _fish_abbr_mkdir:mkdir\x20\x2dp
+SETUVAR _fish_abbr_ofc:bash\x20/home/s/scripts/ofc\x2esh
 SETUVAR _fish_abbr_off:shutdown\x20\x2dh\x200
 SETUVAR _fish_abbr_oi:omf\x20install
 SETUVAR _fish_abbr_open:xdg\x2dopen
