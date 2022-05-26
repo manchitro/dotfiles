@@ -49,6 +49,7 @@ SETUVAR _fish_abbr_off:shutdown\x20\x2dh\x200
 SETUVAR _fish_abbr_oi:omf\x20install
 SETUVAR _fish_abbr_open:xdg\x2dopen
 SETUVAR _fish_abbr_ot:omf\x20theme
+SETUVAR _fish_abbr_ports:sudo\x20lsof\x20\x2di\x20\x2dP\x20\x2dn\x20\x7c\x20grep\x20LISTEN
 SETUVAR _fish_abbr_purge:sudo\x20apt\x20purge
 SETUVAR _fish_abbr_r:reset\x20\x26\x26\x20fish
 SETUVAR _fish_abbr_re:shutdown\x20\x2dr\x200
