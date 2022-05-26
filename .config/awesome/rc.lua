@@ -464,13 +464,13 @@ globalkeys = mytable.join(
               {description = "show weather", group = "widgets"}),
 
     -- Screen brightness
-    awful.key({ }, "XF86MonBrightnessUp", function () os.execute("xbacklight -inc 1") end,
-              {description = "+1%", group = "hotkeys"}),
-    awful.key({ }, "XF86MonBrightnessDown", function () os.execute("xbacklight -dec 1") end,
-              {description = "-1%", group = "hotkeys"}),
-    awful.key({ modkey, altkey, "Control" }, "l", function () os.execute("xbacklight -inc 1") end,
-              {description = "+1%", group = "hotkeys"}),
-    awful.key({ modkey, altkey, "Control" }, "h", function () os.execute("xbacklight -dec 1") end,
+    awful.key({ }, "XF86MonBrightnessUp", function () os.execute("xbacklight -inc 2") end,
+              {description = "+2%", group = "hotkeys"}),
+    awful.key({ }, "XF86MonBrightnessDown", function () os.execute("xbacklight -dec 2") end,
+              {description = "-2%", group = "hotkeys"}),
+    awful.key({ modkey, altkey, "Control" }, "l", function () os.execute("xbacklight -inc 2") end,
+              {description = "+2%", group = "hotkeys"}),
+    awful.key({ modkey, altkey, "Control" }, "h", function () os.execute("xbacklight -dec 2") end,
               {description = "-10%", group = "hotkeys"}),
 
     -- ALSA volume control
@@ -480,7 +480,19 @@ globalkeys = mytable.join(
             beautiful.volume.update()
         end,
         {description = "volume up", group = "hotkeys"}),
+    awful.key({ }, "XF86AudioRaiseVolume",
+        function ()
+            os.execute(string.format("amixer -q set %s 1%%+", beautiful.volume.channel))
+            beautiful.volume.update()
+        end,
+        {description = "volume up", group = "hotkeys"}),
     awful.key({ modkey, altkey, "Control" }, "j",
+        function ()
+            os.execute(string.format("amixer -q set %s 1%%-", beautiful.volume.channel))
+            beautiful.volume.update()
+        end,
+        {description = "volume down", group = "hotkeys"}),
+    awful.key({ }, "XF86AudioLowerVolume",
         function ()
             os.execute(string.format("amixer -q set %s 1%%-", beautiful.volume.channel))
             beautiful.volume.update()
