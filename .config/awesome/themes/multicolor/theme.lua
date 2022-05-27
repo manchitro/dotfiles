@@ -212,7 +212,7 @@ theme.brightness = lain.widget.brightness({
         else
             brightness_now = string.sub(brightness_now, 1, 2)
         end
-        widget:set_markup(markup.fontfg(theme.font, "#7493d2", brightness_now .. "% "))
+        widget:set_markup(markup.fontfg(theme.font, "#ffffff", brightness_now .. "% "))
     end
 })
 
