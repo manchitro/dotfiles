@@ -16,8 +16,8 @@ local my_table = awful.util.table or gears.table -- 4.{0,1} compatibility
 
 local theme                                     = {}
 theme.confdir                                   = os.getenv("HOME") .. "/.config/awesome/themes/multicolor"
-theme.wallpaper                                 = theme.confdir .. "/wall.png"
-theme.font                                      = "Terminus 8"
+--theme.wallpaper                                 = theme.confdir .. "/wall.png"
+theme.font                                      = "Terminus 10"
 theme.menu_bg_normal                            = "#000000"
 theme.menu_bg_focus                             = "#000000"
 theme.bg_normal                                 = "#000000"
@@ -52,6 +52,7 @@ theme.widget_mail                               = theme.confdir .. "/icons/mail.
 theme.widget_batt                               = theme.confdir .. "/icons/bat.png"
 theme.widget_clock                              = theme.confdir .. "/icons/clock.png"
 theme.widget_vol                                = theme.confdir .. "/icons/spkr.png"
+theme.widget_brightness                         = theme.confdir .. "/icons/brightness.png"
 theme.taglist_squares_sel                       = theme.confdir .. "/icons/square_a.png"
 theme.taglist_squares_unsel                     = theme.confdir .. "/icons/square_b.png"
 theme.tasklist_plain_task_name                  = true
@@ -200,6 +201,21 @@ theme.volume = lain.widget.alsa({
     end
 })
 
+-- xbacklight brighness
+local fsicon = wibox.widget.imagebox(theme.widget_fs)
+theme.brightness = lain.widget.brightness({
+    settings = function()
+        if tonumber(brightness_now) > 99 then
+            brightness_now = "100"
+        elseif tonumber(brightness_now) < 10 then
+            brightness_now = string.sub(brightness_now, 1, 1)
+        else
+            brightness_now = string.sub(brightness_now, 1, 2)
+        end
+        widget:set_markup(markup.fontfg(theme.font, "#7493d2", brightness_now .. "% "))
+    end
+})
+
 -- Net
 local netdownicon = wibox.widget.imagebox(theme.widget_netdown)
 local netdowninfo = wibox.widget.textbox()
@@ -313,6 +329,8 @@ function theme.at_screen_connect(s)
             netupinfo.widget,
             volicon,
             theme.volume.widget,
+            fsicon,
+            theme.brightness.widget,
             memicon,
             memory.widget,
             cpuicon,

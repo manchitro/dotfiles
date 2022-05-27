@@ -101,7 +101,7 @@ local themes = {
     "vertex"           -- 10
 }
 
-local chosen_theme = themes[6]
+local chosen_theme = themes[5]
 local modkey       = "Mod4"
 local altkey       = "Mod1"
 local terminal     = "gnome-terminal"
@@ -300,18 +300,18 @@ globalkeys = mytable.join(
               {description = "view  previous nonempty", group = "tag"}),
 
     -- Default client focus
-    awful.key({ altkey,           }, "j",
-        function ()
-            awful.client.focus.byidx( 1)
-        end,
-        {description = "focus next by index", group = "client"}
-    ),
-    awful.key({ altkey,           }, "k",
-        function ()
-            awful.client.focus.byidx(-1)
-        end,
-        {description = "focus previous by index", group = "client"}
-    ),
+    --awful.key({ altkey,           }, "j",
+        --function ()
+            --awful.client.focus.byidx( 1)
+        --end,
+        --{description = "focus next by index", group = "client"}
+    --),
+    --awful.key({ altkey,           }, "k",
+        --function ()
+            --awful.client.focus.byidx(-1)
+        --end,
+        --{description = "focus previous by index", group = "client"}
+    --),
 
     -- By-direction client focus
     awful.key({ modkey }, "j",
@@ -354,18 +354,18 @@ globalkeys = mytable.join(
               {description = "focus the previous screen", group = "screen"}),
     awful.key({ modkey,           }, "u", awful.client.urgent.jumpto,
               {description = "jump to urgent client", group = "client"}),
-    --awful.key({ modkey,           }, "Tab",
-        --function ()
-            --if cycle_prev then
-                --awful.client.focus.history.previous()
-            --else
-                --awful.client.focus.byidx(-1)
-            --end
-            --if client.focus then
-                --client.focus:raise()
-            --end
-        --end,
-        --{description = "cycle with previous/go back", group = "client"}),
+    awful.key({ modkey,           }, "Tab",
+        function ()
+            if cycle_prev then
+                awful.client.focus.history.previous()
+            else
+                awful.client.focus.byidx(-1)
+            end
+            if client.focus then
+                client.focus:raise()
+            end
+        end,
+        {description = "cycle with previous/go back", group = "client"}),
        
     -- cyclefocus
     -- modkey+Tab: cycle through all clients.
@@ -868,3 +868,4 @@ awful.spawn("sh -c '/usr/bin/nvidia-settings --load-config-only'") -- NVIDIA X S
 awful.spawn("transmission-gtk -m") -- Tranmission Torrect Client minimized
 awful.spawn("nitrogen --restore") -- Restore last wallpaper
 awful.spawn("keynav") -- Mouse control with keyboard
+
