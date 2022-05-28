@@ -440,6 +440,8 @@ globalkeys = mytable.join(
               {description = "decrease the number of columns", group = "layout"}),
     awful.key({ modkey,           }, "space", function () awful.spawn("rofi -show drun")      end,
               {description = "Show rofi applications", group = "layout"}),
+    awful.key({ }, "<", function () awful.spawn("rofi -show drun")      end,
+              {description = "Show rofi applications", group = "layout"}),
     awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(-1)                end,
               {description = "select previous", group = "layout"}),
 
@@ -860,7 +862,6 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 --
 --
 -- startup programs
-awful.spawn("conky")
 awful.spawn("bash /home/s/scripts/ofc.sh") -- OpenFreezeCenter
 awful.spawn("blueman-applet") -- Bluetooth manager
 awful.spawn("guake") -- Guake Dropdown Terminal
