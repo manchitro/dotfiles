@@ -27,6 +27,8 @@ local mytable       = awful.util.table or gears.table -- 4.{0,1} compatibility
 --blueyed/awesome-cyclefocus plugin
 local cyclefocus = require('cyclefocus')
 
+--Elv13/collision
+require("collision")()
 
 -- }}}
 
@@ -113,14 +115,14 @@ local browser      = "google-chrome"
 awful.util.terminal = terminal
 awful.util.tagnames = { "1", "2", "3", "4", "5" }
 awful.layout.layouts = {
-    awful.layout.suit.floating,
+    --awful.layout.suit.floating,
     --awful.layout.suit.tile,
     --awful.layout.suit.tile.left,
     --awful.layout.suit.tile.bottom,
     --awful.layout.suit.tile.top,
     --awful.layout.suit.fair,
     --awful.layout.suit.fair.horizontal,
-    --awful.layout.suit.spiral,
+    awful.layout.suit.spiral,
     --awful.layout.suit.spiral.dwindle,
     --awful.layout.suit.max,
     --awful.layout.suit.max.fullscreen,
@@ -227,17 +229,17 @@ end)
 -- {{{ Screen
 
 -- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
-screen.connect_signal("property::geometry", function(s)
-    -- Wallpaper
-    if beautiful.wallpaper then
-        local wallpaper = beautiful.wallpaper
-        -- If wallpaper is a function, call it with the screen
-        if type(wallpaper) == "function" then
-            wallpaper = wallpaper(s)
-        end
-        gears.wallpaper.maximized(wallpaper, s, true)
-    end
-end)
+--screen.connect_signal("property::geometry", function(s)
+--    -- Wallpaper
+--    if beautiful.wallpaper then
+--        local wallpaper = beautiful.wallpaper
+--        -- If wallpaper is a function, call it with the screen
+--        if type(wallpaper) == "function" then
+--            wallpaper = wallpaper(s)
+--        end
+--        gears.wallpaper.maximized(wallpaper, s, true)
+--    end
+--end)
 
 -- No borders when rearranging only 1 non-floating or maximized client
 screen.connect_signal("arrange", function (s)
@@ -286,12 +288,12 @@ globalkeys = mytable.join(
               {description="show help", group="awesome"}),
 
     -- Tag browsing
-    awful.key({ modkey,           }, "Left",   awful.tag.viewprev,
-              {description = "view previous", group = "tag"}),
-    awful.key({ modkey,           }, "Right",  awful.tag.viewnext,
-              {description = "view next", group = "tag"}),
-    awful.key({ modkey,           }, "Escape", awful.tag.history.restore,
-              {description = "go back", group = "tag"}),
+    --awful.key({ modkey,           }, "Left",   awful.tag.viewprev,
+    --          {description = "view previous", group = "tag"}),
+    --awful.key({ modkey,           }, "Right",  awful.tag.viewnext,
+    --          {description = "view next", group = "tag"}),
+    --awful.key({ modkey,           }, "Escape", awful.tag.history.restore,
+    --          {description = "go back", group = "tag"}),
 
     -- Non-empty tag browsing
     awful.key({ altkey }, "Left", function () lain.util.tag_view_nonempty(-1) end,
@@ -369,28 +371,17 @@ globalkeys = mytable.join(
        
     -- cyclefocus
     -- modkey+Tab: cycle through all clients.
-    awful.key({ altkey }, "Tab", function(c)
-        cyclefocus.cycle({modifier="Super_L"})
-    end),
+    --awful.key({ altkey }, "Tab", function(c)
+        --cyclefocus.cycle({modifier="Super_L"})
+    --end),
     -- modkey+Shift+Tab: backwards
-    awful.key({ modkey, "Shift" }, "Tab", function(c)
-        cyclefocus.cycle({modifier="Super_L"})
-    end),
+    --awful.key({ modkey, "Shift" }, "Tab", function(c)
+        --cyclefocus.cycle({modifier="Super_L"})
+    --end),
 
 
     -- Show/hide wibox
-    awful.key({ modkey }, "b", function ()
-            for s in screen do
-                s.mywibox.visible = not s.mywibox.visible
-                if s.mybottomwibox then
-                    s.mybottomwibox.visible = not s.mybottomwibox.visible
-                end
-            end
-        end,
-        {description = "toggle wibox", group = "awesome"}),
-
-    -- Show/hide wibox
-    awful.key({ modkey }, "b", function ()
+    awful.key({ modkey, altkey, }, "b", function ()
             for s in screen do
                 s.mywibox.visible = not s.mywibox.visible
                 if s.mybottomwibox then
@@ -438,10 +429,22 @@ globalkeys = mytable.join(
               {description = "increase the number of columns", group = "layout"}),
     awful.key({ modkey, "Control" }, "l",     function () awful.tag.incncol(-1, nil, true)    end,
               {description = "decrease the number of columns", group = "layout"}),
+    -- rofi app launcher          
+
     awful.key({ modkey,           }, "space", function () awful.spawn("rofi -show drun")      end,
-              {description = "Show rofi applications", group = "layout"}),
-    awful.key({ }, "<", function () awful.spawn("rofi -show drun")      end,
-              {description = "Show rofi applications", group = "layout"}),
+              {description = "Show rofi applications", group = "rofi"}),
+    awful.key({ altkey, }, "<", function () awful.spawn("rofi -show drun")      end,
+              {description = "Show rofi applications", group = "rofi"}),
+
+    -- rofi window swithcer          
+
+    awful.key({ altkey,           }, "Tab", function () awful.spawn("rofi -show window")      end,
+              {description = "Show active windows rofi", group = "rofi"}),
+              
+    -- rofi greenclip          
+    awful.key({ altkey, "Shift"   }, "<", function () awful.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}'")      end,
+              {description = "Show clipboard manager", group = "rofi"}),
+
     awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(-1)                end,
               {description = "select previous", group = "layout"}),
 
@@ -776,9 +779,9 @@ awful.rules.rules = {
       }, properties = { floating = true }},
 
     -- Add titlebars to normal clients and dialogs
-    { rule_any = {type = { "normal", "dialog" }
-      }, properties = { titlebars_enabled = true }
-    },
+    --{ rule_any = {type = { "normal", "dialog" }
+    --  }, properties = { titlebars_enabled = true }
+    --},
 
     -- Set Firefox to always map on the tag named "2" on screen 1.
     -- { rule = { class = "Firefox" },
@@ -851,22 +854,23 @@ client.connect_signal("request::titlebars", function(c)
 end)
 
 -- Enable sloppy focus, so that focus follows mouse.
-client.connect_signal("mouse::enter", function(c)
-    c:emit_signal("request::activate", "mouse_enter", {raise = vi_focus})
-end)
+--client.connect_signal("mouse::enter", function(c)
+    --c:emit_signal("request::activate", "mouse_enter", {raise = vi_focus})
+--end)
 
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 
 -- }}}
 --
---
 -- startup programs
-awful.spawn("bash /home/s/scripts/ofc.sh") -- OpenFreezeCenter
-awful.spawn("blueman-applet") -- Bluetooth manager
-awful.spawn("guake") -- Guake Dropdown Terminal
-awful.spawn("sh -c '/usr/bin/nvidia-settings --load-config-only'") -- NVIDIA X Server Settings
-awful.spawn("transmission-gtk -m") -- Tranmission Torrect Client minimized
-awful.spawn("nitrogen --restore") -- Restore last wallpaper
-awful.spawn("keynav") -- Mouse control with keyboard
+awful.spawn.with_shell("picom --experimental-backends --backend glx") -- start picom compositor
+--awful.spawn.with_shell("bash /home/s/scripts/ofc.sh") -- OpenFreezeCenter
+awful.spawn.with_shell("blueman-applet") -- Bluetooth manager
+awful.spawn.with_shell("guake") -- Guake Dropdown Terminal
+awful.spawn.with_shell("sh -c '/usr/bin/nvidia-settings --load-config-only'") -- NVIDIA X Server Settings
+awful.spawn.with_shell("transmission-gtk -m") -- Tranmission Torrect Client minimized
+awful.spawn.with_shell("nitrogen --restore") -- Restore last wallpaper
+awful.spawn.with_shell("keynav") -- Mouse control with keyboard
+awful.spawn.with_shell("greenclip daemon") -- Greenclip clipboard manager
 

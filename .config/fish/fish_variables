@@ -10,6 +10,7 @@ SETUVAR _fish_abbr_btb:bluetooth_battery\x20FC\x3aE8\x3a06\x3a16\x3a0C\x3aAA
 SETUVAR _fish_abbr_bts:sudo\x20rmmod\x20btusb\x20\x26\x26\x20sudo\x20modprobe\x20btusb
 SETUVAR _fish_abbr_c:clear
 SETUVAR _fish_abbr_ccjar:nohup\x20java\x20\x2djar\x20/home/s/orion/callcenter/ProxyIQ_Cliet/dist/nuarca\x2ejar\x20\x26
+SETUVAR _fish_abbr_client:nohup\x20intellij\x2didea\x2dultimate\x20/home/s/orion/proxy\x2dus/source/proxy\x2dvoting/ShareHolderPortal/Client/\x20\x26
 SETUVAR _fish_abbr_clone:git\x20clone\x20
 SETUVAR _fish_abbr_clr:clear
 SETUVAR _fish_abbr_copy:xclip\x20\x2dselection\x20clipboard
@@ -30,6 +31,7 @@ SETUVAR _fish_abbr_eaps:gnome\x2dterminal\x20\x2d\x2dtitle\x20Shareholder\x20EAP
 SETUVAR _fish_abbr_exa:exa\x20\x2dl
 SETUVAR _fish_abbr_fd:fdfind
 SETUVAR _fish_abbr_fishcon:vim\x20/home/s/\x2econfig/fish/config\x2efish
+SETUVAR _fish_abbr_gc:git\x20clone
 SETUVAR _fish_abbr_gh:/home/s
 SETUVAR _fish_abbr_gs:git\x20status
 SETUVAR _fish_abbr_iap:nohup\x20intellij\x2didea\x2dultimate\x20/home/s/orion/proxy\x2dus/source/proxy\x2dvoting/Client/\x20\x26
