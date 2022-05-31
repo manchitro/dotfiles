@@ -30,7 +30,7 @@ from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 
 mod = "mod4"
-terminal = guess_terminal()
+terminal = "kitty"
 
 keys = [
     # A list of available commands that can be bound to keys can be found
@@ -91,12 +91,15 @@ keys = [
     Key([], "XF86MonBrightnessUp", lazy.spawn("xbacklight -inc 5")),
     Key([], "XF86MonBrightnessDown", lazy.spawn("xbacklight -dec 5")),
 
-    #Audio control
+    #Audio control -- unfinished
     Key([], "XF86AudioLowerVolume", lazy.spawn("xbacklight -inc 5")),
     Key([], "XF86AudioRaiseVolume", lazy.spawn("xbacklight -dec 5")),
 
     #Toggle Minimize window
-    Key([mod], "n", lazy.window.toggle_minimize(), desc="Toggle minimization on focused window")
+    Key([mod], "n", lazy.window.toggle_minimize(), desc="Toggle minimization on focused window"),
+
+    #Shutdown menu
+    Key([mod], "0", lazy.spawn("rofi -show p:rofi-power-menu -kb-cancel Alt+F1"), desc="Open a power menu")
 ]
 
 groups = [Group(i) for i in "12345"]
@@ -127,7 +130,7 @@ for i in groups:
 
 layouts = [
     layout.Max(),
-    layout.Columns(border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=1),
+    layout.Columns(border_focus="#cccccc", border_width=1, margin=10),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
     # layout.Bsp(),
@@ -164,7 +167,6 @@ widget_defaults = dict(
     font="Hack Nerd Font Bold",
     fontsize=12,
     padding=3,
-    background=colors[0],
 )
 extension_defaults = widget_defaults.copy()
 
@@ -174,7 +176,7 @@ screens = [
             [
                 widget.Image(filename="/home/s/.config/qtile/icons/ubuntu.png", margin=7, mouse_callbacks={"Button1": lazy.spawn("rofi -show drun")},),
                 widget.TextBox("|"),
-                widget.Clock(format="%I:%M:%S %p - %a, %b %d"),
+                widget.Clock(format="%I:%M:%S %p - %a, %b %d", mouse_callbacks={"Button1": lazy.spawn("gnome-calendar")}),
                 widget.TextBox("|"),
                 widget.Net(format="{down}"),
                 widget.Image(filename="/home/s/.config/qtile/icons/net.png", margin=7),
@@ -197,16 +199,16 @@ screens = [
                 widget.Image(filename="/home/s/.config/qtile/icons/temp.png", margin=6),
                 widget.ThermalSensor(),
                 widget.TextBox("|"),
-                widget.Image(filename="/home/s/.config/qtile/icons/ram.png", margin=5),
-                widget.Memory(measure_mem="G", format="{MemUsed: .2f}{mm} /{MemTotal: .2f}{mm}"),
-                widget.TextBox("|"),
                 widget.Image(filename="/home/s/.config/qtile/icons/gpu.png", margin=5),
                 widget.NvidiaSensors(),
+                widget.TextBox("|"),
+                widget.Image(filename="/home/s/.config/qtile/icons/ram.png", margin=5),
+                widget.Memory(measure_mem="G", format="{MemUsed: .2f}{mm} /{MemTotal: .2f}{mm}"),
                 widget.TextBox("| 📋"),
                 widget.Clipboard(),
                 widget.TextBox("|"),
-                widget.Image(filename="/home/s/.config/qtile/icons/sound.png", margin=7),
-                widget.Volume(),
+                widget.Image(filename="/home/s/.config/qtile/icons/sound.png", margin=7, mouse_callbacks={"Button1": lazy.spawn("pavucontrol")}),
+                widget.Volume(mouse_callbacks={"Button1": lazy.spawn("pavucontrol")}),
                 widget.TextBox("| 🔆"),
                 widget.Backlight(backlight_name="intel_backlight"),
                 widget.TextBox("|"),
@@ -219,6 +221,7 @@ screens = [
                     ),
             ],
             30,
+            background="#ffffff10"
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
             # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
         ),
