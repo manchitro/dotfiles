@@ -1,4 +1,5 @@
 # Copyright (c) 2010 Aldo Cortesi
+
 # Copyright (c) 2010, 2014 dequis
 # Copyright (c) 2012 Randall Ma
 # Copyright (c) 2012-2014 Tycho Andersen
@@ -11,8 +12,7 @@
 # in the Software without restriction, including without limitation the rights
 # to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 # copies of the Software, and to permit persons to whom the Software is
-# furnished to do so, subject to the following conditions:
-#
+# furnished to do so, subject to the following conditions: #
 # The above copyright notice and this permission notice shall be included in
 # all copies or substantial portions of the Software.
 #
@@ -65,15 +65,30 @@ keys = [
         desc="Toggle between split and unsplit sides of stack",
     ),
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
+    Key([mod], "t", lazy.spawn(terminal), desc="Launch terminal"),
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
     Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
+
+    #Browser
+    Key([mod], "b", lazy.spawn("google-chrome"), desc="Open a google-chrome"),
+
+    #Restart qtile
+    Key(["control", mod, "mod1"], "r", lazy.restart(), desc="Restart Qtile"),
+
+    #Rofi launchers
+    Key(["mod1"], "F1", lazy.spawn("rofi -show drun -kb-cancel Alt+F1"), desc="Rofi Application Launcher"),
+    Key(["mod1"], "v", lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1 -kb-cancel Esc"), desc="Rofi Clipboard Manager"),
+
+    #Brightness control
+    Key([], "XF86MonBrightnessUp", lazy.spawn("xbacklight -inc 5")),
+    Key([], "XF86MonBrightnessDown", lazy.spawn("xbacklight -dec 5")),
 ]
 
-groups = [Group(i) for i in "123456789"]
+groups = [Group(i) for i in "12345"]
 
 for i in groups:
     keys.extend(
@@ -100,7 +115,7 @@ for i in groups:
     )
 
 layouts = [
-    layout.Columns(border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=4),
+    layout.Columns(border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=1),
     layout.Max(),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
@@ -126,8 +141,15 @@ screens = [
     Screen(
         bottom=bar.Bar(
             [
-                widget.CurrentLayout(),
-                widget.GroupBox(),
+                widget.Clock(format="%I:%M:%S %p - %a, %b %d"),
+                widget.TextBox("|"),
+                widget.Net(format="{down}"),
+                widget.Image(filename="/home/s/.config/qtile/icons/net.png", margin=7),
+                widget.Net(format="{up}"),
+                widget.TextBox("|"),
+                widget.CurrentLayoutIcon(),
+                widget.TextBox("|"),
+                #widget.GroupBox(),
                 widget.Prompt(),
                 widget.WindowName(),
                 widget.Chord(
@@ -136,13 +158,30 @@ screens = [
                     },
                     name_transform=lambda name: name.upper(),
                 ),
-                widget.TextBox("default config", name="default"),
-                widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
+                widget.TextBox("|"),
                 widget.Systray(),
-                widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
+                widget.TextBox("|"),
+                widget.Image(filename="/home/s/.config/qtile/icons/cpu.png", margin=7),
+                widget.CPU(format="{load_percent}%"),
+                widget.TextBox("|"),
+                widget.Image(filename="/home/s/.config/qtile/icons/ram.png", margin=5),
+                widget.Memory(measure_mem="G", format="{MemUsed: .2f}{mm} /{MemTotal: .2f}{mm}"),
+                widget.TextBox("|"),
+                widget.Image(filename="/home/s/.config/qtile/icons/gpu.png", margin=5),
+                widget.NvidiaSensors(),
+                widget.TextBox("|"),
+                widget.Image(filename="/home/s/.config/qtile/icons/sound.png", margin=7),
+                widget.Volume(),
+                widget.TextBox("| 📋"),
+                widget.Clipboard(),
+                widget.TextBox("| 🔆"),
+                widget.Backlight(backlight_name="intel_backlight"),
+                widget.TextBox("|"),
+                widget.Battery(charge_char="⚡ ", discharge_char="🔋 ",format="{char}{percent:2.0%}"),
+                widget.TextBox("|"),
                 widget.QuickExit(),
             ],
-            24,
+            30,
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
             # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
         ),
@@ -158,7 +197,7 @@ mouse = [
 
 dgroups_key_binder = None
 dgroups_app_rules = []  # type: list
-follow_mouse_focus = True
+follow_mouse_focus = False
 bring_front_click = False
 cursor_warp = False
 floating_layout = layout.Floating(
@@ -193,3 +232,14 @@ wl_input_rules = None
 # We choose LG3D to maximize irony: it is a 3D non-reparenting WM written in
 # java that happens to be on java's whitelist.
 wmname = "LG3D"
+
+import os
+import subprocess
+
+from libqtile import hook
+
+@hook.subscribe.startup_once
+def autostart():
+    home = os.path.expanduser('~/.config/qtile/autostart.sh')
+    subprocess.Popen([home])
+
