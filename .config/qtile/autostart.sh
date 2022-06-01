@@ -1,4 +1,5 @@
 #!/bin/sh
+picom -b &
 guake &
 nm-applet &
 xcape -e 'Super_L=Alt_L|F1' &

@@ -46,7 +46,7 @@ keys = [
     Key([mod], "l", lazy.layout.right(), desc="Move focus to right"),
     Key([mod], "j", lazy.layout.down(), desc="Move focus down"),
     Key([mod], "k", lazy.layout.up(), desc="Move focus up"),
-    Key([mod], "space", lazy.layout.next(), desc="Move window focus to other window"),
+    #Key([mod], "space", lazy.layout.next(), desc="Move window focus to other window"),
     # Move windows between left/right columns or move up/down in current stack.
     # Moving out of range in Columns layout will create new column.
     Key([mod, shift], "h", lazy.layout.shuffle_left(), desc="Move window to the left"),
@@ -119,6 +119,10 @@ keys = [
         lazy.spawn("pactl -- set-sink-mute 0 toggle") #amixer -c 0 -q set Master toggle
     ),
     Key(
+        [mod], "space",
+        lazy.spawn("playerctl play-pause") #amixer -c 0 -q set Master toggle
+    ),
+    Key(
         [mod, alt, control], "k",
         lazy.spawn("pactl -- set-sink-volume 0 +5%") #amixer -c 0 -q set Master 2dB+
     ),
@@ -136,7 +140,10 @@ keys = [
     Key([mod], "n", lazy.window.toggle_minimize(), desc="Toggle minimization on focused window"),
 
     #Shutdown menu
-    Key([mod], "0", lazy.spawn("rofi -show p:rofi-power-menu -kb-cancel Alt+F1"), desc="Open a power menu")
+    Key([mod], "0", lazy.spawn("rofi -show p:rofi-power-menu -kb-cancel Alt+F1"), desc="Open a power menu"),
+
+    #Screenshot tool - flameshot
+    Key([], "Print", lazy.spawn("flameshot gui"), desc="open flameshot gui")
 ]
 
 groups = [Group(i) for i in "12345"]
