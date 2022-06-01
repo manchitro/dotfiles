@@ -93,6 +93,7 @@ keys = [
     Key([alt], "F1", lazy.spawn("rofi -show drun -kb-cancel Alt+F1,Escape,Alt+v"), desc="Rofi Application Launcher"),
     Key([alt], "v", lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1,Escape,Alt+v, Esc"), desc="Rofi Clipboard Manager"),
     Key([alt], "Return", lazy.spawn("rofi -show window -kb-cancel Alt+Return,Escape,Alt+F1"), desc="Rofi Window Switcher"),
+    Key([mod], "c", lazy.spawn("bash /home/s/scripts/confedit.sh"), desc="Rofi Window Switcher"),
 
     # toggle between windows just like in unity with 'alt+tab'
     Key([alt,shift], "Tab", lazy.layout.down()),
@@ -202,10 +203,10 @@ colors = [
 def longNameParse(text):
     arr=text.split('|')
     for window in arr:
-        if 'Google Chrome' in window:
-            arr[arr.index(window)] = window[-15:]
-    text_out = '|'.join(arr)
-    return text_out
+        if "Google Chrome" in window:
+            arr[arr.index(window)]=window[-14:]
+    text=' |'.join(arr)
+    return text
 
 widget_defaults = dict(
     font="Hack Nerd Font Bold",
@@ -227,7 +228,7 @@ screens = [
                 widget.Net(format="{up}"),
                 widget.TextBox("|"),
                 widget.Prompt(),
-                widget.WindowTabs(font="Montserrat"),
+                widget.WindowTabs(font="Montserrat", parse_text=longNameParse),
                 #widget.Chord(
                 #    chords_colors={
                 #        "launch": ("#ff0000", "#ffffff"),

@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 editor="vim"
+terminal="kitty"
 
 declare -a options=(
 "fish user key bindings - .config/fish/functions/fish_user_key_bindings.fish"
@@ -21,14 +22,15 @@ declare -a options=(
 "quit"
 )
 
-choice=$(printf '%s\n' "${options[@]}" | sort | dmenu -i -l 20 -p 'Edit Config:')
+choice=$(printf '%s\n' "${options[@]}" | sort | rofi -dmenu -p "Edit config: " -kb-cancel Alt+F1,Escape)
+#choice=$(printf '%s\n' "${options[@]}" | sort | dmenu -i -l 20 -p 'Edit Config:')
 
 if [[ "$choice" == "quit" ]]; then
     echo "Program Terminated" && exit 1
 
 elif [ "$choice" ]; then
     cfg=$(echo "$choice" | awk '{print $NF}')
-    $editor "$cfg"
+    $terminal -- $editor "$cfg"
     echo "cfg=$cfg"
 else
     echo "Program Terminated" && exit 1

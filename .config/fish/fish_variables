@@ -13,6 +13,7 @@ SETUVAR _fish_abbr_ccjar:nohup\x20java\x20\x2djar\x20/home/s/orion/callcenter/Pr
 SETUVAR _fish_abbr_client:nohup\x20intellij\x2didea\x2dultimate\x20/home/s/orion/proxy\x2dus/source/proxy\x2dvoting/ShareHolderPortal/Client/\x20\x26
 SETUVAR _fish_abbr_clone:git\x20clone\x20
 SETUVAR _fish_abbr_clr:clear
+SETUVAR _fish_abbr_confedit:/home/s/scripts/confedit\x2esh
 SETUVAR _fish_abbr_copy:xclip\x20\x2dselection\x20clipboard
 SETUVAR _fish_abbr_da:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/dotfiles/\x20\x2d\x2dwork\x2dtree\x3d/home/s\x20add
 SETUVAR _fish_abbr_db:sudo\x20docker\x20container\x20start\x20sql1
