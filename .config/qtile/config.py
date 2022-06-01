@@ -30,7 +30,13 @@ from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 
 mod = "mod4"
+alt = "mod1"
+control = "control"
+shift = "shift"
+
 terminal = "kitty"
+
+vol_cur  = "amixer -D pulse get Master"
 
 keys = [
     # A list of available commands that can be bound to keys can be found
@@ -43,34 +49,35 @@ keys = [
     Key([mod], "space", lazy.layout.next(), desc="Move window focus to other window"),
     # Move windows between left/right columns or move up/down in current stack.
     # Moving out of range in Columns layout will create new column.
-    Key([mod, "shift"], "h", lazy.layout.shuffle_left(), desc="Move window to the left"),
-    Key([mod, "shift"], "l", lazy.layout.shuffle_right(), desc="Move window to the right"),
-    Key([mod, "shift"], "j", lazy.layout.shuffle_down(), desc="Move window down"),
-    Key([mod, "shift"], "k", lazy.layout.shuffle_up(), desc="Move window up"),
+    Key([mod, shift], "h", lazy.layout.shuffle_left(), desc="Move window to the left"),
+    Key([mod, shift], "l", lazy.layout.shuffle_right(), desc="Move window to the right"),
+    Key([mod, shift], "j", lazy.layout.shuffle_down(), desc="Move window down"),
+    Key([mod, shift], "k", lazy.layout.shuffle_up(), desc="Move window up"),
     # Grow windows. If current window is on the edge of screen and direction
     # will be to screen edge - window would shrink.
-    Key([mod, "control"], "h", lazy.layout.grow_left(), desc="Grow window to the left"),
-    Key([mod, "control"], "l", lazy.layout.grow_right(), desc="Grow window to the right"),
-    Key([mod, "control"], "j", lazy.layout.grow_down(), desc="Grow window down"),
-    Key([mod, "control"], "k", lazy.layout.grow_up(), desc="Grow window up"),
+    Key([mod, control], "h", lazy.layout.grow_left(), desc="Grow window to the left"),
+    Key([mod, control], "l", lazy.layout.grow_right(), desc="Grow window to the right"),
+    Key([mod, control], "j", lazy.layout.grow_down(), desc="Grow window down"),
+    Key([mod, control], "k", lazy.layout.grow_up(), desc="Grow window up"),
     #Key([mod], "n", lazy.layout.normalize(), desc="Reset all window sizes"),
     # Toggle between split and unsplit sides of stack.
     # Split = all windows displayed
     # Unsplit = 1 window displayed, like Max layout, but still with
     # multiple stack panes
     Key(
-        [mod, "shift"],
+        [mod, shift],
         "Return",
         lazy.layout.toggle_split(),
         desc="Toggle between split and unsplit sides of stack",
     ),
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
     Key([mod], "t", lazy.spawn(terminal), desc="Launch terminal"),
+
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
     Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),
-    Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
-    Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
+    Key([mod, control], "r", lazy.reload_config(), desc="Reload the config"),
+    Key([mod, control], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
 
     #Browser
@@ -80,20 +87,47 @@ keys = [
     Key([mod], "f", lazy.spawn("nautilus"), desc="Open a file manager"),
 
     #Restart qtile
-    Key(["control", mod, "mod1"], "r", lazy.restart(), desc="Restart Qtile"),
+    Key([control, mod, alt], "r", lazy.restart(), desc="Restart Qtile"),
 
     #Rofi launchers
-    Key(["mod1"], "F1", lazy.spawn("rofi -show drun -kb-cancel Alt+F1"), desc="Rofi Application Launcher"),
-    Key(["mod1"], "v", lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1"), desc="Rofi Clipboard Manager"),
-    Key(["mod1"], "Tab", lazy.spawn("rofi -show window -kb-cancel Alt+F1"), desc="Rofi Window Switcher"),
+    Key([alt], "F1", lazy.spawn("rofi -show drun -kb-cancel Alt+F1,Escape,Alt+v"), desc="Rofi Application Launcher"),
+    Key([alt], "v", lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1,Escape,Alt+v, Esc"), desc="Rofi Clipboard Manager"),
+    Key([alt], "Return", lazy.spawn("rofi -show window -kb-cancel Alt+Return,Escape,Alt+F1"), desc="Rofi Window Switcher"),
+
+    # toggle between windows just like in unity with 'alt+tab'
+    Key([alt,shift], "Tab", lazy.layout.down()),
+    Key([alt], "Tab", lazy.layout.up()),
 
     #Brightness control
     Key([], "XF86MonBrightnessUp", lazy.spawn("xbacklight -inc 5")),
     Key([], "XF86MonBrightnessDown", lazy.spawn("xbacklight -dec 5")),
 
     #Audio control -- unfinished
-    Key([], "XF86AudioLowerVolume", lazy.spawn("xbacklight -inc 5")),
-    Key([], "XF86AudioRaiseVolume", lazy.spawn("xbacklight -dec 5")),
+    Key(
+        [], "XF86AudioRaiseVolume",
+        lazy.spawn("pactl -- set-sink-volume 0 +5%") #amixer -c 0 -q set Master 2dB+
+    ),
+    Key(
+        [], "XF86AudioLowerVolume",
+        lazy.spawn("pactl -- set-sink-volume 0 -5%") #amixer -c 0 -q set Master 2dB-
+    ),
+    Key(
+        [], "XF86AudioMute",
+        lazy.spawn("pactl -- set-sink-mute 0 toggle") #amixer -c 0 -q set Master toggle
+    ),
+    Key(
+        [mod, alt, control], "k",
+        lazy.spawn("pactl -- set-sink-volume 0 +5%") #amixer -c 0 -q set Master 2dB+
+    ),
+    Key(
+        [mod, alt, control], "j",
+        lazy.spawn("pactl -- set-sink-volume 0 -5%") #amixer -c 0 -q set Master 2dB-
+    ),
+    Key(
+        [mod, alt, control], "l",
+        lazy.spawn("pactl -- set-sink-mute 0 toggle") #amixer -c 0 -q set Master toggle
+    ),
+
 
     #Toggle Minimize window
     Key([mod], "n", lazy.window.toggle_minimize(), desc="Toggle minimization on focused window"),
@@ -116,14 +150,14 @@ for i in groups:
             ),
             # mod1 + shift + letter of group = switch to & move focused window to group
             Key(
-                [mod, "shift"],
+                [mod, shift],
                 i.name,
                 lazy.window.togroup(i.name, switch_group=True),
                 desc="Switch to & move focused window to group {}".format(i.name),
             ),
             # Or, use below if you prefer not to switch to that group.
             # # mod1 + shift + letter of group = move focused window to group
-            # Key([mod, "shift"], i.name, lazy.window.togroup(i.name),
+            # Key([mod, shift], i.name, lazy.window.togroup(i.name),
             #     desc="move focused window to group {}".format(i.name)),
         ]
     )
@@ -208,7 +242,7 @@ screens = [
                 widget.Clipboard(),
                 widget.TextBox("|"),
                 widget.Image(filename="/home/s/.config/qtile/icons/sound.png", margin=7, mouse_callbacks={"Button1": lazy.spawn("pavucontrol")}),
-                widget.Volume(mouse_callbacks={"Button1": lazy.spawn("pavucontrol")}),
+                widget.Volume(get_volume_command="amixer -D pulse get Master".split(), mouse_callbacks={"Button1": lazy.spawn("pavucontrol")}),
                 widget.TextBox("| 🔆"),
                 widget.Backlight(backlight_name="intel_backlight"),
                 widget.TextBox("|"),
