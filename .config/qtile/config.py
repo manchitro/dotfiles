@@ -101,8 +101,10 @@ keys = [
     #Brightness control
     Key([], "XF86MonBrightnessUp", lazy.spawn("xbacklight -inc 5")),
     Key([], "XF86MonBrightnessDown", lazy.spawn("xbacklight -dec 5")),
+    Key([mod, alt, control], "l", lazy.spawn("xbacklight -inc 5")),
+    Key([mod, alt, control], "h", lazy.spawn("xbacklight -dec 5")),
 
-    #Audio control -- unfinished
+    #Audio control
     Key(
         [], "XF86AudioRaiseVolume",
         lazy.spawn("pactl -- set-sink-volume 0 +5%") #amixer -c 0 -q set Master 2dB+
@@ -124,7 +126,7 @@ keys = [
         lazy.spawn("pactl -- set-sink-volume 0 -5%") #amixer -c 0 -q set Master 2dB-
     ),
     Key(
-        [mod, alt, control], "l",
+        [mod, alt, control], "m",
         lazy.spawn("pactl -- set-sink-mute 0 toggle") #amixer -c 0 -q set Master toggle
     ),
 
@@ -197,6 +199,14 @@ colors = [
     ["#242831", "#242831"],  # 14 super dark background
 ]
 
+def longNameParse(text):
+    arr=text.split('|')
+    for window in arr:
+        if 'Google Chrome' in window:
+            arr[arr.index(window)] = window[-15:]
+    text_out = '|'.join(arr)
+    return text_out
+
 widget_defaults = dict(
     font="Hack Nerd Font Bold",
     fontsize=12,
@@ -217,13 +227,13 @@ screens = [
                 widget.Net(format="{up}"),
                 widget.TextBox("|"),
                 widget.Prompt(),
-                widget.WindowName(),
-                widget.Chord(
-                    chords_colors={
-                        "launch": ("#ff0000", "#ffffff"),
-                    },
-                    name_transform=lambda name: name.upper(),
-                ),
+                widget.WindowTabs(font="Montserrat"),
+                #widget.Chord(
+                #    chords_colors={
+                #        "launch": ("#ff0000", "#ffffff"),
+                #    },
+                #    name_transform=lambda name: name.upper(),
+                #),
                 widget.TextBox("|"),
                 widget.Systray(),
                 widget.TextBox("|"),
@@ -316,4 +326,5 @@ from libqtile import hook
 def autostart():
     home = os.path.expanduser('~/.config/qtile/autostart.sh')
     subprocess.Popen([home])
+
 
