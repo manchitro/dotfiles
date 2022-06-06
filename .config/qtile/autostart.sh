@@ -1,5 +1,5 @@
 #!/bin/sh
-picom -b &
+#picom -b
 guake &
 nm-applet &
 xcape -e 'Super_L=Alt_L|F1' &
@@ -8,3 +8,4 @@ nitrogen --restore --set-zoom-fill &
 greenclip daemon &
 keynav &
 transmission-gtk -m
+blueman-manager &

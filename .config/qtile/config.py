@@ -29,6 +29,8 @@ from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 
+from widgets import btindicator
+
 mod = "mod4"
 alt = "mod1"
 control = "control"
@@ -91,7 +93,7 @@ keys = [
 
     #Rofi launchers
     Key([alt], "F1", lazy.spawn("rofi -show drun -kb-cancel Alt+F1,Escape,Alt+v"), desc="Rofi Application Launcher"),
-    Key([alt], "v", lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1,Escape,Alt+v, Esc"), desc="Rofi Clipboard Manager"),
+    Key([alt], "v", lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1,Escape,Alt+v"), desc="Rofi Clipboard Manager"),
     Key([alt], "Return", lazy.spawn("rofi -show window -kb-cancel Alt+Return,Escape,Alt+F1"), desc="Rofi Window Switcher"),
     Key([mod], "c", lazy.spawn("bash /home/s/scripts/confedit.sh"), desc="Rofi Window Switcher"),
 
@@ -123,6 +125,10 @@ keys = [
         lazy.spawn("playerctl play-pause") #amixer -c 0 -q set Master toggle
     ),
     Key(
+        [alt], "space",
+        lazy.spawn("playerctl play-pause") #amixer -c 0 -q set Master toggle
+    ),
+    Key(
         [mod, alt, control], "k",
         lazy.spawn("pactl -- set-sink-volume 0 +5%") #amixer -c 0 -q set Master 2dB+
     ),
@@ -140,10 +146,16 @@ keys = [
     Key([mod], "n", lazy.window.toggle_minimize(), desc="Toggle minimization on focused window"),
 
     #Shutdown menu
-    Key([mod], "0", lazy.spawn("rofi -show p:rofi-power-menu -kb-cancel Alt+F1"), desc="Open a power menu"),
+    Key([mod], "0", lazy.spawn("rofi -show p:rofi-power-menu -kb-cancel Alt+F1,Escape"), desc="Open a power menu"),
 
     #Screenshot tool - flameshot
-    Key([], "Print", lazy.spawn("flameshot gui"), desc="open flameshot gui")
+    Key([], "Print", lazy.spawn("flameshot gui"), desc="open flameshot gui"),
+
+    #Bluetooth tws connect/disconnect
+    Key([mod, shift], "b", lazy.spawn("bash /home/s/scripts/tws_switch.sh"), desc="connect/disconnect tws"),
+
+    #Bluetooth tws profile switch
+    Key([mod, shift], "p", lazy.spawn("bash /home/s/scripts/tws_profile_switch.sh"), desc="tws profile switch"),
 ]
 
 groups = [Group(i) for i in "12345"]
@@ -173,8 +185,8 @@ for i in groups:
     )
 
 layouts = [
+    layout.Columns(border_focus="#ffffff", border_width=1, margin=7),
     layout.Max(),
-    layout.Columns(border_focus="#cccccc", border_width=1, margin=10),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
     # layout.Bsp(),
@@ -208,11 +220,11 @@ colors = [
 ]
 
 def longNameParse(text):
-    arr=text.split('|')
+    arr=text.split(' -§- ')
     for window in arr:
         if "Google Chrome" in window:
-            arr[arr.index(window)]=window[-14:]
-    text=' |'.join(arr)
+            arr[arr.index(window)]=window[-6:]
+    text=' -§- '.join(arr)
     return text
 
 widget_defaults = dict(
@@ -226,7 +238,7 @@ screens = [
     Screen(
         bottom=bar.Bar(
             [
-                widget.Image(filename="/home/s/.config/qtile/icons/ubuntu.png", margin=7, mouse_callbacks={"Button1": lazy.spawn("rofi -show drun")},),
+                widget.Image(filename="/home/s/.config/qtile/icons/ubuntu.png", margin=5, mouse_callbacks={"Button1": lazy.spawn("rofi -show drun")},),
                 widget.TextBox("|"),
                 widget.Clock(format="%I:%M:%S %p - %a, %b %d", mouse_callbacks={"Button1": lazy.spawn("gnome-calendar")}),
                 widget.TextBox("|"),
@@ -235,7 +247,12 @@ screens = [
                 widget.Net(format="{up}"),
                 widget.TextBox("|"),
                 widget.Prompt(),
-                widget.WindowTabs(font="Montserrat", parse_text=longNameParse),
+                widget.WindowTabs(
+                    font="Montserrat", 
+                    parse_text=longNameParse, 
+                    mouse_callbacks={"Button3": lazy.spawn("rofi -show window -kb-cancel Alt+Return,Escape,Alt+F1")},
+                    separator=" -§- ",
+                    ),
                 #widget.Chord(
                 #    chords_colors={
                 #        "launch": ("#ff0000", "#ffffff"),
@@ -244,24 +261,27 @@ screens = [
                 #),
                 widget.TextBox("|"),
                 widget.Systray(),
+                #widget.TextBox("|"),
+                #widget.Image(filename="/home/s/.config/qtile/icons/cpu.png", margin=7),
+                #widget.CPU(format="{load_percent}%"),
+                #widget.TextBox("|"),
+                #widget.Image(filename="/home/s/.config/qtile/icons/temp.png", margin=6),
+                #widget.ThermalSensor(),
+                #widget.TextBox("|"),
+                #widget.Image(filename="/home/s/.config/qtile/icons/gpu.png", margin=5),
+                #widget.NvidiaSensors(),
+                #widget.TextBox("|"),
+                #widget.Image(filename="/home/s/.config/qtile/icons/ram.png", margin=5),
+                #widget.Memory(measure_mem="G", format="{MemPercent}%"),
+                btindicator.BtIndicator(hci="/dev_FC_E8_06_16_0C_AA", mouse_callbacks={"Button1": lazy.spawn("bash /home/s/scripts/tws_switch.sh")}),
                 widget.TextBox("|"),
-                widget.Image(filename="/home/s/.config/qtile/icons/cpu.png", margin=7),
-                widget.CPU(format="{load_percent}%"),
-                widget.TextBox("|"),
-                widget.Image(filename="/home/s/.config/qtile/icons/temp.png", margin=6),
-                widget.ThermalSensor(),
-                widget.TextBox("|"),
-                widget.Image(filename="/home/s/.config/qtile/icons/gpu.png", margin=5),
-                widget.NvidiaSensors(),
-                widget.TextBox("|"),
-                widget.Image(filename="/home/s/.config/qtile/icons/ram.png", margin=5),
-                widget.Memory(measure_mem="G", format="{MemUsed: .2f}{mm} /{MemTotal: .2f}{mm}"),
-                widget.TextBox("| 📋"),
-                widget.Clipboard(),
+                widget.TextBox( "📋", mouse_callbacks={"Button1":lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1,Escape,Alt+v")}),
+                widget.Clipboard( timeout=0, mouse_callbacks={"Button1":lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1,Escape,Alt+v")}),
                 widget.TextBox("|"),
                 widget.Image(filename="/home/s/.config/qtile/icons/sound.png", margin=7, mouse_callbacks={"Button1": lazy.spawn("pavucontrol")}),
                 widget.Volume(get_volume_command="amixer -D pulse get Master".split(), mouse_callbacks={"Button1": lazy.spawn("pavucontrol")}),
-                widget.TextBox("| 🔆"),
+                widget.TextBox("|"),
+                widget.TextBox("🔆"),
                 widget.Backlight(backlight_name="intel_backlight"),
                 widget.TextBox("|"),
                 widget.Battery(charge_char="⚡ ", discharge_char="🔋 ",format="{char}{percent:2.0%}"),
@@ -269,11 +289,11 @@ screens = [
                 widget.Image(
                     filename="/home/s/.config/qtile/icons/power.png",
                     margin=7,
-                    mouse_callbacks={"Button1": lazy.spawn("rofi -show p:rofi-power-menu -kb-cancel Alt+F1")},
+                    mouse_callbacks={"Button1": lazy.spawn("rofi -show p:rofi-power-menu -kb-cancel Alt+F1,Escape")},
                     ),
             ],
             30,
-            background="#ffffff10"
+            background="#00000050"
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
             # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
         ),
