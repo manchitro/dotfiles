@@ -38,7 +38,7 @@ SETUVAR _fish_abbr_gs:git\x20status
 SETUVAR _fish_abbr_iap:nohup\x20intellij\x2didea\x2dultimate\x20/home/s/orion/proxy\x2dus/source/proxy\x2dvoting/Client/\x20\x26
 SETUVAR _fish_abbr_icc:nohup\x20intellij\x2didea\x2dultimate\x20/home/s/orion/proxy\x2dus/source/proxy\x2dvoting/proxyiq\x2dapigateway/\x20\x26
 SETUVAR _fish_abbr_iip:nohup\x20intellij\x2didea\x2dultimate\x20/home/s/orion/proxy\x2dus/source/proxy\x2dvoting/IssuerPortal/\x20\x26
-SETUVAR _fish_abbr_install:sudo\x20apt\x20install\x20\x2dy
+SETUVAR _fish_abbr_install:sudo\x20apt\x20install
 SETUVAR _fish_abbr_issuer:nohup\x20intellij\x2didea\x2dultimate\x20/home/s/orion/proxy\x2dus/source/proxy\x2dvoting/IssuerPortal/\x20\x26
 SETUVAR _fish_abbr_kafka:gnome\x2dterminal\x20\x2d\x2dwindow\x20\x2d\x2d\x20/home/s/scripts/kafka\x2esh
 SETUVAR _fish_abbr_kafkac:sudo\x20gnome\x2dterminal\x20\x2d\x2dwindow\x20\x2d\x2d\x20/home/s/scripts/kafkac\x2esh

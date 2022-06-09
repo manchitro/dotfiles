@@ -1,29 +1,3 @@
-# Copyright (c) 2010 Aldo Cortesi
-
-# Copyright (c) 2010, 2014 dequis
-# Copyright (c) 2012 Randall Ma
-# Copyright (c) 2012-2014 Tycho Andersen
-# Copyright (c) 2012 Craig Barnes
-# Copyright (c) 2013 horsik
-# Copyright (c) 2013 Tao Sauvage
-#
-# Permission is hereby granted, free of charge, to any person obtaining a copy
-# of this software and associated documentation files (the "Software"), to deal
-# in the Software without restriction, including without limitation the rights
-# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-# copies of the Software, and to permit persons to whom the Software is
-# furnished to do so, subject to the following conditions: #
-# The above copyright notice and this permission notice shall be included in
-# all copies or substantial portions of the Software.
-#
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-# SOFTWARE.
-
 from libqtile import bar, layout, widget
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
@@ -37,8 +11,6 @@ control = "control"
 shift = "shift"
 
 terminal = "kitty"
-
-vol_cur  = "amixer -D pulse get Master"
 
 keys = [
     # A list of available commands that can be bound to keys can be found
@@ -67,12 +39,9 @@ keys = [
     # Unsplit = 1 window displayed, like Max layout, but still with
     # multiple stack panes
     Key(
-        [mod, shift],
-        "Return",
-        lazy.layout.toggle_split(),
-        desc="Toggle between split and unsplit sides of stack",
+        [mod, shift], "Return", lazy.layout.toggle_split(), desc="Toggle between split and unsplit sides of stack",
     ),
-    Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
+    #Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
     Key([mod], "t", lazy.spawn(terminal), desc="Launch terminal"),
 
     # Toggle between different layouts as defined below
@@ -94,7 +63,7 @@ keys = [
     #Rofi launchers
     Key([alt], "F1", lazy.spawn("rofi -show drun -kb-cancel Alt+F1,Escape,Alt+v"), desc="Rofi Application Launcher"),
     Key([alt], "v", lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1,Escape,Alt+v"), desc="Rofi Clipboard Manager"),
-    Key([alt], "Return", lazy.spawn("rofi -show window -kb-cancel Alt+Return,Escape,Alt+F1"), desc="Rofi Window Switcher"),
+    Key([mod], "Return", lazy.spawn("rofi -show window -kb-cancel Alt+Return,Escape,Alt+F1"), desc="Rofi Window Switcher"),
     Key([mod], "c", lazy.spawn("bash /home/s/scripts/confedit.sh"), desc="Rofi Window Switcher"),
 
     # toggle between windows just like in unity with 'alt+tab'
@@ -156,6 +125,9 @@ keys = [
 
     #Bluetooth tws profile switch
     Key([mod, shift], "p", lazy.spawn("bash /home/s/scripts/tws_profile_switch.sh"), desc="tws profile switch"),
+
+    #ProtonVPN swith
+    Key([mod, shift], "v", lazy.spawn("bash /home/s/scripts/protonvpn.sh"), desc="tws profile switch"),
 ]
 
 groups = [Group(i) for i in "12345"]
@@ -185,8 +157,8 @@ for i in groups:
     )
 
 layouts = [
-    layout.Columns(border_focus="#ffffff", border_width=1, margin=7),
     layout.Max(),
+    layout.Columns(border_focus="#ffffff", border_width=1, margin=7),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
     # layout.Bsp(),
@@ -238,12 +210,22 @@ screens = [
     Screen(
         bottom=bar.Bar(
             [
-                widget.Image(filename="/home/s/.config/qtile/icons/ubuntu.png", margin=5, mouse_callbacks={"Button1": lazy.spawn("rofi -show drun")},),
+                widget.Image(
+                    filename="/home/s/.config/qtile/icons/ubuntu.png",
+                    margin=5,
+                    mouse_callbacks={"Button1": lazy.spawn("rofi -show drun")},
+                ),
                 widget.TextBox("|"),
-                widget.Clock(format="%I:%M:%S %p - %a, %b %d", mouse_callbacks={"Button1": lazy.spawn("gnome-calendar")}),
+                widget.Clock(
+                    format="%I:%M:%S %p - %a, %b %d",
+                    mouse_callbacks={"Button1": lazy.spawn("gnome-calendar")}
+                ),
                 widget.TextBox("|"),
                 widget.Net(format="{down}"),
-                widget.Image(filename="/home/s/.config/qtile/icons/net.png", margin=7),
+                widget.Image(
+                    filename="/home/s/.config/qtile/icons/net.png",
+                    margin=7
+                ),
                 widget.Net(format="{up}"),
                 widget.TextBox("|"),
                 widget.Prompt(),
@@ -252,13 +234,7 @@ screens = [
                     parse_text=longNameParse, 
                     mouse_callbacks={"Button3": lazy.spawn("rofi -show window -kb-cancel Alt+Return,Escape,Alt+F1")},
                     separator=" -§- ",
-                    ),
-                #widget.Chord(
-                #    chords_colors={
-                #        "launch": ("#ff0000", "#ffffff"),
-                #    },
-                #    name_transform=lambda name: name.upper(),
-                #),
+                ),
                 widget.TextBox("|"),
                 widget.Systray(),
                 #widget.TextBox("|"),
@@ -273,27 +249,49 @@ screens = [
                 #widget.TextBox("|"),
                 #widget.Image(filename="/home/s/.config/qtile/icons/ram.png", margin=5),
                 #widget.Memory(measure_mem="G", format="{MemPercent}%"),
-                btindicator.BtIndicator(hci="/dev_FC_E8_06_16_0C_AA", mouse_callbacks={"Button1": lazy.spawn("bash /home/s/scripts/tws_switch.sh")}),
+                btindicator.BtIndicator(
+                    hci="/dev_FC_E8_06_16_0C_AA",
+                    mouse_callbacks={"Button1": lazy.spawn("bash /home/s/scripts/tws_switch.sh")}
+                ),
                 widget.TextBox("|"),
-                widget.TextBox( "📋", mouse_callbacks={"Button1":lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1,Escape,Alt+v")}),
-                widget.Clipboard( timeout=0, mouse_callbacks={"Button1":lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1,Escape,Alt+v")}),
+                widget.TextBox(
+                    "📋",
+                    mouse_callbacks={"Button1":lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1,Escape,Alt+v")}
+                ),
+                widget.Clipboard(
+                    timeout=0,
+                    mouse_callbacks={"Button1":lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1,Escape,Alt+v")}
+                ),
                 widget.TextBox("|"),
-                widget.Image(filename="/home/s/.config/qtile/icons/sound.png", margin=7, mouse_callbacks={"Button1": lazy.spawn("pavucontrol")}),
-                widget.Volume(get_volume_command="amixer -D pulse get Master".split(), mouse_callbacks={"Button1": lazy.spawn("pavucontrol")}),
+                widget.Image(
+                    filename="/home/s/.config/qtile/icons/sound.png",
+                    margin=7,
+                    mouse_callbacks={"Button1": lazy.spawn("pavucontrol")}
+                ),
+                widget.Volume(
+                    get_volume_command="amixer -D pulse get Master".split(),
+                    volume_down_command="pactl -- set-sink-volume 0 -5%",
+                    volume_up_command="pactl -- set-sink-volume 0 +5%",
+                    mouse_callbacks={"Button1": lazy.spawn("pavucontrol")}
+                ),
                 widget.TextBox("|"),
                 widget.TextBox("🔆"),
                 widget.Backlight(backlight_name="intel_backlight"),
                 widget.TextBox("|"),
-                widget.Battery(charge_char="⚡ ", discharge_char="🔋 ",format="{char}{percent:2.0%}"),
+                widget.Battery(
+                    charge_char="⚡ ",
+                    discharge_char="🔋 ",
+                    format="{char}{percent:2.0%}"
+                ),
                 widget.TextBox("|"),
                 widget.Image(
                     filename="/home/s/.config/qtile/icons/power.png",
                     margin=7,
                     mouse_callbacks={"Button1": lazy.spawn("rofi -show p:rofi-power-menu -kb-cancel Alt+F1,Escape")},
-                    ),
+                ),
             ],
             30,
-            background="#00000050"
+            background="#00000000"
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
             # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
         ),
