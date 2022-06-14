@@ -75,6 +75,7 @@ keys = [
     Key([], "XF86MonBrightnessDown", lazy.spawn("xbacklight -dec 5")),
     Key([mod, alt, control], "l", lazy.spawn("xbacklight -inc 5")),
     Key([mod, alt, control], "h", lazy.spawn("xbacklight -dec 5")),
+    Key([mod, shift, alt, control], "h", lazy.spawn("xbacklight -set 1")),
 
     #Audio control
     Key(
@@ -276,7 +277,11 @@ screens = [
                 ),
                 widget.TextBox("|"),
                 widget.TextBox("🔆"),
-                widget.Backlight(backlight_name="intel_backlight"),
+                widget.Backlight(
+                    backlight_name="intel_backlight",
+                    step=5,
+                    mouse_callbacks={"Button1": lazy.spawn("xbacklight -set 1")},
+                    ),
                 widget.TextBox("|"),
                 widget.Battery(
                     charge_char="⚡ ",
