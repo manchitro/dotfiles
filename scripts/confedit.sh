@@ -19,6 +19,7 @@ declare -a options=(
 "fish prompt - .config/fish/functions/fish_prompt.fish"
 "neofetch config - .config/neofetch/config.conf"
 "ideavimrc - .ideavimrc"
+"rofi wifi menu - scripts/rofi-wifi-menu.sh"
 "quit"
 )
 

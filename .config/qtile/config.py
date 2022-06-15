@@ -65,6 +65,8 @@ keys = [
     Key([alt], "v", lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1,Escape,Alt+v"), desc="Rofi Clipboard Manager"),
     Key([mod], "Return", lazy.spawn("rofi -show window -kb-cancel Alt+Return,Escape,Alt+F1"), desc="Rofi Window Switcher"),
     Key([mod], "c", lazy.spawn("bash /home/s/scripts/confedit.sh"), desc="Rofi Window Switcher"),
+    Key([mod], "w", lazy.spawn("bash /home/s/scripts/rofi-wifi-menu.sh"), desc="Rofi WIFI Menu"),
+    Key([mod, control], "b", lazy.spawn("bash /home/s/scripts/rofi-bluetooth.sh"), desc="Rofi Bluetooth Menu"),
 
     # toggle between windows just like in unity with 'alt+tab'
     Key([alt,shift], "Tab", lazy.layout.down()),
