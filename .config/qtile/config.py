@@ -18,8 +18,10 @@ keys = [
     # Switch between windows
     Key([mod], "h", lazy.layout.left(), desc="Move focus to left"),
     Key([mod], "l", lazy.layout.right(), desc="Move focus to right"),
-    Key([mod], "j", lazy.layout.down(), desc="Move focus down"),
-    Key([mod], "k", lazy.layout.up(), desc="Move focus up"),
+#     Key([mod], "j", lazy.layout.down(), desc="Move focus down"),
+    Key([mod], "j", lazy.group.next_window(), desc="Move focus to next window"),
+#     Key([mod], "k", lazy.layout.up(), desc="Move focus up"),
+    Key([mod], "k", lazy.group.prev_window(), desc="Move focus to prev window"),
     #Key([mod], "space", lazy.layout.next(), desc="Move window focus to other window"),
     # Move windows between left/right columns or move up/down in current stack.
     # Moving out of range in Columns layout will create new column.
@@ -67,6 +69,7 @@ keys = [
     Key([mod], "c", lazy.spawn("bash /home/s/scripts/confedit.sh"), desc="Rofi Window Switcher"),
     Key([mod], "w", lazy.spawn("bash /home/s/scripts/rofi-wifi-menu.sh"), desc="Rofi WIFI Menu"),
     Key([mod, control], "b", lazy.spawn("bash /home/s/scripts/rofi-bluetooth.sh"), desc="Rofi Bluetooth Menu"),
+    Key([mod], "g", lazy.spawn("rofi -dmenu -p '🔍 Google Search' | xargs -I{} xdg-open 'https://www.google.com/search?q={}'"), desc="Rofi Google Search"),
 
     # toggle between windows just like in unity with 'alt+tab'
     Key([alt,shift], "Tab", lazy.layout.down()),
@@ -133,35 +136,36 @@ keys = [
     Key([mod, shift], "v", lazy.spawn("bash /home/s/scripts/protonvpn.sh"), desc="tws profile switch"),
 ]
 
-groups = [Group(i) for i in "12345"]
+groups = [
+	Group("1", label="WWW", matches=(Match(wm_class="google-chrome"))),
+	Group("2", label="DEV", matches=[Match(wm_class="jetbrains-idea"), Match(wm_class="code")]),
+	Group("3", label="SYS"),
+	Group("4", label="ETC"),
+]
+
+def toscreen(qtile, group_name):
+    if group_name  == qtile.current_screen.group.name:
+        qtile.current_screen.set_group(qtile.current_screen.previous_group)
+    else:
+        for i in range(len(qtile.groups)):
+            if group_name == qtile.groups[i].name:
+                qtile.current_screen.set_group(qtile.groups[i])
+                break
 
 for i in groups:
-    keys.extend(
-        [
-            # mod1 + letter of group = switch to group
-            Key(
-                [mod],
-                i.name,
-                lazy.group[i.name].toscreen(),
-                desc="Switch to group {}".format(i.name),
-            ),
-            # mod1 + shift + letter of group = switch to & move focused window to group
-            Key(
-                [mod, shift],
-                i.name,
-                lazy.window.togroup(i.name, switch_group=True),
-                desc="Switch to & move focused window to group {}".format(i.name),
-            ),
-            # Or, use below if you prefer not to switch to that group.
-            # # mod1 + shift + letter of group = move focused window to group
-            # Key([mod, shift], i.name, lazy.window.togroup(i.name),
-            #     desc="move focused window to group {}".format(i.name)),
-        ]
-    )
+    keys.extend([
+        # mod1 + letter of group = switch to group
+        #Key([mod], i.name, lazy.group[i.name].toscreen()),
+        # switch to group with ability to go to prevous group if pressed again
+        Key([mod], i.name, lazy.function(toscreen, i.name)),
+
+        # mod1 + shift + letter of group = switch to & move focused window to group
+        Key([mod, "shift"], i.name, lazy.window.togroup(i.name, switch_group=True)),
+    ])
 
 layouts = [
-    layout.Max(),
     layout.Columns(border_focus="#ffffff", border_width=1, margin=7),
+    layout.Max(),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
     # layout.Bsp(),
@@ -218,6 +222,14 @@ screens = [
                     margin=5,
                     mouse_callbacks={"Button1": lazy.spawn("rofi -show drun")},
                 ),
+                widget.GroupBox(
+					highlight_method="block",
+					font="Ubuntu Mono",
+					fontsize=16,
+					inactive="aaaaaa",
+					rounded=False,
+					hide_unused=True,
+				),
                 widget.TextBox("|"),
                 widget.Clock(
                     format="%I:%M:%S %p - %a, %b %d",
@@ -359,5 +371,3 @@ from libqtile import hook
 def autostart():
     home = os.path.expanduser('~/.config/qtile/autostart.sh')
     subprocess.Popen([home])
-
-
