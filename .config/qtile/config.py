@@ -1,7 +1,8 @@
 from libqtile import bar, layout, widget
-from libqtile.config import Click, Drag, Group, Key, Match, Screen
+from libqtile.config import Click, Drag, Group, Key, Match, Screen, ScratchPad, DropDown
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
+from libqtile.log_utils import logger
 
 from widgets import btindicator
 
@@ -11,6 +12,32 @@ control = "control"
 shift = "shift"
 
 terminal = "kitty"
+
+def movetonextgroup(qtile, lazy):
+	current_group_name = qtile.current_screen.group.name
+	next_group_name = int(current_group_name) + 1
+	if next_group_name == 5:
+		next_group_name = 1
+	logger.warn(next_group_name)
+	qtile.current_window.togroup(str(next_group_name), switch_group=True)
+
+def movetoprevgroup(qtile, lazy):
+	current_group_name = qtile.current_screen.group.name
+	prev_group_name = int(current_group_name) - 1
+	if prev_group_name == 0:
+		prev_group_name = 4
+	logger.warn(prev_group_name)
+	qtile.current_window.togroup(str(prev_group_name), switch_group=True)
+
+def gotonextgroup(qtile):
+	current_group_name = qtile.current_screen.group.name
+	next_group_name = int(current_group_name) + 1
+	qtile.current_screen.set_group(qtile.groups[next_group_name-1])
+
+def gotoprevgroup(qtile):
+	current_group_name = qtile.current_screen.group.name
+	prev_group_name = int(current_group_name) - 1
+	qtile.current_screen.set_group(qtile.groups[prev_group_name-1])
 
 keys = [
     # A list of available commands that can be bound to keys can be found
@@ -72,8 +99,8 @@ keys = [
     Key([mod], "g", lazy.spawn("rofi -dmenu -p '🔍 Google Search' | xargs -I{} xdg-open 'https://www.google.com/search?q={}'"), desc="Rofi Google Search"),
 
     # toggle between windows just like in unity with 'alt+tab'
-    Key([alt,shift], "Tab", lazy.layout.down()),
-    Key([alt], "Tab", lazy.layout.up()),
+    Key([alt,shift], "Tab", lazy.group.prev_window()),
+    Key([alt], "Tab", lazy.group.next_window()),
 
     #Brightness control
     Key([], "XF86MonBrightnessUp", lazy.spawn("xbacklight -inc 5")),
@@ -134,11 +161,23 @@ keys = [
 
     #ProtonVPN swith
     Key([mod, shift], "v", lazy.spawn("bash /home/s/scripts/protonvpn.sh"), desc="tws profile switch"),
+
+	#Group management
+	# Key([control, alt], "j", lazy.function(gotonextgroup), desc="go to next group"),
+	# Key([control, alt], "k", lazy.function(gotoprevgroup), desc="go to next group"),
+	Key([control, alt], "j", lazy.screen.next_group(), desc="go to next group"),
+	Key([control, alt], "l", lazy.screen.next_group(), desc="go to next group"),
+	Key([control, alt], "k", lazy.screen.prev_group(), desc="go to next group"),
+	Key([control, alt], "h", lazy.screen.prev_group(), desc="go to next group"),
+	Key([control, alt, shift], "j", lazy.function(movetonextgroup, lazy), desc="move window to next group"),
+	Key([control, alt, shift], "l", lazy.function(movetonextgroup, lazy), desc="move window to next group"),
+	Key([control, alt, shift], "k", lazy.function(movetoprevgroup, lazy), desc="move window to previous group"),
+	Key([control, alt, shift], "h", lazy.function(movetoprevgroup, lazy), desc="move window to previous group"),
 ]
 
 groups = [
-	Group("1", label="WWW", matches=(Match(wm_class="google-chrome"))),
-	Group("2", label="DEV", matches=[Match(wm_class="jetbrains-idea"), Match(wm_class="code")]),
+	Group("1", label="WWW"),
+	Group("2", label="DEV"),
 	Group("3", label="SYS"),
 	Group("4", label="ETC"),
 ]
@@ -163,8 +202,16 @@ for i in groups:
         Key([mod, "shift"], i.name, lazy.window.togroup(i.name, switch_group=True)),
     ])
 
+groups.append(ScratchPad('scratchpad', [
+	DropDown('guake', 'kitty')
+]))
+
+keys.extend([
+	Key([], "F1", lazy.group["scratchpad"].dropdown_toggle('guake')),
+])
+
 layouts = [
-    layout.Columns(border_focus="#ffffff", border_width=1, margin=7),
+    layout.Columns(border_focus="#ffffff", border_width=0, margin=10),
     layout.Max(),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
@@ -217,15 +264,16 @@ screens = [
     Screen(
         bottom=bar.Bar(
             [
+				widget.Spacer(length=12),
                 widget.Image(
-                    filename="/home/s/.config/qtile/icons/ubuntu.png",
-                    margin=5,
+                    filename="/home/s/.config/qtile/icons/arch.png",
+                    margin=3,
                     mouse_callbacks={"Button1": lazy.spawn("rofi -show drun")},
                 ),
                 widget.GroupBox(
 					highlight_method="block",
 					font="Ubuntu Mono",
-					fontsize=16,
+					fontsize=14,
 					inactive="aaaaaa",
 					rounded=False,
 					hide_unused=True,
@@ -308,6 +356,7 @@ screens = [
                     margin=7,
                     mouse_callbacks={"Button1": lazy.spawn("rofi -show p:rofi-power-menu -kb-cancel Alt+F1,Escape")},
                 ),
+				widget.Spacer(length=12),
             ],
             30,
             background="#00000000"
