@@ -16,8 +16,8 @@ my_filename = os.path.join(path_to_script, "conf.txt")
 check_1 = os.path.exists(my_filename)
 
 if check_1 == False:
-    # os.system("x-terminal-emulator -e 'bash -c \"./root_permissions.sh\"'")
-    # os.system("x-terminal-emulator -e 'bash -c \"sudo ./install_deps.sh\"'")
+    os.system("x-terminal-emulator -e 'bash -c \"./root_permissions.sh\"'")
+    os.system("x-terminal-emulator -e 'bash -c \"sudo ./install_deps.sh\"'")
     open(my_filename, "w").close()
     subprocess.call(['chmod', '0777', my_filename])
     conf_file = open(my_filename, "w")

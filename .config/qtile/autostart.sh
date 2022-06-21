@@ -10,3 +10,4 @@ keynav &
 transmission-gtk -m &
 blueman-applet &
 kdeconnect-cli -l &
+protonvpn &

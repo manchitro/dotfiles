@@ -82,6 +82,7 @@ keys = [
 
     #Browser
     Key([mod], "b", lazy.spawn("google-chrome"), desc="Open a google-chrome"),
+    Key([mod, shift], "b", lazy.spawn("google-chrome --incognito"), desc="Open a google-chrome"),
 
     #File Manager
     Key([mod], "f", lazy.spawn("nautilus"), desc="Open a file manager"),
@@ -95,7 +96,7 @@ keys = [
     Key([mod], "Return", lazy.spawn("rofi -show window -kb-cancel Alt+Return,Escape,Alt+F1"), desc="Rofi Window Switcher"),
     Key([mod], "c", lazy.spawn("bash /home/s/scripts/confedit.sh"), desc="Rofi Window Switcher"),
     Key([mod], "w", lazy.spawn("bash /home/s/scripts/rofi-wifi-menu.sh"), desc="Rofi WIFI Menu"),
-    Key([mod, control], "b", lazy.spawn("bash /home/s/scripts/rofi-bluetooth.sh"), desc="Rofi Bluetooth Menu"),
+    Key([mod, control, alt], "b", lazy.spawn("bash /home/s/scripts/rofi-bluetooth.sh"), desc="Rofi Bluetooth Menu"),
     Key([mod], "g", lazy.spawn("rofi -dmenu -p '🔍 Google Search' | xargs -I{} xdg-open 'https://www.google.com/search?q={}'"), desc="Rofi Google Search"),
 
     # toggle between windows just like in unity with 'alt+tab'
@@ -154,7 +155,7 @@ keys = [
     Key([], "Print", lazy.spawn("flameshot gui"), desc="open flameshot gui"),
 
     #Bluetooth tws connect/disconnect
-    Key([mod, shift], "b", lazy.spawn("bash /home/s/scripts/tws_switch.sh"), desc="connect/disconnect tws"),
+    Key([mod, control], "b", lazy.spawn("bash /home/s/scripts/tws_switch.sh"), desc="connect/disconnect tws"),
 
     #Bluetooth tws profile switch
     Key([mod, shift], "p", lazy.spawn("bash /home/s/scripts/tws_profile_switch.sh"), desc="tws profile switch"),
@@ -329,13 +330,13 @@ screens = [
                 widget.Image(
                     filename="/home/s/.config/qtile/icons/sound.png",
                     margin=7,
-                    mouse_callbacks={"Button1": lazy.spawn("pavucontrol")}
+                    mouse_callbacks={"Button1": lazy.spawn("pavucontrol -t 3"), "Button3": lazy.spawn("pavucontrol -t 4"),},
                 ),
                 widget.Volume(
                     get_volume_command="amixer -D pulse get Master".split(),
                     volume_down_command="pactl -- set-sink-volume 0 -5%",
                     volume_up_command="pactl -- set-sink-volume 0 +5%",
-                    mouse_callbacks={"Button1": lazy.spawn("pavucontrol")}
+                    mouse_callbacks={"Button1": lazy.spawn("pavucontrol -t 3"), "Button3": lazy.spawn("pavucontrol -t 4"),},
                 ),
                 widget.TextBox("|"),
                 widget.TextBox("🔆"),
