@@ -90,7 +90,7 @@ keys = [
     Key([control, mod, alt], "r", lazy.restart(), desc="Restart Qtile"),
 
     #Rofi launchers
-    Key([alt], "F1", lazy.spawn("rofi -show drun -kb-cancel Alt+F1,Escape,Alt+v"), desc="Rofi Application Launcher"),
+    Key([alt], "F1", lazy.spawn("rofi -show combi -combi-modes 'window,drun' -modes combi -kb-cancel Alt+F1,Escape,Alt+v"), desc="Rofi Application Launcher"),
     Key([alt], "v", lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1,Escape,Alt+v"), desc="Rofi Clipboard Manager"),
     Key([mod], "Return", lazy.spawn("rofi -show window -kb-cancel Alt+Return,Escape,Alt+F1"), desc="Rofi Window Switcher"),
     Key([mod], "c", lazy.spawn("bash /home/s/scripts/confedit.sh"), desc="Rofi Window Switcher"),
@@ -205,12 +205,23 @@ for i in groups:
         Key([mod, "shift"], i.name, lazy.window.togroup(i.name, switch_group=True)),
     ])
 
-groups.append(ScratchPad('scratchpad', [
-	DropDown('guake', 'kitty')
-]))
+groups.append(
+	ScratchPad('scratchpad', [
+		DropDown(
+			"term",
+			"kitty",
+			opacity=1,
+			x=0,
+			y=0,
+			height=0.9,
+			width=1,
+			on_focus_lost_hide=False
+		),
+	]
+))
 
 keys.extend([
-	Key([], "F1", lazy.group["scratchpad"].dropdown_toggle('guake')),
+	# Key([], "grave", lazy.group["scratchpad"].dropdown_toggle('term')),
 ])
 
 layouts = [
@@ -267,7 +278,10 @@ screens = [
     Screen(
         bottom=bar.Bar(
             [
-				widget.Spacer(length=12),
+				widget.Spacer(
+					length=12,
+                    mouse_callbacks={"Button1": lazy.spawn("rofi -show drun")},
+				),
                 widget.Image(
                     filename="/home/s/.config/qtile/icons/arch.png",
                     margin=3,
@@ -290,7 +304,7 @@ screens = [
                 widget.Net(format="{down}"),
                 widget.Image(
                     filename="/home/s/.config/qtile/icons/net.png",
-                    margin=7
+                    margin=9
                 ),
                 widget.Net(format="{up}"),
                 widget.TextBox("|"),
@@ -320,10 +334,12 @@ screens = [
                     mouse_callbacks={"Button1": lazy.spawn("bash /home/s/scripts/tws_switch.sh")}
                 ),
                 widget.TextBox("|"),
-                widget.TextBox(
-                    "📋: ",
+                widget.Image(
+                    filename="/home/s/.config/qtile/icons/copy-content.png",
+                    margin=8,
                     mouse_callbacks={"Button1":lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1,Escape,Alt+v")}
                 ),
+                widget.TextBox(": "),
                 widget.Clipboard(
                     timeout=0,
                     mouse_callbacks={"Button1":lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1,Escape,Alt+v")}
@@ -331,7 +347,7 @@ screens = [
                 widget.TextBox("|"),
                 widget.Image(
                     filename="/home/s/.config/qtile/icons/sound.png",
-                    margin=7,
+                    margin=8,
                     mouse_callbacks={"Button1": lazy.spawn("pavucontrol -t 3"), "Button3": lazy.spawn("pavucontrol -t 4"),},
                 ),
                 widget.Volume(
@@ -341,25 +357,35 @@ screens = [
                     mouse_callbacks={"Button1": lazy.spawn("pavucontrol -t 3"), "Button3": lazy.spawn("pavucontrol -t 4"),},
                 ),
                 widget.TextBox("|"),
-                widget.TextBox("🔆"),
+                widget.Image(
+                    filename="/home/s/.config/qtile/icons/brightness.png",
+                    margin=8,
+                ),
                 widget.Backlight(
                     backlight_name="intel_backlight",
                     step=5,
                     mouse_callbacks={"Button1": lazy.spawn("xbacklight -set 1")},
                     ),
                 widget.TextBox("|"),
+                widget.Image(
+                    filename="/home/s/.config/qtile/icons/battery.png",
+                    margin=7,
+                ),
                 widget.Battery(
-                    charge_char="⚡ ",
-                    discharge_char="🔋 ",
+                    charge_char="+",
+                    discharge_char="",
                     format="{char}{percent:2.0%}"
                 ),
                 widget.TextBox("|"),
                 widget.Image(
                     filename="/home/s/.config/qtile/icons/power.png",
-                    margin=7,
+                    margin=8,
                     mouse_callbacks={"Button1": lazy.spawn("rofi -show p:rofi-power-menu -kb-cancel Alt+F1,Escape")},
                 ),
-				widget.Spacer(length=12),
+				widget.Spacer(
+					length=12,
+                    mouse_callbacks={"Button1": lazy.spawn("rofi -show p:rofi-power-menu -kb-cancel Alt+F1,Escape")},
+				),
             ],
             30,
             background="#00000000"
@@ -384,15 +410,16 @@ bring_front_click = False
 cursor_warp = False
 floating_layout = layout.Floating(
     float_rules=[
-        # Run the utility of `xprop` to see the wm class and name of an X client.
         *layout.Floating.default_float_rules,
         Match(wm_class="confirmreset"),  # gitk
         Match(wm_class="makebranch"),  # gitk
         Match(wm_class="maketag"),  # gitk
         Match(wm_class="ssh-askpass"),  # ssh-askpass
+        Match(title="Guake!"),  # guake main window
         Match(title="branchdialog"),  # gitk
         Match(title="pinentry"),  # GPG key password entry
-    ]
+    ],
+	border_width=0,
 )
 auto_fullscreen = True
 focus_on_window_activation = "smart"

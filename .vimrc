@@ -1,5 +1,5 @@
 "kj to esc
-:imap kj <Esc>
+imap kj <Esc>
 
 "tab to 4 spaces
 set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
@@ -12,21 +12,21 @@ map <C-S-v> "+p"
 map <F6> :setlocal spell! spelllang=en_us<CR>
 
 "show line numbers
-:set number
+set number
 
 "enable mouse
-:set mouse=a
+set mouse=a
 
 "Smartcase search
-:set ignorecase
-:set smartcase
+set ignorecase
+set smartcase
 
-:set hidden
-:set mouse=a
+set hidden
+set mouse=a
 
 "H to start of line end L to end of line
-:map H ^
-:map L $
+map H ^
+map L $
 
 "plugins
 call plug#begin('~/.vim/plugged')
@@ -38,7 +38,7 @@ call plug#end()
 
 "keep cursor in middle
 :set so=999
-:nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<CR>
+nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<CR>
 
 " these lines are needed for ToggleComment()
 autocmd FileType c,cpp,java      let b:comment_leader = '//'
