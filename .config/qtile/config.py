@@ -1,7 +1,6 @@
 from libqtile import bar, layout, widget
 from libqtile.config import Click, Drag, Group, Key, Match, Screen, ScratchPad, DropDown
 from libqtile.lazy import lazy
-from libqtile.utils import guess_terminal
 from libqtile.log_utils import logger
 
 from widgets import btindicator
@@ -174,6 +173,9 @@ keys = [
 	Key([control, alt, shift], "l", lazy.function(movetonextgroup, lazy), desc="move window to next group"),
 	Key([control, alt, shift], "k", lazy.function(movetoprevgroup, lazy), desc="move window to previous group"),
 	Key([control, alt, shift], "h", lazy.function(movetoprevgroup, lazy), desc="move window to previous group"),
+
+	#CoolerBoost
+	Key([mod], "o", lazy.spawn("timeout 1 scripts/cooler_boost.sh"), desc="Write EC/CoolerBoost"),
 ]
 
 groups = [
@@ -319,7 +321,7 @@ screens = [
                 ),
                 widget.TextBox("|"),
                 widget.TextBox(
-                    "📋",
+                    "📋: ",
                     mouse_callbacks={"Button1":lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1,Escape,Alt+v")}
                 ),
                 widget.Clipboard(
@@ -420,4 +422,9 @@ from libqtile import hook
 @hook.subscribe.startup_once
 def autostart():
     home = os.path.expanduser('~/.config/qtile/autostart.sh')
+    subprocess.Popen([home])
+
+@hook.subscribe.startup_complete
+def startup_complete():
+    home = os.path.expanduser('~/.config/qtile/startup_complete.sh')
     subprocess.Popen([home])

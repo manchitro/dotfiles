@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd /home/s/OpenFreezeCenter;
-python3 cooler_boost.py;
+cd /home/s/ofc/;
+python3 indicator.py;
