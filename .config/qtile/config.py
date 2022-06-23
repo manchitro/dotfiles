@@ -1,3 +1,6 @@
+from decimal import Rounded
+from socket import INADDR_ALLHOSTS_GROUP
+from turtle import bgcolor
 from libqtile import bar, layout, widget
 from libqtile.config import Click, Drag, Group, Key, Match, Screen, ScratchPad, DropDown
 from libqtile.lazy import lazy
@@ -107,7 +110,7 @@ keys = [
     Key([], "XF86MonBrightnessDown", lazy.spawn("xbacklight -dec 5")),
     Key([mod, alt, control], "l", lazy.spawn("xbacklight -inc 5")),
     Key([mod, alt, control], "h", lazy.spawn("xbacklight -dec 5")),
-    Key([mod, shift, alt, control], "h", lazy.spawn("xbacklight -set 1")),
+    Key([mod,  alt, control], "g", lazy.spawn("xbacklight -set 1")),
 
     #Audio control
     Key(
@@ -179,10 +182,10 @@ keys = [
 ]
 
 groups = [
-	Group("1", label="WWW"),
-	Group("2", label="DEV"),
+	Group("1", label="WWW", matches=[Match(wm_class="google-chrome")]),
+	Group("2", label="DEV", matches=[Match(wm_class="jetbrains-idea")], layout="stack"),
 	Group("3", label="SYS"),
-	Group("4", label="ETC"),
+	Group("4", label="ETC", matches=[Match(wm_class="blueman-applet")]),
 ]
 
 def toscreen(qtile, group_name):
@@ -225,17 +228,17 @@ keys.extend([
 ])
 
 layouts = [
-    layout.Columns(border_focus="#ffffff", border_width=0, margin=10),
+    layout.Columns(border_focus="#ffffff", border_width=1, margin=10, insert_position=1),
     layout.Max(),
     # Try more layouts by unleashing below layouts.
-    # layout.Stack(num_stacks=2),
+    layout.Stack(num_stacks=1, border_width=0, margin=10),
     # layout.Bsp(),
     # layout.Matrix(),
     # layout.MonadTall(),
     # layout.MonadWide(),
     # layout.RatioTile(),
     # layout.Tile(),
-    # layout.TreeTab(),
+    # layout.TreeTab(panel_width=100, place_right=True, bg_color="00000000", vspace=5, inactive_bg="00000020", active_bg="ffffff20", font="Hack Nerd Font Bold", sections=["Tabs"]),
     # layout.VerticalTile(),
     # layout.Zoomy(),
 ]
@@ -279,7 +282,7 @@ screens = [
         bottom=bar.Bar(
             [
 				widget.Spacer(
-					length=12,
+					length=17,
                     mouse_callbacks={"Button1": lazy.spawn("rofi -show drun")},
 				),
                 widget.Image(
@@ -287,18 +290,10 @@ screens = [
                     margin=3,
                     mouse_callbacks={"Button1": lazy.spawn("rofi -show drun")},
                 ),
-                widget.GroupBox(
-					highlight_method="block",
-					font="Ubuntu Mono",
-					fontsize=14,
-					inactive="aaaaaa",
-					rounded=False,
-					hide_unused=True,
-				),
-                widget.TextBox("|"),
                 widget.Clock(
                     format="%I:%M:%S %p - %a, %b %d",
-                    mouse_callbacks={"Button1": lazy.spawn("gnome-calendar")}
+                    mouse_callbacks={"Button1": lazy.spawn("gnome-calendar")},
+					font="Hack Nerd Font Bold"
                 ),
                 widget.TextBox("|"),
                 widget.Net(format="{down}"),
@@ -308,13 +303,30 @@ screens = [
                 ),
                 widget.Net(format="{up}"),
                 widget.TextBox("|"),
+                widget.GroupBox(
+					highlight_method="block",
+					font="Ubuntu Mono",
+					fontsize=14,
+					inactive="aaaaaa",
+					rounded=False,
+					hide_unused=True,
+				),
+                widget.TextBox("|"),
                 widget.Prompt(),
-                widget.WindowTabs(
-                    font="Montserrat", 
-                    parse_text=longNameParse, 
+                # widget.WindowTabs(
+                #     parse_text=longNameParse, 
+                #     mouse_callbacks={"Button3": lazy.spawn("rofi -show window -kb-cancel Alt+Return,Escape,Alt+F1")},
+                #     separator=" -§- ",
+                # ),
+				widget.TaskList(
+					highlight_method="block",
+					max_title_width=150, 
+					title_width_method="uniform", 
+					icon_size=0, 
+					padding=5, 
+					rounded=False,
                     mouse_callbacks={"Button3": lazy.spawn("rofi -show window -kb-cancel Alt+Return,Escape,Alt+F1")},
-                    separator=" -§- ",
-                ),
+				),
                 widget.TextBox("|"),
                 widget.Systray(),
                 #widget.TextBox("|"),
@@ -374,7 +386,10 @@ screens = [
                 widget.Battery(
                     charge_char="+",
                     discharge_char="",
-                    format="{char}{percent:2.0%}"
+                    format="{char}{percent:2.0%}",
+					update_interval=5,
+					low_foreground="#ffb0ab",
+					notify_below=5,
                 ),
                 widget.TextBox("|"),
                 widget.Image(
@@ -383,7 +398,7 @@ screens = [
                     mouse_callbacks={"Button1": lazy.spawn("rofi -show p:rofi-power-menu -kb-cancel Alt+F1,Escape")},
                 ),
 				widget.Spacer(
-					length=12,
+					length=17,
                     mouse_callbacks={"Button1": lazy.spawn("rofi -show p:rofi-power-menu -kb-cancel Alt+F1,Escape")},
 				),
             ],
@@ -400,13 +415,14 @@ screens = [
 mouse = [
     Drag([mod], "Button1", lazy.window.set_position_floating(), start=lazy.window.get_position()),
     Drag([mod], "Button3", lazy.window.set_size_floating(), start=lazy.window.get_size()),
+    Drag([mod, shift], "Button1", lazy.window.set_size_floating(), start=lazy.window.get_size()),
     Click([mod], "Button2", lazy.window.bring_to_front()),
 ]
 
 dgroups_key_binder = None
 dgroups_app_rules = []  # type: list
 follow_mouse_focus = False
-bring_front_click = False
+bring_front_click = True
 cursor_warp = False
 floating_layout = layout.Floating(
     float_rules=[
@@ -451,7 +467,7 @@ def autostart():
     home = os.path.expanduser('~/.config/qtile/autostart.sh')
     subprocess.Popen([home])
 
-@hook.subscribe.startup_complete
-def startup_complete():
-    home = os.path.expanduser('~/.config/qtile/startup_complete.sh')
+@hook.subscribe.startup
+def restore_clipboard():
+    home = os.path.expanduser('greenclip print | head -n 1 | xclip -selection clipboard')
     subprocess.Popen([home])

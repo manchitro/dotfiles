@@ -74,3 +74,6 @@ nnoremap <C-_> :call ToggleComment()<CR>
 inoremap <C-_> <C-o>:call ToggleComment()<CR>
 xnoremap <C-_> :'<,'>call ToggleComment()<CR>
 
+command! -nargs=0 Sw w !sudo tee % > /dev/null
+
+set autoread

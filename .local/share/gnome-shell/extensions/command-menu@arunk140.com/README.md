@@ -14,7 +14,7 @@ For Icon Names - https://specifications.freedesktop.org/icon-naming-spec/latest/
 
 ---
 
-#### Example ~/.commands.json
+#### Example ~/.commands.json (Check the examples folder for more..)
 
 ```
 [
@@ -52,6 +52,17 @@ For Icon Names - https://specifications.freedesktop.org/icon-naming-spec/latest/
     }
 ]
 ```
+
+```
+Note:
+examples/.commands-full.json is supported in versions >= 5
+```
+
+---
+
+#### New Feature (Work in Progress) - Web Editor for .commands.json 
+
+https://github.com/arunk140/gnome-command-menu-editor
 
 ---
 

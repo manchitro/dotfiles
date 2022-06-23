@@ -1,7 +1,7 @@
 #!/bin/sh
 
 light-locker --lock-on-lid --lock-on-suspend &
-picom -b &
+# picom -b &
 guake &
 nm-applet &
 xcape -e 'Super_L=Alt_L|F1' &
