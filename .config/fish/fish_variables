@@ -1,6 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR __fish_initialized:3100
+SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr_abba:abbr\x20\x2da
 SETUVAR _fish_abbr_abbf:abbr\x20\x7c\x20grep
 SETUVAR _fish_abbr_abbs:abbr\x20\x2ds
@@ -16,15 +16,15 @@ SETUVAR _fish_abbr_clone:git\x20clone\x20
 SETUVAR _fish_abbr_clr:clear
 SETUVAR _fish_abbr_confedit:/home/s/scripts/confedit\x2esh
 SETUVAR _fish_abbr_copy:xclip\x20\x2dselection\x20clipboard
-SETUVAR _fish_abbr_da:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/dotfiles/\x20\x2d\x2dwork\x2dtree\x3d/home/s\x20add
+SETUVAR _fish_abbr_da:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/\x2edots/\x20\x2d\x2dwork\x2dtree\x3d/home/s\x20add
 SETUVAR _fish_abbr_db:sudo\x20docker\x20container\x20start\x20sql1
 SETUVAR _fish_abbr_dbs:sudo\x20docker\x20container\x20stop\x20sql1
-SETUVAR _fish_abbr_dc:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/dotfiles/\x20\x2d\x2dwork\x2dtree\x3d/home/s\x20commit\x20\x2dm\x20\x22
-SETUVAR _fish_abbr_dd:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/dotfiles/\x20\x2d\x2dwork\x2dtree\x3d/home/s\x20diff
+SETUVAR _fish_abbr_dc:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/\x2edots/\x20\x2d\x2dwork\x2dtree\x3d/home/s\x20commit\x20\x2dm\x20\x22
+SETUVAR _fish_abbr_dd:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/\x2edots/\x20\x2d\x2dwork\x2dtree\x3d/home/s\x20diff
 SETUVAR _fish_abbr_delete:rm\x20\x2drf
-SETUVAR _fish_abbr_dots:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/dotfiles/\x20\x2d\x2dwork\x2dtree\x3d/home/s
-SETUVAR _fish_abbr_dp:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/dotfiles/\x20\x2d\x2dwork\x2dtree\x3d/home/s\x20push
-SETUVAR _fish_abbr_ds:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/dotfiles/\x20\x2d\x2dwork\x2dtree\x3d/home/s\x20status
+SETUVAR _fish_abbr_dots:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/\x2edots/\x20\x2d\x2dwork\x2dtree\x3d/home/s
+SETUVAR _fish_abbr_dp:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/\x2edots/\x20\x2d\x2dwork\x2dtree\x3d/home/s\x20push
+SETUVAR _fish_abbr_ds:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/\x2edots/\x20\x2d\x2dwork\x2dtree\x3d/home/s\x20status
 SETUVAR _fish_abbr_eap:gnome\x2dterminal\x20\x2d\x2dtitle\x20Admin\x20EAP\x20\x2d\x2d\x20/home/s/orion/eap7\x2dweb/bin/standalone\x2esh
 SETUVAR _fish_abbr_eapc:gnome\x2dterminal\x20\x2d\x2dtitle\x20Shareholder\x20EAP\x20\x2d\x2d\x20/home/s/orion/eap7\x2dcc/bin/standalone\x2esh
 SETUVAR _fish_abbr_eapg:gnome\x2dterminal\x20\x2d\x2dtitle\x20Gateway\x20EAP\x20\x2d\x2d\x20/home/s/orion/eap7\x2dapigateway/bin/standalone\x2esh
@@ -97,3 +97,4 @@ SETUVAR fish_pager_color_completion:normal
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
+SETUVAR fish_pager_color_selected_background:\x2dr
