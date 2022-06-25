@@ -21,6 +21,7 @@ declare -a options=(
 "fish variables - .config/fish/fish_variables"
 "neofetch config - .config/neofetch/config.conf"
 "ideavimrc - .ideavimrc"
+"rofi config - .config/rofi/config.rasi"
 "rofi wifi menu - scripts/rofi-wifi-menu.sh"
 "xinitrc - .xinitrc"
 "quit"
