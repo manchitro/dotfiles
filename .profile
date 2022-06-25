@@ -26,9 +26,3 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 . "$HOME/.cargo/env"
-
-# Nodejs
-VERSION=v8.11.3
-DISTRO=linux-x64
-export PATH=/usr/local/lib/node-$VERSION-$DISTRO/bin:$PATH
-

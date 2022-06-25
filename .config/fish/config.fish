@@ -10,3 +10,11 @@ alias dots='/usr/bin/git --git-dir=/home/s/dotfiles/ --work-tree=/home/s'
 
 #fish-command-timer variables
 set fish_command_timer_time_format '%I:%M:%S%p | %b %d'
+
+# Start X at login
+if status --is-login
+  if test -z "$DISPLAY" -a $XDG_VTNR = 1
+    exec startx
+  end
+end
+

@@ -1,7 +1,11 @@
+from cmath import inf
+import os
+import subprocess
+
 from decimal import Rounded
 from socket import INADDR_ALLHOSTS_GROUP
 from turtle import bgcolor
-from libqtile import bar, layout, widget
+from libqtile import bar, layout, widget, hook
 from libqtile.config import Click, Drag, Group, Key, Match, Screen, ScratchPad, DropDown
 from libqtile.lazy import lazy
 from libqtile.log_utils import logger
@@ -83,23 +87,23 @@ keys = [
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
 
     #Browser
-    Key([mod], "b", lazy.spawn("google-chrome"), desc="Open a google-chrome"),
-    Key([mod, shift], "b", lazy.spawn("google-chrome --incognito"), desc="Open a google-chrome"),
+    Key([mod], "b", lazy.spawn("google-chrome-stable"), desc="Open a google-chrome"),
+    Key([mod, shift], "b", lazy.spawn("google-chrome-stable --incognito"), desc="Open a google-chrome"),
 
     #File Manager
-    Key([mod], "f", lazy.spawn("nautilus"), desc="Open a file manager"),
+    Key([mod], "f", lazy.spawn("pcmanfm"), desc="Open a file manager"),
 
     #Restart qtile
     Key([control, mod, alt], "r", lazy.restart(), desc="Restart Qtile"),
 
     #Rofi launchers
-    Key([alt], "F1", lazy.spawn("rofi -show combi -combi-modes 'window,drun' -modes combi -kb-cancel Alt+F1,Escape,Alt+v"), desc="Rofi Application Launcher"),
-    Key([alt], "v", lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1,Escape,Alt+v"), desc="Rofi Clipboard Manager"),
-    Key([mod], "Return", lazy.spawn("rofi -show window -kb-cancel Alt+Return,Escape,Alt+F1"), desc="Rofi Window Switcher"),
+    Key([alt], "F1", lazy.spawn("rofi -show combi -combi-modes 'window,drun' -modes combi -kb-cancel Alt+F1,Escape,Alt+v -show-icons"), desc="Rofi Application Launcher"),
+    Key([alt], "v", lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1,Escape,Alt+v -show-icons"), desc="Rofi Clipboard Manager"),
+    Key([mod], "Return", lazy.spawn("rofi -show window -kb-cancel Alt+Return,Escape,Alt+F1 -show-icons"), desc="Rofi Window Switcher"),
     Key([mod], "c", lazy.spawn("bash /home/s/scripts/confedit.sh"), desc="Rofi Window Switcher"),
     Key([mod], "w", lazy.spawn("bash /home/s/scripts/rofi-wifi-menu.sh"), desc="Rofi WIFI Menu"),
     Key([mod, control, alt], "b", lazy.spawn("bash /home/s/scripts/rofi-bluetooth.sh"), desc="Rofi Bluetooth Menu"),
-    Key([mod], "g", lazy.spawn("rofi -dmenu -p '🔍 Google Search' | xargs -I{} xdg-open 'https://www.google.com/search?q={}'"), desc="Rofi Google Search"),
+    Key([mod], "a", lazy.spawn("rofi -show drun -kb-cancel Alt+F1,Escape,Alt+v -show-icons"), desc="Show Applications"),
 
     # toggle between windows just like in unity with 'alt+tab'
     Key([alt,shift], "Tab", lazy.group.prev_window()),
@@ -115,15 +119,15 @@ keys = [
     #Audio control
     Key(
         [], "XF86AudioRaiseVolume",
-        lazy.spawn("pactl -- set-sink-volume 0 +5%") #amixer -c 0 -q set Master 2dB+
+        lazy.spawn("amixer set Master 5%+") #amixer -c 0 -q set Master 2dB+ #pactl -- set-sink-volume 0 +5%
     ),
     Key(
         [], "XF86AudioLowerVolume",
-        lazy.spawn("pactl -- set-sink-volume 0 -5%") #amixer -c 0 -q set Master 2dB-
+        lazy.spawn("amixer set Master 5%-") #amixer -c 0 -q set Master 2dB- #pactl -- set-sink-volume 0 -5%
     ),
     Key(
         [], "XF86AudioMute",
-        lazy.spawn("pactl -- set-sink-mute 0 toggle") #amixer -c 0 -q set Master toggle
+        lazy.spawn("amixer set Master 0") #amixer -c 0 -q set Master toggle #pactl -- set-sink-mute 0 toggle
     ),
     Key(
         [mod], "space",
@@ -135,15 +139,15 @@ keys = [
     ),
     Key(
         [mod, alt, control], "k",
-        lazy.spawn("pactl -- set-sink-volume 0 +5%") #amixer -c 0 -q set Master 2dB+
+        lazy.spawn("amixer set Master 5%+") #amixer -c 0 -q set Master 2dB+ #pactl -- set-sink-volume 0 +5%
     ),
     Key(
         [mod, alt, control], "j",
-        lazy.spawn("pactl -- set-sink-volume 0 -5%") #amixer -c 0 -q set Master 2dB-
+        lazy.spawn("amixer set Master 5%-") #amixer -c 0 -q set Master 2dB- #pactl -- set-sink-volume 0 -5%
     ),
     Key(
         [mod, alt, control], "m",
-        lazy.spawn("pactl -- set-sink-mute 0 toggle") #amixer -c 0 -q set Master toggle
+        lazy.spawn("amixer set Master 0") #amixer -c 0 -q set Master toggle #pactl -- set-sink-mute 0 toggle
     ),
 
 
@@ -151,7 +155,7 @@ keys = [
     Key([mod], "n", lazy.window.toggle_minimize(), desc="Toggle minimization on focused window"),
 
     #Shutdown menu
-    Key([mod], "0", lazy.spawn("rofi -show p:rofi-power-menu -kb-cancel Alt+F1,Escape"), desc="Open a power menu"),
+    Key([mod], "0", lazy.spawn("rofi -show p:rofi-power-menu -kb-cancel Alt+F1,Escape -show-icons"), desc="Open a power menu"),
 
     #Screenshot tool - flameshot
     Key([], "Print", lazy.spawn("flameshot gui"), desc="open flameshot gui"),
@@ -182,10 +186,10 @@ keys = [
 ]
 
 groups = [
-	Group("1", label="WWW", matches=[Match(wm_class="google-chrome")]),
+	Group("1", label="WEB", matches=[Match(wm_class="google-chrome-stable")], layout="stack"),
 	Group("2", label="DEV", matches=[Match(wm_class="jetbrains-idea")], layout="stack"),
-	Group("3", label="SYS"),
-	Group("4", label="ETC", matches=[Match(wm_class="blueman-applet")]),
+	Group("3", label="TXT", matches=[Match(wm_class="code")], layout="stack"),
+	Group("4", label="ETC", matches=[Match(wm_class="blueman-applet"), Match(wm_class="protonvpn"), Match(wm_class="transmission-gtk"),]),
 ]
 
 def toscreen(qtile, group_name):
@@ -283,12 +287,12 @@ screens = [
             [
 				widget.Spacer(
 					length=17,
-                    mouse_callbacks={"Button1": lazy.spawn("rofi -show drun")},
+                    mouse_callbacks={"Button1": lazy.spawn("rofi -show drun -show-icons")},
 				),
                 widget.Image(
                     filename="/home/s/.config/qtile/icons/arch.png",
-                    margin=3,
-                    mouse_callbacks={"Button1": lazy.spawn("rofi -show drun")},
+                    margin=5,
+                    mouse_callbacks={"Button1": lazy.spawn("rofi -show drun -show-icons")},
                 ),
                 widget.Clock(
                     format="%I:%M:%S %p - %a, %b %d",
@@ -305,27 +309,23 @@ screens = [
                 widget.TextBox("|"),
                 widget.GroupBox(
 					highlight_method="block",
-					font="Ubuntu Mono",
-					fontsize=14,
+					font="SpaceMono Nerd Font",
+					fontsize=12,
 					inactive="aaaaaa",
 					rounded=False,
-					hide_unused=True,
+					hide_unused=False,
+					visible_groups=['1', '2', '3'],
 				),
                 widget.TextBox("|"),
                 widget.Prompt(),
-                # widget.WindowTabs(
-                #     parse_text=longNameParse, 
-                #     mouse_callbacks={"Button3": lazy.spawn("rofi -show window -kb-cancel Alt+Return,Escape,Alt+F1")},
-                #     separator=" -§- ",
-                # ),
 				widget.TaskList(
 					highlight_method="block",
 					max_title_width=150, 
 					title_width_method="uniform", 
-					icon_size=0, 
+					icon_size=15, 
 					padding=5, 
 					rounded=False,
-                    mouse_callbacks={"Button3": lazy.spawn("rofi -show window -kb-cancel Alt+Return,Escape,Alt+F1")},
+                    mouse_callbacks={"Button3": lazy.spawn("rofi -show window -kb-cancel Alt+Return,Escape,Alt+F1 -show-icons")},
 				),
                 widget.TextBox("|"),
                 widget.Systray(),
@@ -349,12 +349,12 @@ screens = [
                 widget.Image(
                     filename="/home/s/.config/qtile/icons/copy-content.png",
                     margin=8,
-                    mouse_callbacks={"Button1":lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1,Escape,Alt+v")}
+                    mouse_callbacks={"Button1":lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1,Escape,Alt+v -show-icons")}
                 ),
-                widget.TextBox(": "),
+                # widget.TextBox(": "),
                 widget.Clipboard(
                     timeout=0,
-                    mouse_callbacks={"Button1":lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1,Escape,Alt+v")}
+                    mouse_callbacks={"Button1":lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1,Escape,Alt+v -show-icons")}
                 ),
                 widget.TextBox("|"),
                 widget.Image(
@@ -395,11 +395,11 @@ screens = [
                 widget.Image(
                     filename="/home/s/.config/qtile/icons/power.png",
                     margin=8,
-                    mouse_callbacks={"Button1": lazy.spawn("rofi -show p:rofi-power-menu -kb-cancel Alt+F1,Escape")},
+                    mouse_callbacks={"Button1": lazy.spawn("rofi -show p:rofi-power-menu -kb-cancel Alt+F1,Escape -show-icons")},
                 ),
 				widget.Spacer(
 					length=17,
-                    mouse_callbacks={"Button1": lazy.spawn("rofi -show p:rofi-power-menu -kb-cancel Alt+F1,Escape")},
+                    mouse_callbacks={"Button1": lazy.spawn("rofi -show p:rofi-power-menu -kb-cancel Alt+F1,Escape -show-icons")},
 				),
             ],
             30,
@@ -457,17 +457,17 @@ wl_input_rules = None
 # java that happens to be on java's whitelist.
 wmname = "LG3D"
 
-import os
-import subprocess
-
-from libqtile import hook
-
 @hook.subscribe.startup_once
 def autostart():
     home = os.path.expanduser('~/.config/qtile/autostart.sh')
     subprocess.Popen([home])
 
-@hook.subscribe.startup
-def restore_clipboard():
-    home = os.path.expanduser('greenclip print | head -n 1 | xclip -selection clipboard')
-    subprocess.Popen([home])
+@hook.subscribe.client_new
+def focus_group(client):
+	for group in groups: 
+		match = next((m for m in group.matches if m.compare(client)), None)
+		if match:
+			if group.name != '4':
+				targetgroup = client.qtile.groups_map[group.name]  # there can be multiple instances of a group
+				targetgroup.cmd_toscreen(toggle=False)
+				break

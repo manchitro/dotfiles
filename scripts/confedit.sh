@@ -17,9 +17,12 @@ declare -a options=(
 "fish greeting - .config/fish/functions/fish_greeting.fish"
 "rifle config - .config/ranger/rifle.conf"
 "fish prompt - .config/fish/functions/fish_prompt.fish"
+"fish config - .config/fish/config.fish"
+"fish variables - .config/fish/fish_variables"
 "neofetch config - .config/neofetch/config.conf"
 "ideavimrc - .ideavimrc"
 "rofi wifi menu - scripts/rofi-wifi-menu.sh"
+"xinitrc - .xinitrc"
 "quit"
 )
 
