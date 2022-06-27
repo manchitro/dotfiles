@@ -99,11 +99,10 @@ keys = [
     #Rofi launchers
     Key([alt], "F1", lazy.spawn("rofi -show combi -combi-modes 'window,drun' -modes combi -kb-cancel Alt+F1,Escape,Alt+v -show-icons"), desc="Rofi Application Launcher"),
     Key([alt], "v", lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1,Escape,Alt+v -show-icons"), desc="Rofi Clipboard Manager"),
-    Key([mod], "Return", lazy.spawn("rofi -show window -kb-cancel Alt+Return,Escape,Alt+F1 -show-icons"), desc="Rofi Window Switcher"),
+    Key([mod], "Return", lazy.spawn("rofi -show drun -kb-cancel Alt+F1,Escape,Alt+v -show-icons"), desc="Rofi Applications"),
     Key([mod], "c", lazy.spawn("bash /home/s/scripts/confedit.sh"), desc="Rofi Window Switcher"),
     Key([mod], "w", lazy.spawn("bash /home/s/scripts/rofi-wifi-menu.sh"), desc="Rofi WIFI Menu"),
     Key([mod, control, alt], "b", lazy.spawn("bash /home/s/scripts/rofi-bluetooth.sh"), desc="Rofi Bluetooth Menu"),
-    Key([mod], "a", lazy.spawn("rofi -show drun -kb-cancel Alt+F1,Escape,Alt+v -show-icons"), desc="Show Applications"),
 
     # toggle between windows just like in unity with 'alt+tab'
     Key([alt,shift], "Tab", lazy.group.prev_window()),
@@ -119,15 +118,27 @@ keys = [
     #Audio control
     Key(
         [], "XF86AudioRaiseVolume",
-        lazy.spawn("amixer set Master 5%+") #amixer -c 0 -q set Master 2dB+ #pactl -- set-sink-volume 0 +5%
+        lazy.spawn("pactl -- set-sink-volume @DEFAULT_SINK@ +5%") #amixer -c 0 -q set Master 2dB+ #pactl -- set-sink-volume 0 +5%
+    ),
+    Key(
+        [mod, alt, control], "k",
+        lazy.spawn("pactl -- set-sink-volume @DEFAULT_SINK@ +5%") #amixer -c 0 -q set Master 2dB+ #pactl -- set-sink-volume 0 +5%
     ),
     Key(
         [], "XF86AudioLowerVolume",
-        lazy.spawn("amixer set Master 5%-") #amixer -c 0 -q set Master 2dB- #pactl -- set-sink-volume 0 -5%
+        lazy.spawn("pactl -- set-sink-volume @DEFAULT_SINK@ -5%") #amixer -c 0 -q set Master 2dB- #pactl -- set-sink-volume 0 -5%
+    ),
+    Key(
+        [mod, alt, control], "j",
+        lazy.spawn("pactl -- set-sink-volume @DEFAULT_SINK@ -5%") #amixer -c 0 -q set Master 2dB- #pactl -- set-sink-volume 0 -5%
     ),
     Key(
         [], "XF86AudioMute",
-        lazy.spawn("amixer set Master 0") #amixer -c 0 -q set Master toggle #pactl -- set-sink-mute 0 toggle
+        lazy.spawn("pactl -- set-sink-mute @DEFAULT_SINK@ toggle") #amixer -c 0 -q set Master toggle #pactl -- set-sink-mute 0 toggle
+    ),
+    Key(
+        [mod, alt, control], "m",
+        lazy.spawn("pactl -- set-sink-mute @DEFAULT_SINK@ toggle") #amixer -c 0 -q set Master toggle #pactl -- set-sink-mute 0 toggle
     ),
     Key(
         [mod], "space",
@@ -136,18 +147,6 @@ keys = [
     Key(
         [alt], "space",
         lazy.spawn("playerctl play-pause") #amixer -c 0 -q set Master toggle
-    ),
-    Key(
-        [mod, alt, control], "k",
-        lazy.spawn("amixer set Master 5%+") #amixer -c 0 -q set Master 2dB+ #pactl -- set-sink-volume 0 +5%
-    ),
-    Key(
-        [mod, alt, control], "j",
-        lazy.spawn("amixer set Master 5%-") #amixer -c 0 -q set Master 2dB- #pactl -- set-sink-volume 0 -5%
-    ),
-    Key(
-        [mod, alt, control], "m",
-        lazy.spawn("amixer set Master 0") #amixer -c 0 -q set Master toggle #pactl -- set-sink-mute 0 toggle
     ),
 
 
@@ -232,10 +231,10 @@ keys.extend([
 ])
 
 layouts = [
-    layout.Columns(border_focus="#ffffff", border_width=1, margin=10, insert_position=1),
+    layout.Columns(border_focus="#ffffff", border_width=1, margin=15, insert_position=1),
     layout.Max(),
     # Try more layouts by unleashing below layouts.
-    layout.Stack(num_stacks=1, border_width=0, margin=10),
+    layout.Stack(num_stacks=1, border_width=0, margin=15),
     # layout.Bsp(),
     # layout.Matrix(),
     # layout.MonadTall(),
@@ -297,19 +296,18 @@ screens = [
                 widget.Clock(
                     format="%I:%M:%S %p - %a, %b %d",
                     mouse_callbacks={"Button1": lazy.spawn("gnome-calendar")},
-					font="Hack Nerd Font Bold"
                 ),
                 widget.TextBox("|"),
                 widget.Net(format="{down}"),
                 widget.Image(
                     filename="/home/s/.config/qtile/icons/net.png",
-                    margin=9
+                    margin=10
                 ),
                 widget.Net(format="{up}"),
                 widget.TextBox("|"),
                 widget.GroupBox(
 					highlight_method="block",
-					font="SpaceMono Nerd Font",
+					font="SpaceMono",
 					fontsize=12,
 					inactive="aaaaaa",
 					rounded=False,
@@ -320,10 +318,10 @@ screens = [
                 widget.Prompt(),
 				widget.TaskList(
 					highlight_method="block",
-					max_title_width=150, 
+					max_title_width=200, 
 					title_width_method="uniform", 
-					icon_size=15, 
-					padding=5, 
+					icon_size=16, 
+					padding=8, 
 					rounded=False,
                     mouse_callbacks={"Button3": lazy.spawn("rofi -show window -kb-cancel Alt+Return,Escape,Alt+F1 -show-icons")},
 				),
@@ -348,7 +346,7 @@ screens = [
                 widget.TextBox("|"),
                 widget.Image(
                     filename="/home/s/.config/qtile/icons/copy-content.png",
-                    margin=8,
+                    margin=10,
                     mouse_callbacks={"Button1":lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1,Escape,Alt+v -show-icons")}
                 ),
                 # widget.TextBox(": "),
@@ -359,7 +357,7 @@ screens = [
                 widget.TextBox("|"),
                 widget.Image(
                     filename="/home/s/.config/qtile/icons/sound.png",
-                    margin=8,
+                    margin=10,
                     mouse_callbacks={"Button1": lazy.spawn("pavucontrol -t 3"), "Button3": lazy.spawn("pavucontrol -t 4"),},
                 ),
                 widget.Volume(
@@ -371,7 +369,7 @@ screens = [
                 widget.TextBox("|"),
                 widget.Image(
                     filename="/home/s/.config/qtile/icons/brightness.png",
-                    margin=8,
+                    margin=10,
                 ),
                 widget.Backlight(
                     backlight_name="intel_backlight",
@@ -381,7 +379,7 @@ screens = [
                 widget.TextBox("|"),
                 widget.Image(
                     filename="/home/s/.config/qtile/icons/battery.png",
-                    margin=7,
+                    margin=9,
                 ),
                 widget.Battery(
                     charge_char="+",
@@ -394,7 +392,7 @@ screens = [
                 widget.TextBox("|"),
                 widget.Image(
                     filename="/home/s/.config/qtile/icons/power.png",
-                    margin=8,
+                    margin=10,
                     mouse_callbacks={"Button1": lazy.spawn("rofi -show p:rofi-power-menu -kb-cancel Alt+F1,Escape -show-icons")},
                 ),
 				widget.Spacer(
@@ -402,7 +400,7 @@ screens = [
                     mouse_callbacks={"Button1": lazy.spawn("rofi -show p:rofi-power-menu -kb-cancel Alt+F1,Escape -show-icons")},
 				),
             ],
-            30,
+            35,
             background="#00000000"
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
             # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
@@ -464,6 +462,7 @@ def autostart():
 
 @hook.subscribe.client_new
 def focus_group(client):
+	lazy.window.toggle_fullscreen()
 	for group in groups: 
 		match = next((m for m in group.matches if m.compare(client)), None)
 		if match:
