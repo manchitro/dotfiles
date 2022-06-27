@@ -1,0 +1,10 @@
+[Unit]
+Description=MSSQL Docker Container
+
+[Service]
+Type=simple
+Restart=no
+ExecStart=docker container start sql1
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+[Unit]
+Description=ISW Cooler Boost
+
+[Service]
+Type=simple
+Restart=no
+ExecStart=/opt/scripts/cool.sh
+
+[Install]
+WantedBy=multi-user.target
