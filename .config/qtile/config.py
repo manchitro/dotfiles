@@ -307,7 +307,7 @@ screens = [
                 widget.Net(format="{down}"),
                 widget.Image(
                     filename="/home/s/.config/qtile/icons/net.png",
-                    margin=10
+                    margin=9
                 ),
                 widget.Net(format="{up}"),
                 widget.TextBox("|"),
@@ -347,12 +347,12 @@ screens = [
                 #widget.Memory(measure_mem="G", format="{MemPercent}%"),
                 btindicator.BtIndicator(
                     hci="/dev_FC_E8_06_16_0C_AA",
-                    mouse_callbacks={"Button1": lazy.spawn("bash /home/s/scripts/tws_switch.sh")}
+                    mouse_callbacks={"Button3": lazy.spawn("bash /home/s/scripts/tws_switch.sh"), "Button1": lazy.spawn("bash /home/s/scripts/tws_profile_switch.sh")}
                 ),
                 widget.TextBox("|"),
                 widget.Image(
                     filename="/home/s/.config/qtile/icons/copy-content.png",
-                    margin=10,
+                    margin=9,
                     mouse_callbacks={"Button1":lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1,Escape,Alt+v -show-icons")}
                 ),
                 # widget.TextBox(": "),
@@ -363,7 +363,7 @@ screens = [
                 widget.TextBox("|"),
                 widget.Image(
                     filename="/home/s/.config/qtile/icons/sound.png",
-                    margin=10,
+                    margin=8,
                     mouse_callbacks={"Button1": lazy.spawn("pavucontrol -t 3"), "Button3": lazy.spawn("pavucontrol -t 4"),},
                 ),
                 widget.Volume(
@@ -375,7 +375,7 @@ screens = [
                 widget.TextBox("|"),
                 widget.Image(
                     filename="/home/s/.config/qtile/icons/brightness.png",
-                    margin=10,
+                    margin=8,
                 ),
                 widget.Backlight(
                     backlight_name="intel_backlight",
@@ -385,7 +385,7 @@ screens = [
                 widget.TextBox("|"),
                 widget.Image(
                     filename="/home/s/.config/qtile/icons/battery.png",
-                    margin=9,
+                    margin=7,
                 ),
                 widget.Battery(
                     charge_char="+",
@@ -398,7 +398,7 @@ screens = [
                 widget.TextBox("|"),
                 widget.Image(
                     filename="/home/s/.config/qtile/icons/power.png",
-                    margin=10,
+                    margin=8,
                     mouse_callbacks={"Button1": lazy.spawn("rofi -show p:rofi-power-menu -kb-cancel Alt+F1,Escape -show-icons")},
                 ),
 				widget.Spacer(
@@ -406,7 +406,7 @@ screens = [
                     mouse_callbacks={"Button1": lazy.spawn("rofi -show p:rofi-power-menu -kb-cancel Alt+F1,Escape -show-icons")},
 				),
             ],
-            35,
+            30,
             background="#00000000"
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
             # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
@@ -435,6 +435,7 @@ floating_layout = layout.Floating(
         Match(wm_class="makebranch"),  # gitk
         Match(wm_class="maketag"),  # gitk
         Match(wm_class="ssh-askpass"),  # ssh-askpass
+        # Match(wm_class="com-nuarca-nuarca-HTTPLoadTest"),
         Match(title="Guake!"),  # guake main window
         Match(title="branchdialog"),  # gitk
         Match(title="pinentry"),  # GPG key password entry

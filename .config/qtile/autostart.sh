@@ -12,4 +12,4 @@ transmission-gtk -m &
 blueman-applet &
 kdeconnect-cli -l &
 protonvpn &
-xbacklight -set 100 &
+xbacklight -set 70 &

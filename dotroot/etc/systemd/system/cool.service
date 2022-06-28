@@ -1,11 +1,10 @@
 [Unit]
 Description=ISW Cooler Boost
+After=suspend.target
 
 [Service]
 Type=simple
-StartLimitIntervalSec=10
-Restart=always
-ExecStart=/opt/scripts/cool.sh
+ExecStart=/usr/bin/isw -b on
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=suspend.target
