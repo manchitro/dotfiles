@@ -6,7 +6,7 @@ set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
 
 "copy from and to clipboard
 vnoremap <C-c> "*y :let @+=@*<CR>
-map <C-S-v> "+p"
+map <C-S-v> "+p
 
 "set toggle spellcheck
 map <F6> :setlocal spell! spelllang=en_us<CR>
@@ -89,3 +89,9 @@ set autoread
 " Ps = 6 -> steady bar (xterm)
 let &t_SI = "\e[5 q"
 let &t_EI = "\e[2 q"
+
+set undofile " Maintain undo history between sessions
+set undodir=~/.vim/undodir
+
+"highlight search matches
+set hlsearch

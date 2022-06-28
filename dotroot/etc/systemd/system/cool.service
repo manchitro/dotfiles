@@ -3,7 +3,8 @@ Description=ISW Cooler Boost
 
 [Service]
 Type=simple
-Restart=no
+StartLimitIntervalSec=10
+Restart=always
 ExecStart=/opt/scripts/cool.sh
 
 [Install]

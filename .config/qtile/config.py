@@ -163,6 +163,9 @@ keys = [
     Key([mod, control], "b", lazy.spawn("bash /home/s/scripts/tws_switch.sh"), desc="connect/disconnect tws"),
 
     #Bluetooth tws profile switch
+    Key([alt, control], "b", lazy.spawn("bash /home/s/scripts/tws_profile_switch.sh"), desc="TWS profile switch"),
+
+    #Bluetooth tws profile switch
     Key([mod, shift], "p", lazy.spawn("bash /home/s/scripts/tws_profile_switch.sh"), desc="tws profile switch"),
 
     #ProtonVPN swith
@@ -182,6 +185,9 @@ keys = [
 
 	#CoolerBoost
 	Key([mod], "o", lazy.spawn("timeout 1 scripts/cooler_boost.sh"), desc="Write EC/CoolerBoost"),
+
+	#betterlockscreen
+	Key([mod], "Escape", lazy.spawn("betterlockscreen -l dim"), desc="lock screen"),
 ]
 
 groups = [
@@ -462,11 +468,20 @@ def autostart():
 
 @hook.subscribe.client_new
 def focus_group(client):
-	lazy.window.toggle_fullscreen()
 	for group in groups: 
 		match = next((m for m in group.matches if m.compare(client)), None)
 		if match:
 			if group.name != '4':
+				targetgroup = client.qtile.groups_map[group.name]  # there can be multiple instances of a group
+				targetgroup.cmd_toscreen(toggle=False)
+				break
+
+@hook.subscribe.client_name_updated
+def focus_group(client):
+	for group in groups: 
+		match = next((m for m in group.matches if m.compare(client)), None)
+		if match:
+			if group.name != '4' and client.get_wm_class()[0] == 'code':
 				targetgroup = client.qtile.groups_map[group.name]  # there can be multiple instances of a group
 				targetgroup.cmd_toscreen(toggle=False)
 				break
