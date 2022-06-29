@@ -97,4 +97,4 @@ set undodir=~/.vim/undodir
 set hlsearch
 
 "autosave on change
-autocmd TextChanged,TextChangedI <buffer> silent write
+" autocmd TextChanged,TextChangedI <buffer> silent write

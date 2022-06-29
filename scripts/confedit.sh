@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-editor="code"
+editor="vim"
 terminal="kitty"
 
 declare -a options=(

@@ -97,7 +97,7 @@ keys = [
     Key([control, mod, alt], "r", lazy.restart(), desc="Restart Qtile"),
 
     #Rofi launchers
-    Key([alt], "F1", lazy.spawn("rofi -show combi -combi-modes 'window,drun' -modes combi -kb-cancel Alt+F1,Escape,Alt+v -show-icons"), desc="Rofi Application Launcher"),
+    Key([alt], "F1", lazy.spawn("rofi -combi-modi window,drun,run -show combi -show-icons -kb-cancel Alt+F1,Escape,Alt+v -combi-display-format '{text}'"), desc="Rofi Application Launcher"),
     Key([alt], "v", lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1,Escape,Alt+v -show-icons"), desc="Rofi Clipboard Manager"),
     Key([mod], "Return", lazy.spawn("rofi -show drun -kb-cancel Alt+F1,Escape,Alt+v -show-icons"), desc="Rofi Applications"),
     Key([mod], "c", lazy.spawn("bash /home/s/scripts/confedit.sh"), desc="Rofi Window Switcher"),
