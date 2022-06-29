@@ -95,3 +95,6 @@ set undodir=~/.vim/undodir
 
 "highlight search matches
 set hlsearch
+
+"autosave on change
+autocmd TextChanged,TextChangedI <buffer> silent write

@@ -31,7 +31,7 @@ SETUVAR _fish_abbr_eapc:kitty\x20\x2d\x2dtitle\x20\x27Shareholder\x20EAP\x27\x20
 SETUVAR _fish_abbr_eapg:kitty\x20\x2d\x2dtitle\x20Gateway\x20EAP\x20\x2d\x2d\x20/home/s/orion/eap7\x2dapigateway/bin/standalone\x2esh
 SETUVAR _fish_abbr_eapi:kitty\x20\x2d\x2dtitle\x20Issuer\x20EAP\x20\x2d\x2d\x20/home/s/orion/eap7\x2dissuer/bin/standalone\x2esh
 SETUVAR _fish_abbr_eapj:kitty\x20\x2d\x2dtitle\x20\x22Gateway\x20EAP\x22\x20/home/s/orion/jboss\x2deap\x2d7\x2e0/bin/standalone\x2esh\x20\x26
-SETUVAR _fish_abbr_eaps:kitty\x20\x2d\x2dtitle\x20\x22Gateway\x20EAP\x22\x20/home/s/orion/eap7\x2dapigateway/bin/standalone\x2esh\x20\x26
+SETUVAR _fish_abbr_eaps:kitty\x20\x2d\x2dtitle\x20\x22Gateway\x20EAP\x22\x20/home/s/orion/callcenter/jboss\x2deap\x2dweb7\x2e0/bin/standalone\x2esh\x20\x26
 SETUVAR _fish_abbr_exa:exa\x20\x2dl
 SETUVAR _fish_abbr_fd:fdfind
 SETUVAR _fish_abbr_fishcon:vim\x20/home/s/\x2econfig/fish/config\x2efish
