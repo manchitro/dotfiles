@@ -69,6 +69,7 @@ SETUVAR _fish_abbr_sl:systemctl\x20suspend
 SETUVAR _fish_abbr_snapi:sudo\x20snap\x20install
 SETUVAR _fish_abbr_sx:startx
 SETUVAR _fish_abbr_todo:vim\x20/home/s/Documents/imtodo\x2etxt
+SETUVAR _fish_abbr_update:sudo\x20pacman\x20\x2dSyu
 SETUVAR _fish_abbr_v:vim
 SETUVAR _fish_abbr_yay:yay\x20\x2dS
 SETUVAR _fish_abbr_zks:sudo\x20/opt/kafka/bin/zookeeper\x2dserver\x2dstop\x2esh\x20/opt/kafka/config/zookeeper\x2eproperties
