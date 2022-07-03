@@ -188,10 +188,13 @@ keys = [
 
 	#betterlockscreen
 	Key([mod], "Escape", lazy.spawn("betterlockscreen -l dim"), desc="lock screen"),
+
+    Key([], "F11", lazy.window.toggle_fullscreen(), desc="Toggle fullscreen",),
+
 ]
 
 groups = [
-	Group("1", label="WEB", matches=[Match(wm_class="google-chrome-stable")], layout="stack"),
+	Group("1", label="WEB", matches=[Match(wm_class="google-chrome-stable"), Match(wm_class="teams")], layout="stack"),
 	Group("2", label="DEV", matches=[Match(wm_class="jetbrains-idea")], layout="stack"),
 	Group("3", label="TXT", matches=[Match(wm_class="code")], layout="stack"),
 	Group("4", label="ETC", matches=[Match(wm_class="blueman-applet"), Match(wm_class="protonvpn"), Match(wm_class="transmission-gtk"),]),
@@ -236,11 +239,11 @@ keys.extend([
 	# Key([], "grave", lazy.group["scratchpad"].dropdown_toggle('term')),
 ])
 
+# Try more layouts by unleashing below layouts.
 layouts = [
     layout.Columns(border_focus="#ffffff", border_width=1, margin=15, insert_position=1),
-    layout.Max(),
-    # Try more layouts by unleashing below layouts.
     layout.Stack(num_stacks=1, border_width=0, margin=15),
+    # layout.Max(),
     # layout.Bsp(),
     # layout.Matrix(),
     # layout.MonadTall(),

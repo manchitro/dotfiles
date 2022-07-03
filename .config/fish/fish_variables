@@ -17,7 +17,7 @@ SETUVAR _fish_abbr_clone:git\x20clone\x20
 SETUVAR _fish_abbr_clr:clear
 SETUVAR _fish_abbr_confedit:/home/s/scripts/confedit\x2esh
 SETUVAR _fish_abbr_copy:xclip\x20\x2dselection\x20clipboard
-SETUVAR _fish_abbr_da:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/\x2edots/\x20\x2d\x2dwork\x2dtree\x3d/home/s\x20add\x20\x2econfig/fish/\x20\x2econfig/qtile/\x20\x2evim/\x20\x2evimrc\x20dotroot/\x20scripts/\x20\x2econfig/kitty/\x20\x2elocal/share/rofi/\x20\x2econfig/rofi/\x20\x2elocal/share/\x7bfonts\x2cicons\x2crofi\x7d\x20\x2econfig/picom/
+SETUVAR _fish_abbr_da:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/\x2edots/\x20\x2d\x2dwork\x2dtree\x3d/home/s\x20add\x20\x2econfig/\x7bfish\x2cqtile\x2ckitty\x2crofi\x2cpicom\x2cawesome\x2cneofetch\x2cpcmanfm\x2cpowerline\x2dshell\x2cranger\x7d\x20\x2ebashrc\x20\x2eguake\x20\x2eideavimrc\x20\x2eprofile\x20\x2evimrc\x20\x2evim/\x20dotroot/\x20scripts/\x20\x2elocal/share/\x7brofi\x2cfonts\x2cicons\x7d\x20GRE/\x20\x2eicons/\x20\x2ethemes/\x20ofc/\x20wallpapers/
 SETUVAR _fish_abbr_db:sudo\x20docker\x20container\x20start\x20sql1
 SETUVAR _fish_abbr_dbs:sudo\x20docker\x20container\x20stop\x20sql1
 SETUVAR _fish_abbr_dc:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/\x2edots/\x20\x2d\x2dwork\x2dtree\x3d/home/s\x20commit\x20\x2dm\x20\x22
