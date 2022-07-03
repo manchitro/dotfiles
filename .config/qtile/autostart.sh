@@ -14,3 +14,4 @@ kdeconnect-cli -l &
 protonvpn &
 xbacklight -set 70 &
 sh /home/s/scripts/generate_installed_list.sh &
+sudo isw -b on

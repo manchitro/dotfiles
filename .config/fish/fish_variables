@@ -38,6 +38,7 @@ SETUVAR _fish_abbr_fishcon:vim\x20/home/s/\x2econfig/fish/config\x2efish
 SETUVAR _fish_abbr_gc:git\x20clone
 SETUVAR _fish_abbr_gh:/home/s
 SETUVAR _fish_abbr_gs:git\x20status
+SETUVAR _fish_abbr_i:sudo\x20pacman\x20\x2dS
 SETUVAR _fish_abbr_iap:nohup\x20intellij\x2didea\x2dultimate\x20/home/s/orion/proxy\x2dus/source/proxy\x2dvoting/Client/\x20\x26
 SETUVAR _fish_abbr_icc:nohup\x20intellij\x2didea\x2dultimate\x20/home/s/orion/proxy\x2dus/source/proxy\x2dvoting/proxyiq\x2dapigateway/\x20\x26
 SETUVAR _fish_abbr_iip:nohup\x20intellij\x2didea\x2dultimate\x20/home/s/orion/proxy\x2dus/source/proxy\x2dvoting/IssuerPortal/\x20\x26

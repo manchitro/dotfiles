@@ -189,7 +189,11 @@ keys = [
 	#betterlockscreen
 	Key([mod], "Escape", lazy.spawn("betterlockscreen -l dim"), desc="lock screen"),
 
+    #toggle fullscreen
     Key([], "F11", lazy.window.toggle_fullscreen(), desc="Toggle fullscreen",),
+
+    #bitwarden
+	Key([mod], "p", lazy.spawn("bitwarden-desktop"), desc="Bitwarden password manager"),
 
 ]
 
