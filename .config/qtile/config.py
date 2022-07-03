@@ -311,6 +311,8 @@ screens = [
                 ),
                 widget.Net(format="{up}"),
                 widget.TextBox("|"),
+                widget.CurrentLayout(),
+                widget.TextBox("|"),
                 widget.GroupBox(
 					highlight_method="block",
 					font="SpaceMono",
@@ -482,7 +484,7 @@ def focus_group(client):
 	for group in groups: 
 		match = next((m for m in group.matches if m.compare(client)), None)
 		if match:
-			if group.name != '4' and client.get_wm_class()[0] == 'code':
+			if group.name != '4' and (client.get_wm_class()[0] == 'code' or client.get_wm_class()[0] == 'google-chrome'):
 				targetgroup = client.qtile.groups_map[group.name]  # there can be multiple instances of a group
 				targetgroup.cmd_toscreen(toggle=False)
 				break
