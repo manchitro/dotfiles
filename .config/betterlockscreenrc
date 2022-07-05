@@ -14,10 +14,9 @@ quiet=false
 # i3lockcolor_bin="i3lock-color" # Manually set command for i3lock-color
 
 # default theme
-loginbox=00000066
+loginbox=00000030
 loginshadow=00000000
-locktext="password?"
-font="Hack Nerd Font"
+locktext="Hello"
 ringcolor=ffffffff
 insidecolor=00000000
 separatorcolor=00000000

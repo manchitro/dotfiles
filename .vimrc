@@ -98,3 +98,12 @@ set hlsearch
 
 "autosave on change
 " autocmd TextChanged,TextChangedI <buffer> silent write
+
+"Ctrl+s to save
+noremap <silent> <C-S>          :update<CR>
+vnoremap <silent> <C-S>         <C-C>:update<CR>
+inoremap <silent> <C-S>         <C-O>:update<CR>
+
+"Wrap
+set nowrap
+map <C-w> :set wrap!<CR>

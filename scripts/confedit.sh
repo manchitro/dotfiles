@@ -25,6 +25,7 @@ declare -a options=(
 "rofi wifi menu - scripts/rofi-wifi-menu.sh"
 "xinitrc - .xinitrc"
 "powerline-shell - .config/powerline-shell/config.json"
+"betterlockscreen - .config/betterlockscreenrc"
 "quit"
 )
 

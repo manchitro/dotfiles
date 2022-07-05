@@ -1,0 +1,243 @@
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2022-07-04 13:59:06,754 [  16163]  ERROR - rationStore.ComponentStoreImpl - Cannot read scheme /home/s/orion/proxy-us/source/proxy-voting/ShareHolderPortal/Service/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_28_22__5_52_PM__Default_Changelist_.xml 
+org.jdom.JDOMException: ParseError at [row,col]:[1,1]
+Message: Premature end of file.
+	at com.intellij.openapi.util.JDOMUtil.loadUsingStaX(JDOMUtil.java:292)
+	at com.intellij.openapi.util.JDOMUtil.load(JDOMUtil.java:383)
+	at com.intellij.openapi.util.JDOMUtil.load(JDOMUtil.java:375)
+	at com.intellij.configurationStore.schemeManager.SchemeLoader.loadScheme(schemeLoader.kt:183)
+	at com.intellij.configurationStore.schemeManager.SchemeManagerImpl.loadSchemes(SchemeManagerImpl.kt:216)
+	at com.intellij.openapi.vcs.changes.shelf.ShelveChangesManager.projectOpened(ShelveChangesManager.java:220)
+	at com.intellij.openapi.vcs.changes.shelf.ShelveChangesManager$PostStartupActivity.runActivity(ShelveChangesManager.java:1398)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runStartupActivity(StartupManagerImpl.java:329)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runActivity(StartupManagerImpl.java:303)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.lambda$runPostStartupActivities$4(StartupManagerImpl.java:229)
+	at com.intellij.openapi.extensions.impl.ExtensionPointImpl.processWithPluginDescriptor(ExtensionPointImpl.java:296)
+	at com.intellij.openapi.extensions.ExtensionPointName.processWithPluginDescriptor(ExtensionPointName.java:158)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runPostStartupActivities(StartupManagerImpl.java:223)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$2(CoreProgressManager.java:178)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:165)
+	at com.intellij.openapi.progress.util.BackgroundTaskUtil.runUnderDisposeAwareIndicator(BackgroundTaskUtil.java:254)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.lambda$projectOpened$1(StartupManagerImpl.java:157)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,1]
+Message: Premature end of file.
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLStreamReaderImpl.next(XMLStreamReaderImpl.java:652)
+	at com.intellij.openapi.util.SafeStAXStreamBuilder.build(SafeStAXStreamBuilder.java:94)
+	at com.intellij.openapi.util.JDOMUtil.loadUsingStaX(JDOMUtil.java:285)
+	... 26 more
+2022-07-04 13:59:06,755 [  16164]  ERROR - rationStore.ComponentStoreImpl - IntelliJ IDEA 2020.3.4  Build #IU-203.8084.24 
+2022-07-04 13:59:06,758 [  16167]  ERROR - rationStore.ComponentStoreImpl - JDK: 11.0.10; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2022-07-04 13:59:06,758 [  16167]  ERROR - rationStore.ComponentStoreImpl - OS: Linux 
+2022-07-04 13:59:06,759 [  16168]  ERROR - rationStore.ComponentStoreImpl - Last Action:  
+2022-07-04 13:59:10,599 [  20008]   WARN - com.intellij.util.xmlb.Binding - no accessors for zielu.gittoolbox.a.a.a.j 
+2022-07-04 13:59:23,388 [  32797]   WARN - g.jetbrains.kotlin.idea.script - [KOTLIN_SCRIPTING] Cannot load script definition class org.gradle.kotlin.dsl.KotlinInitScript 
+2022-07-04 13:59:23,712 [  33121]   WARN - g.jetbrains.kotlin.idea.script - [KOTLIN_SCRIPTING] Cannot load script definition class org.gradle.kotlin.dsl.KotlinSettingsScript 
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+ERROR: The file is locked: /home/s/.cache/JetBrains/IntelliJIdea2020.3/icons-v2.db
+org.jetbrains.mvstore.MVStoreException: The file is locked: /home/s/.cache/JetBrains/IntelliJIdea2020.3/icons-v2.db
+	at org.jetbrains.mvstore.FileStore.<init>(FileStore.java:109)
+	at org.jetbrains.mvstore.MVStore$Builder.createFileStore(MVStore.java:4031)
+	at org.jetbrains.mvstore.MVStore$Builder.openOrNewOnIoError(MVStore.java:3995)
+	at com.intellij.ui.svg.SvgCacheManager.<init>(SvgCacheManager.java:59)
+	at com.intellij.util.SVGLoader.<clinit>(SVGLoader.java:86)
+	at com.intellij.util.ImageLoader.loadByDescriptor(ImageLoader.java:252)
+	at com.intellij.util.ImageLoader.load(ImageLoader.java:224)
+	at com.intellij.openapi.util.IconLoader$ResolvedImageDataResolver.loadImage(IconLoader.java:1150)
+	at com.intellij.openapi.util.IconLoader$CachedImageIcon.loadImage(IconLoader.java:1017)
+	at com.intellij.openapi.util.IconLoader$ScaledIconCache.getOrScaleIcon(IconLoader.java:1087)
+	at com.intellij.openapi.util.IconLoader$CachedImageIcon.scale(IconLoader.java:932)
+	at com.intellij.util.IconUtil.scale(IconUtil.java:522)
+	at com.intellij.ui.AppUIUtil.scaleIconToSize(AppUIUtil.java:179)
+	at com.intellij.ui.AppUIUtil.loadApplicationIcon(AppUIUtil.java:171)
+	at com.intellij.ui.AppUIUtil.loadApplicationIconImage(AppUIUtil.java:150)
+	at com.intellij.ui.AppUIUtil.updateWindowIcon(AppUIUtil.java:76)
+	at com.intellij.idea.StartupUtil.updateFrameClassAndWindowIcon(StartupUtil.java:410)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:783)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Already running
+2022-07-04 13:59:37,928 [  47337]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,928 [  47337]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,928 [  47337]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,929 [  47338]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,929 [  47338]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,929 [  47338]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,929 [  47338]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,929 [  47338]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,930 [  47339]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,930 [  47339]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,930 [  47339]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,930 [  47339]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,930 [  47339]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,931 [  47340]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,931 [  47340]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,931 [  47340]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,931 [  47340]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,931 [  47340]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,932 [  47341]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,932 [  47341]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,932 [  47341]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,932 [  47341]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,932 [  47341]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,933 [  47342]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,933 [  47342]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,933 [  47342]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,933 [  47342]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,933 [  47342]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,934 [  47343]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,934 [  47343]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,934 [  47343]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,942 [  47351]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,942 [  47351]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,943 [  47352]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,943 [  47352]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,943 [  47352]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,943 [  47352]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,944 [  47353]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,944 [  47353]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,944 [  47353]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,944 [  47353]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,944 [  47353]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:37,945 [  47354]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 13:59:44,271 [  53680]   WARN - g.jetbrains.kotlin.idea.script - [KOTLIN_SCRIPTING] Cannot load script definition class org.gradle.kotlin.dsl.KotlinInitScript 
+2022-07-04 13:59:44,373 [  53782]   WARN - g.jetbrains.kotlin.idea.script - [KOTLIN_SCRIPTING] Cannot load script definition class org.gradle.kotlin.dsl.KotlinSettingsScript 
+2022-07-04 14:02:18,835 [ 208244]   WARN - ome.idea.vim.group.SearchGroup - No range is found 
+2022-07-04 14:04:18,626 [ 328035]   WARN - com.intellij.util.xmlb.Binding - no accessors for org.jetbrains.idea.perforce.perforce.ConnectionId 
+2022-07-04 14:04:33,756 [ 343165]   WARN - penapi.wm.impl.GlobalMenuLinux - can't obtain XID of window: com.intellij.openapi.ui.FrameWrapper$MyJFrame[frame0,15,15,1890x1020,invalid,hidden,layout=java.awt.BorderLayout,title=UserResource.java (/home/s/orion/proxy-us/source/proxy-voting/ShareHolderPortal/Service/service/src/main/java/com/nuarca/proxyvoting/service/web/rest/user),resizable,normal,defaultCloseOperation=DO_NOTHING_ON_CLOSE,rootPane=,rootPaneCheckingEnabled=true], skip global menu unbinding 
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2022-07-04 14:23:11,000 [   7098]  ERROR - rationStore.ComponentStoreImpl - Cannot read scheme /home/s/orion/proxy-us/source/proxy-voting/ShareHolderPortal/Service/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_28_22__5_52_PM__Default_Changelist_.xml 
+org.jdom.JDOMException: ParseError at [row,col]:[1,1]
+Message: Premature end of file.
+	at com.intellij.openapi.util.JDOMUtil.loadUsingStaX(JDOMUtil.java:292)
+	at com.intellij.openapi.util.JDOMUtil.load(JDOMUtil.java:383)
+	at com.intellij.openapi.util.JDOMUtil.load(JDOMUtil.java:375)
+	at com.intellij.configurationStore.schemeManager.SchemeLoader.loadScheme(schemeLoader.kt:183)
+	at com.intellij.configurationStore.schemeManager.SchemeManagerImpl.loadSchemes(SchemeManagerImpl.kt:216)
+	at com.intellij.openapi.vcs.changes.shelf.ShelveChangesManager.projectOpened(ShelveChangesManager.java:220)
+	at com.intellij.openapi.vcs.changes.shelf.ShelveChangesManager$PostStartupActivity.runActivity(ShelveChangesManager.java:1398)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runStartupActivity(StartupManagerImpl.java:329)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runActivity(StartupManagerImpl.java:303)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.lambda$runPostStartupActivities$4(StartupManagerImpl.java:229)
+	at com.intellij.openapi.extensions.impl.ExtensionPointImpl.processWithPluginDescriptor(ExtensionPointImpl.java:296)
+	at com.intellij.openapi.extensions.ExtensionPointName.processWithPluginDescriptor(ExtensionPointName.java:158)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runPostStartupActivities(StartupManagerImpl.java:223)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$2(CoreProgressManager.java:178)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:165)
+	at com.intellij.openapi.progress.util.BackgroundTaskUtil.runUnderDisposeAwareIndicator(BackgroundTaskUtil.java:254)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.lambda$projectOpened$1(StartupManagerImpl.java:157)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,1]
+Message: Premature end of file.
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLStreamReaderImpl.next(XMLStreamReaderImpl.java:652)
+	at com.intellij.openapi.util.SafeStAXStreamBuilder.build(SafeStAXStreamBuilder.java:94)
+	at com.intellij.openapi.util.JDOMUtil.loadUsingStaX(JDOMUtil.java:285)
+	... 26 more
+2022-07-04 14:23:11,001 [   7099]  ERROR - rationStore.ComponentStoreImpl - IntelliJ IDEA 2020.3.4  Build #IU-203.8084.24 
+2022-07-04 14:23:11,003 [   7101]  ERROR - rationStore.ComponentStoreImpl - JDK: 11.0.10; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2022-07-04 14:23:11,003 [   7101]  ERROR - rationStore.ComponentStoreImpl - OS: Linux 
+2022-07-04 14:23:11,004 [   7102]  ERROR - rationStore.ComponentStoreImpl - Last Action:  
+2022-07-04 14:23:13,581 [   9679]   WARN - com.intellij.util.xmlb.Binding - no accessors for zielu.gittoolbox.a.a.a.j 
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+ERROR: The file is locked: /home/s/.cache/JetBrains/IntelliJIdea2020.3/icons-v2.db
+org.jetbrains.mvstore.MVStoreException: The file is locked: /home/s/.cache/JetBrains/IntelliJIdea2020.3/icons-v2.db
+	at org.jetbrains.mvstore.FileStore.<init>(FileStore.java:109)
+	at org.jetbrains.mvstore.MVStore$Builder.createFileStore(MVStore.java:4031)
+	at org.jetbrains.mvstore.MVStore$Builder.openOrNewOnIoError(MVStore.java:3995)
+	at com.intellij.ui.svg.SvgCacheManager.<init>(SvgCacheManager.java:59)
+	at com.intellij.util.SVGLoader.<clinit>(SVGLoader.java:86)
+	at com.intellij.util.ImageLoader.loadByDescriptor(ImageLoader.java:252)
+	at com.intellij.util.ImageLoader.load(ImageLoader.java:224)
+	at com.intellij.openapi.util.IconLoader$ResolvedImageDataResolver.loadImage(IconLoader.java:1150)
+	at com.intellij.openapi.util.IconLoader$CachedImageIcon.loadImage(IconLoader.java:1017)
+	at com.intellij.openapi.util.IconLoader$ScaledIconCache.getOrScaleIcon(IconLoader.java:1087)
+	at com.intellij.openapi.util.IconLoader$CachedImageIcon.scale(IconLoader.java:932)
+	at com.intellij.util.IconUtil.scale(IconUtil.java:522)
+	at com.intellij.ui.AppUIUtil.scaleIconToSize(AppUIUtil.java:179)
+	at com.intellij.ui.AppUIUtil.loadApplicationIcon(AppUIUtil.java:171)
+	at com.intellij.ui.AppUIUtil.loadApplicationIconImage(AppUIUtil.java:150)
+	at com.intellij.ui.AppUIUtil.updateWindowIcon(AppUIUtil.java:76)
+	at com.intellij.idea.StartupUtil.updateFrameClassAndWindowIcon(StartupUtil.java:410)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:783)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Already running
+2022-07-04 14:23:24,969 [  21067]   WARN - g.jetbrains.kotlin.idea.script - [KOTLIN_SCRIPTING] Cannot load script definition class org.gradle.kotlin.dsl.KotlinInitScript 
+2022-07-04 14:23:24,974 [  21072]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,975 [  21073]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,976 [  21074]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,976 [  21074]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,976 [  21074]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,976 [  21074]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,976 [  21074]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,977 [  21075]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,977 [  21075]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,977 [  21075]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,977 [  21075]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,977 [  21075]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,977 [  21075]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,978 [  21076]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,978 [  21076]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,978 [  21076]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,978 [  21076]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,978 [  21076]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,978 [  21076]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,979 [  21077]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,979 [  21077]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,979 [  21077]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,979 [  21077]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,980 [  21078]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,980 [  21078]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,980 [  21078]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,984 [  21082]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,985 [  21083]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,986 [  21084]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,986 [  21084]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,986 [  21084]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,986 [  21084]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,986 [  21084]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,986 [  21084]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,986 [  21084]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,986 [  21084]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,987 [  21085]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,987 [  21085]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,987 [  21085]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,987 [  21085]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,987 [  21085]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,987 [  21085]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:24,987 [  21085]   WARN - ge.ExternalProjectsDataStorage - Cannot find class `org.jetbrains.idea.gradle.ext.profiler.model.JavaTaskData` 
+2022-07-04 14:23:25,787 [  21885]   WARN - g.jetbrains.kotlin.idea.script - [KOTLIN_SCRIPTING] Cannot load script definition class org.gradle.kotlin.dsl.KotlinSettingsScript 
+2022-07-04 14:23:34,819 [  30917]   WARN - g.jetbrains.kotlin.idea.script - [KOTLIN_SCRIPTING] Cannot load script definition class org.gradle.kotlin.dsl.KotlinInitScript 
+2022-07-04 14:23:34,881 [  30979]   WARN - g.jetbrains.kotlin.idea.script - [KOTLIN_SCRIPTING] Cannot load script definition class org.gradle.kotlin.dsl.KotlinSettingsScript 
+2022-07-04 14:28:57,495 [ 353593]   WARN - com.intellij.util.xmlb.Binding - no accessors for org.jetbrains.idea.perforce.perforce.ConnectionId 
+2022-07-04 14:33:07,978 [ 604076]   WARN - ution.process.OSProcessHandler - Process has been already terminated: /home/s/.nvm/versions/node/v8.11.3/bin/node /snap/intellij-idea-ultimate/293/plugins/JavaScriptLanguage/jsLanguageServicesImpl/js-language-service.js -id=1656923032413 -debug-name=typescript 
