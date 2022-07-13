@@ -36,7 +36,7 @@ inputbar {
     font:       "Montserrat 14";
     padding:    12px;
     spacing:    12px;
-    children:   [ icon-search, entry ];
+    children:   [ icon-search, entry, prompt ];
 }
 
 icon-search {
@@ -45,7 +45,7 @@ icon-search {
     size: 28px;
 }
 
-icon-search, entry, element-icon, element-text {
+icon-search, entry, element-icon, element-text, prompt {
     vertical-align: 0.5;
 }
 

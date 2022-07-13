@@ -1,7 +1,11 @@
-@theme "/home/s/.local/share/rofi/themes/spotlight-dark.rasi"
+//@theme "/home/s/.local/share/rofi/themes/spotlight-dark.rasi"
 configuration {
 	dpi: 110;
     modi: "window,drun,ssh,combi";
     font: "Hack Nerd Font 10";
     combi-modi: "window,drun,ssh";
 }
+//@theme "/usr/share/rofi/themes/android_notification.rasi"
+//@theme "/home/s/.local/share/rofi/themes/spotlight-dark.rasi"
+//@theme "/usr/share/rofi/themes/android_notification.rasi"
+@theme "/home/s/.local/share/rofi/themes/spotlight-dark.rasi"

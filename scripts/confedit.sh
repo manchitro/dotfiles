@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 
-editor="vim"
+editor=$1
 terminal="kitty"
 
 declare -a options=(
 "fish user key bindings - .config/fish/functions/fish_user_key_bindings.fish"
 "Conf Editor - scripts/confedit.sh"
+"Scripts Editor - scripts/scriptedit.sh"
 "qtile config - .config/qtile/config.py"
 "picom config - .config/picom/picom.conf"
 "qtile autostart - .config/qtile/autostart.sh"
@@ -30,7 +31,7 @@ declare -a options=(
 "quit"
 )
 
-choice=$(printf '%s\n' "${options[@]}" | sort | rofi -dmenu -p "Edit config: " -kb-cancel Alt+F1,Escape)
+choice=$(printf '%s\n' "${options[@]}" | sort | rofi -dmenu -p "Edit with $editor" -kb-cancel Alt+F1,Escape)
 #choice=$(printf '%s\n' "${options[@]}" | sort | dmenu -i -l 20 -p 'Edit Config:')
 
 if [[ "$choice" == "quit" ]]; then

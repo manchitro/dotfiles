@@ -104,9 +104,12 @@ keys = [
     Key([mod], "f",                 lazy.spawn("pcmanfm"), desc="Open a file manager"),
 
     #Rofi launchers
-    Key([alt], "F1",                lazy.spawn("rofi -combi-modi window,drun,run -show combi -show-icons -kb-cancel Alt+F1,Escape,Alt+v -combi-display-format '{text}' -window-format '> {t}'"), desc="Rofi Application Launcher"),
+    Key([alt], "F1",                lazy.spawn("rofi -p 'Run' -combi-modi window,drun,run -show combi -show-icons -kb-cancel Alt+F1,Escape,Alt+v -combi-display-format '{text}' -window-format '> {t}'"), desc="Rofi Application Launcher"),
     Key([alt], "v",                 lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1,Escape,Alt+v -show-icons"), desc="Rofi Clipboard Manager"),
-    Key([mod], "c",                 lazy.spawn("bash /home/s/scripts/confedit.sh"), desc="Rofi Window Switcher"),
+    Key([mod], "c",                 lazy.spawn("bash /home/s/scripts/confedit.sh vim"), desc="Config files edit with vim"),
+    Key([mod, shift], "c",          lazy.spawn("bash /home/s/scripts/confedit.sh code"), desc="Config files edit with code"),
+    Key([mod], "s",                 lazy.spawn("bash /home/s/scripts/scriptedit.sh vim"), desc="Scripts edit with vim"),
+    Key([mod, shift], "s",          lazy.spawn("bash /home/s/scripts/scriptedit.sh code"), desc="Scripts edit with code"),
     Key([mod], "w",                 lazy.spawn("bash /home/s/scripts/rofi-wifi-menu.sh"), desc="Rofi WIFI Menu"),
     Key([mod, control, alt], "b",   lazy.spawn("bash /home/s/scripts/rofi-bluetooth.sh"), desc="Rofi Bluetooth Menu"),
 
@@ -160,11 +163,6 @@ keys = [
 
 	#betterlockscreen
 	Key([mod], "Escape",            lazy.spawn("betterlockscreen -l dim"), desc="lock screen"),
-
-    #Keychords for wifi switching
-    KeyChord([mod],"i", [
-        Key([], "f",                lazy.spawn("kitty"), desc=""),
-    ]),
 ]
 
 groups = [
