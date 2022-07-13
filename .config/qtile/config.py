@@ -161,8 +161,10 @@ keys = [
 	#betterlockscreen
 	Key([mod], "Escape",            lazy.spawn("betterlockscreen -l dim"), desc="lock screen"),
 
-    #bitwarden
-	Key([mod], "p",                 lazy.spawn("bitwarden-desktop"), desc="Bitwarden password manager"),
+    #Keychords for wifi switching
+    KeyChord([mod],"i", [
+        Key([], "f",                lazy.spawn("kitty"), desc=""),
+    ]),
 ]
 
 groups = [

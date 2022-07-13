@@ -1,6 +1,7 @@
 #!/bin/sh
 
 light-locker --lock-on-lid --lock-on-suspend &
+dunst &
 picom -b &
 guake &
 nm-applet &
