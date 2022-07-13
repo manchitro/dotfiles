@@ -35,6 +35,7 @@ SETUVAR _fish_abbr_eaps:kitty\x20\x2d\x2dtitle\x20\x22Gateway\x20EAP\x22\x20/hom
 SETUVAR _fish_abbr_exa:exa\x20\x2dl
 SETUVAR _fish_abbr_fd:fdfind
 SETUVAR _fish_abbr_fishcon:vim\x20/home/s/\x2econfig/fish/config\x2efish
+SETUVAR _fish_abbr_ga:git\x20add
 SETUVAR _fish_abbr_gc:git\x20clone
 SETUVAR _fish_abbr_gh:/home/s
 SETUVAR _fish_abbr_gs:git\x20status
