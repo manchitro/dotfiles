@@ -1,7 +1,6 @@
 #!/bin/sh
 
 light-locker --lock-on-lid --lock-on-suspend &
-dunst &
 picom -b &
 guake &
 nm-applet &
@@ -16,3 +15,4 @@ protonvpn &
 xbacklight -set 70 &
 sh /home/s/scripts/generate_installed_list.sh &
 sudo isw -b on
+deadd-notification-center &

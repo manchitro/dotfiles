@@ -27,7 +27,7 @@ declare -a options=(
 "xinitrc - .xinitrc"
 "powerline-shell - .config/powerline-shell/config.json"
 "betterlockscreen - .config/betterlockscreenrc"
-"dunst config - .config/dunst/dunstrc"
+"deadd config - .config/deadd/deadd.conf"
 "quit"
 )
 

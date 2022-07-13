@@ -12,12 +12,12 @@ blueman 2.2.5-1
 bluetooth-headset-battery-level-git r105.9cc9cf0-1
 bluez-utils 5.64-2
 datagrip 2022.1.5-1
+deadd-notification-center-bin 1.7.3-2
 debtap 3.5.1-1
 dhcpcd 9.4.1-1
 dialog 1:1.3_20220526-1
 docker 1:20.10.17-1
 dosfstools 4.2-2
-dunst 1.9.0-1
 efibootmgr 17-2
 evince 42.3-1
 exa 0.10.1-5
