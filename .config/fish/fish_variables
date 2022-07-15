@@ -17,7 +17,7 @@ SETUVAR _fish_abbr_clone:git\x20clone\x20
 SETUVAR _fish_abbr_clr:clear
 SETUVAR _fish_abbr_confedit:/home/s/scripts/confedit\x2esh
 SETUVAR _fish_abbr_copy:xclip\x20\x2dselection\x20clipboard
-SETUVAR _fish_abbr_da:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/\x2edots/\x20\x2d\x2dwork\x2dtree\x3d/home/s\x20add\x20\x2econfig/\x7bfish\x2cqtile\x2ckitty\x2crofi\x2cpicom\x2cawesome\x2cneofetch\x2cpcmanfm\x2cpowerline\x2dshell\x2cranger\x2cbetterlockscreenrc\x7d\x20\x2ebashrc\x20\x2eguake\x20\x2eideavimrc\x20\x2eprofile\x20\x2einstalled\x2dpackages\x20\x2evimrc\x20\x2evim/\x20dotroot/\x20scripts/\x20\x2elocal/share/\x7brofi\x2cfonts\x2cicons\x7d\x20\x2eicons/\x20\x2ethemes/\x20ofc/\x20wallpapers/
+SETUVAR _fish_abbr_da:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/\x2edots/\x20\x2d\x2dwork\x2dtree\x3d/home/s\x20add\x20\x2econfig/\x7bfish\x2cqtile\x2ckitty\x2crofi\x2cpicom\x2cawesome\x2cneofetch\x2cpcmanfm\x2cpowerline\x2dshell\x2cranger\x2cdeadd\x2cbetterlockscreenrc\x7d\x20\x2ebashrc\x20\x2eguake\x20\x2eideavimrc\x20\x2eprofile\x20\x2einstalled\x2dpackages\x2d\x2a\x20\x2evimrc\x20\x2evim/\x20dotroot/\x20scripts/\x20\x2elocal/share/\x7brofi\x2cfonts\x2cicons\x7d\x20\x2eicons/\x20\x2ethemes/\x20ofc/\x20wallpapers/
 SETUVAR _fish_abbr_db:sudo\x20docker\x20container\x20start\x20sql1
 SETUVAR _fish_abbr_dbs:sudo\x20docker\x20container\x20stop\x20sql1
 SETUVAR _fish_abbr_dc:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/\x2edots/\x20\x2d\x2dwork\x2dtree\x3d/home/s\x20commit\x20\x2dm\x20\x22
@@ -25,6 +25,7 @@ SETUVAR _fish_abbr_dd:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/\x2edots/\x2
 SETUVAR _fish_abbr_delete:rm\x20\x2drf
 SETUVAR _fish_abbr_dots:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/\x2edots/\x20\x2d\x2dwork\x2dtree\x3d/home/s
 SETUVAR _fish_abbr_dp:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/\x2edots/\x20\x2d\x2dwork\x2dtree\x3d/home/s\x20push
+SETUVAR _fish_abbr_dr:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/\x2edots/\x20\x2d\x2dwork\x2dtree\x3d/home/s\x20rm\x20\x2d\x2dcached
 SETUVAR _fish_abbr_ds:/usr/bin/git\x20\x2d\x2dgit\x2ddir\x3d/home/s/\x2edots/\x20\x2d\x2dwork\x2dtree\x3d/home/s\x20status
 SETUVAR _fish_abbr_eap:kitty\x20\x2d\x2dtitle\x20\x27Admin\x20EAP\x27\x20/home/s/orion/eap7\x2dweb/bin/standalone\x2esh\x20\x26
 SETUVAR _fish_abbr_eapc:kitty\x20\x2d\x2dtitle\x20\x27Shareholder\x20EAP\x27\x20/home/s/orion/eap7\x2dcc/bin/standalone\x2esh\x20\x26
