@@ -17,3 +17,4 @@ pactl -- set-sink-volume @DEFAULT_SINK@ 70%
 sh /home/s/scripts/generate_installed_list.sh &
 sudo isw -b on
 deadd-notification-center &
+flameshot &

@@ -1,6 +1,7 @@
 from cmath import inf
 import os
 import subprocess
+import datetime
 
 from decimal import Rounded
 from socket import INADDR_ALLHOSTS_GROUP
@@ -248,6 +249,8 @@ screens = [
                 widget.TextBox      ("|"),
                 widget.Image        (filename="/home/s/.config/qtile/icons/copy-content.png", margin=9, mouse_callbacks={"Button1":lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1,Escape,Alt+v -show-icons")}),
                 widget.Clipboard    (timeout=0, mouse_callbacks={"Button1":lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -kb-cancel Alt+F1,Escape,Alt+v -show-icons")}),
+                widget.TextBox      ("|"),
+                widget.Countdown    (date=datetime.datetime(2022, 9, 15, 15), format='GRE Test in {D}d {H}h'),
                 widget.TextBox      ("|"),
                 widget.Image        (filename="/home/s/.config/qtile/icons/sound.png", margin=8, mouse_callbacks={"Button1": lazy.spawn("pavucontrol -t 3"), "Button3": lazy.spawn("pavucontrol -t 4"),},),
                 widget.Volume       (get_volume_command="amixer -D pulse get Master".split(), volume_down_command="pactl -- set-sink-volume 0 -5%", volume_up_command="pactl -- set-sink-volume 0 +5%", mouse_callbacks={"Button1": lazy.spawn("pavucontrol -t 3"), "Button3": lazy.spawn("pavucontrol -t 4"),},),

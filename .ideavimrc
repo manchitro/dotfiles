@@ -34,6 +34,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-airline/vim-airline-themes'
     Plug 'preservim/nerdtree'
     Plug 'mhinz/vim-startify'
+    Plug 'qpkorr/vim-renamer'
 call plug#end()
 
 "keep cursor in middle

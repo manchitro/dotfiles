@@ -69,6 +69,7 @@ SETUVAR _fish_abbr_reset_2D_store:sudo\x20/opt/kafka/bin/kafka\x2dstreams\x2dapp
 SETUVAR _fish_abbr_rmkafka:sudo\x20rm\x20\x2drf\x20/var/lib/kafka/data/
 SETUVAR _fish_abbr_rmstreams:sudo\x20rm\x20\x2drf\x20/tmp/kafka\x2dstreams/
 SETUVAR _fish_abbr_service:nohup\x20intellij\x2didea\x2dultimate\x20/home/s/orion/proxy\x2dus/source/proxy\x2dvoting/ShareHolderPortal/Service/\x20\x26
+SETUVAR _fish_abbr_shareholder:nohup\x20intellij\x2didea\x2dultimate\x20/home/s/orion/proxy\x2dus/source/proxy\x2dvoting/ShareHolderPortal/Client/
 SETUVAR _fish_abbr_sl:systemctl\x20suspend
 SETUVAR _fish_abbr_snapi:sudo\x20snap\x20install
 SETUVAR _fish_abbr_sx:startx
