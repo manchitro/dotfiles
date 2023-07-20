@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Service App (Proxy-US) | uservice
+Exec=intellij-idea-ultimate /home/s/orion/proxy-us/source/proxy-voting/ShareHolderPortal/Service/
+Icon=/snap/intellij-idea-ultimate/current/bin/idea.png
+

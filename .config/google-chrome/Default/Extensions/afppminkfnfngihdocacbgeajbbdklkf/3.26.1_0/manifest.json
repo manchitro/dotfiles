@@ -1,0 +1,36 @@
+{
+   "applications": {
+      "gecko": {
+         "id": "refined-bitbucket@refined-bitbucket.org"
+      }
+   },
+   "author": "Ronald Rey",
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js", "background-for-requests.js", "background-for-webnavigation.js" ]
+   },
+   "content_scripts": [ {
+      "js": [ "prism.js", "main.js" ],
+      "matches": [ "https://bitbucket.org/*" ]
+   } ],
+   "description": "Improves Bitbucket's user experience",
+   "homepage_url": "https://github.com/refined-bitbucket/refined-bitbucket",
+   "icons": {
+      "128": "icon_128px.png",
+      "16": "icon_16px.png",
+      "256": "icon_256px.png",
+      "32": "icon_32px.png",
+      "48": "icon_48px.png",
+      "64": "icon_64px.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvA5xKXIbYeVf4IdPq/RdMqtcX+5/pkPE5vKy1QE6MG+JOed9cqgSj7DzX2ZzN+BCH0SSvysdyWK8G2sG/x73jqTMYhcirQiaC5vO8GYJCpKjhXCiYbkyHJQYAp2NXOUNsxwaKCU0WsvxCpz0fIdjQXxnSCHQM/xqBV6zDxEWwNFFc4JW5b9VvV/Zf8vvqSK05+Wo62cHbu7g9Zv4+bfM2LCHKb1qgJs5nIzauCNfOb7uA4iII/b7C/s0BmDnllUVoRvYhOUUkS52rmWQ2jpdjiWZx65q2S1GIJ+mtkeXEGgUFknFG5vKZmKp0RrF2xUW7A78RyYt+ET/QmYe9Nen2wIDAQAB",
+   "manifest_version": 2,
+   "name": "Refined Bitbucket",
+   "options_ui": {
+      "chrome_style": true,
+      "page": "options.html"
+   },
+   "permissions": [ "storage", "webNavigation", "https://bitbucket.org/*", "https://api.bitbucket.org/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.26.1"
+}

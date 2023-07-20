@@ -1,0 +1,19 @@
+[Desktop Entry]
+Comment[en_US]=
+Comment=
+Exec=/usr/bin/google-chrome --user-data-dir=/home/s/.chrome-school
+GenericName[en_US]=
+GenericName=
+Icon=google-chrome
+MimeType=
+Name[en_US]=Google Chrome School
+Name=Google Chrome School
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=1.0
+X-KDE-RunOnDiscreteGpu=false
+X-KDE-SubstituteUID=false
+X-KDE-Username=

@@ -1,0 +1,18 @@
+[$Version]
+update_info=ksmserver_update_loginMode_value.upd:ksmserver_update_loginMode_value_default_enum
+
+[LegacySession: saved at previous logout]
+count=0
+
+[Session: saved at previous logout]
+clientId1=10157137d9bc000168970429700000013600006
+clientId2=10157137d9bc000168970429700000013600007
+count=2
+program1=/usr/bin/kalendarac
+program2=/usr/lib/x86_64-linux-gnu/libexec/DiscoverNotifier
+restartCommand1=/usr/bin/kalendarac,-session,10157137d9bc000168970429700000013600006_1689704432_92927
+restartCommand2=/usr/lib/x86_64-linux-gnu/libexec/DiscoverNotifier,-session,10157137d9bc000168970429700000013600007_1689704432_93096
+restartStyleHint1=0
+restartStyleHint2=0
+userId1=s
+userId2=s

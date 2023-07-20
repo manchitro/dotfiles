@@ -1,0 +1,16 @@
+IdeaVIM
+com.dubreuia
+com.nassim.theme.superdark
+com.markskelton.one-dark-theme
+izhangzhihao.rainbow.brackets
+com.thvardhan.gradianto
+com.vecheslav.darculaDarkerTheme
+org.jetbrains.kotlin
+com.jetbrains.php.framework
+zielu.gittoolbox
+com.nasller.CodeGlancePro
+com.github.catppuccin.jetbrains
+com.arcticicestudio.nord.jetbrains
+com.mallowigi.idea
+com.intellij.jira
+com.tabnine.TabNine

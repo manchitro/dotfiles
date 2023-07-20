@@ -1,0 +1,10 @@
+com.mallowigi
+com.github.catppuccin.jetbrains
+com.chrisrm.idea.MaterialThemeUI
+com.mallowigi.idea
+com.markskelton.one-dark-theme
+com.nassim.theme.superdark
+com.vecheslav.darculaDarkerTheme
+tslint
+org.jetbrains.android
+org.jetbrains.kotlin

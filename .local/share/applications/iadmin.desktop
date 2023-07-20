@@ -1,0 +1,6 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Admin Portal (Proxy-International) | iadmin
+Exec=intellij-idea-ultimate /home/s/orion/proxy-international/source/proxy-voting/Client/
+Icon=/snap/intellij-idea-ultimate/current/bin/idea.png

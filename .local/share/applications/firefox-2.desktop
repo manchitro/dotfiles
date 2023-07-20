@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=firefox --private-window
+Name=firefox --private-window
+NoDisplay=true
+StartupNotify=false
+Type=Application
+X-KDE-GlobalAccel-CommandShortcut=true

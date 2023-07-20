@@ -1,0 +1,29 @@
+2023/07/18-15:12:17.165 3 Creating DB /home/s/.config/google-chrome/Default/Local Storage/leveldb since it was missing.
+2023/07/18-15:12:17.176 3 Reusing MANIFEST /home/s/.config/google-chrome/Default/Local Storage/leveldb/MANIFEST-000001
+2023/07/18-15:27:53.438 4 Level-0 table #5: started
+2023/07/18-15:27:53.466 4 Level-0 table #5: 509574 bytes OK
+2023/07/18-15:27:53.469 4 Delete type=0 #3
+2023/07/18-15:30:50.778 4 Level-0 table #7: started
+2023/07/18-15:30:50.826 4 Level-0 table #7: 1046184 bytes OK
+2023/07/18-15:30:50.829 4 Delete type=0 #4
+2023/07/18-15:49:55.810 4 Level-0 table #9: started
+2023/07/18-15:49:55.816 4 Level-0 table #9: 49381 bytes OK
+2023/07/18-15:49:55.821 4 Delete type=0 #6
+2023/07/18-16:16:41.964 4 Level-0 table #11: started
+2023/07/18-16:16:41.980 4 Level-0 table #11: 872076 bytes OK
+2023/07/18-16:16:41.982 4 Delete type=0 #8
+2023/07/18-16:21:27.763 4 Level-0 table #13: started
+2023/07/18-16:21:27.777 4 Level-0 table #13: 154951 bytes OK
+2023/07/18-16:21:27.782 4 Delete type=0 #10
+2023/07/18-16:52:03.068 4 Level-0 table #15: started
+2023/07/18-16:52:03.072 4 Level-0 table #15: 59333 bytes OK
+2023/07/18-16:52:03.074 4 Delete type=0 #12
+2023/07/18-16:52:03.076 4 Compacting 4@0 + 1@1 files
+2023/07/18-16:52:03.111 4 Generated table #16@0: 210 keys, 943200 bytes
+2023/07/18-16:52:03.111 4 Compacted 4@0 + 1@1 files => 943200 bytes
+2023/07/18-16:52:03.112 4 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/07/18-16:52:03.113 4 Delete type=2 #9
+2023/07/18-16:52:03.113 4 Delete type=2 #13
+2023/07/18-16:52:03.113 4 Delete type=2 #15
+2023/07/18-16:52:03.113 4 Delete type=2 #11
+2023/07/18-16:52:03.113 4 Delete type=2 #7

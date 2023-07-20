@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=bash -c "xmodmap $HOME/.Xmodmap"
+Name=bash -c "xmodmap $HOME/.Xmodmap"
+NoDisplay=true
+StartupNotify=false
+Type=Application
+X-KDE-GlobalAccel-CommandShortcut=true

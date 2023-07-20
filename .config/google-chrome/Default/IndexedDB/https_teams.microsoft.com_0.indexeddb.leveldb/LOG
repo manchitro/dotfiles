@@ -1,0 +1,7 @@
+2023/07/18-18:07:19.788 325e Reusing MANIFEST /home/s/.config/google-chrome/Default/IndexedDB/https_teams.microsoft.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/07/18-18:07:19.789 325e Recovering log #40
+2023/07/18-18:07:19.791 325e Reusing old log /home/s/.config/google-chrome/Default/IndexedDB/https_teams.microsoft.com_0.indexeddb.leveldb/000040.log 
+2023/07/18-18:08:12.888 3263 Level-0 table #46: started
+2023/07/18-18:08:12.893 3263 Level-0 table #46: 470437 bytes OK
+2023/07/18-18:08:12.895 3263 Delete type=0 #40
+2023/07/18-18:08:12.895 325e Manual compaction at level-0 from '\x00<\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00=\x00\x00\x00' @ 0 : 0; will stop at (end)

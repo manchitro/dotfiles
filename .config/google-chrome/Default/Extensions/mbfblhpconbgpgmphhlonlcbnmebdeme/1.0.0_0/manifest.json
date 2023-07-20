@@ -1,0 +1,17 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "inpage.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "description": "Allows you to rotate an image with the right click context menu",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjxGyyKoX1PPhLA5fJSV4hjvQqziVMmoWX8B71pVgUnq+dCrLcHKUMKnxUKkz5fKx0zWt6A71lpqd8Hm+pRX6XDjqnYqtXBR+doN2jgjNn/9qNh0TedRUz2el1Q2kldBiiHJt290Gp4LEwVcDXe+koAOgfABkzra1LOG5j+v+gy2RBqFxNpu1G8tDv3jLxwyphJmM/XNuj9UxZ5An/cwoGCoTfFd786wOFF0JHMCwPgq7+U9jbqEmcojE7msCCiyTQKAfQRtioV8kzNKNHrRLVxl9hNq8vyVmJIndMb/ae5eD4/c4v6KztB98yF30Tuy7IDBxmOZvRarOwwcULT+5xwIDAQAB",
+   "manifest_version": 2,
+   "name": "Image Rotate Context",
+   "permissions": [ "activeTab", "contextMenus" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.0"
+}

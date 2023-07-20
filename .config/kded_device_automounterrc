@@ -1,0 +1,45 @@
+[Devices][/org/freedesktop/UDisks2/block_devices/dm_2d1]
+EverMounted=true
+Icon=drive-harddisk-root
+LastNameSeen=474.9 GiB Internal Drive (dm-1)
+LastSeenMounted=true
+
+[Devices][/org/freedesktop/UDisks2/block_devices/loop0]
+EverMounted=true
+Icon=application-vnd.snap
+LastNameSeen=core_15511.snap
+LastSeenMounted=true
+
+[Devices][/org/freedesktop/UDisks2/block_devices/loop1]
+EverMounted=true
+Icon=application-vnd.snap
+LastNameSeen=intellij-idea-ultimate_293.snap
+LastSeenMounted=true
+
+[Devices][/org/freedesktop/UDisks2/block_devices/nvme0n1p1]
+EverMounted=true
+Icon=drive-harddisk
+LastNameSeen=512.0 MiB Internal Drive (nvme0n1p1)
+LastSeenMounted=true
+
+[Devices][/org/freedesktop/UDisks2/block_devices/nvme0n1p2]
+EverMounted=true
+Icon=drive-harddisk
+LastNameSeen=488.0 MiB Internal Drive (nvme0n1p2)
+LastSeenMounted=true
+
+[Devices][/org/freedesktop/UDisks2/block_devices/nvme0n1p3]
+Icon=drive-harddisk
+LastNameSeen=476.0 GiB Encrypted Drive
+
+[Devices][/org/freedesktop/UDisks2/block_devices/sda1]
+EverMounted=true
+Icon=drive-harddisk
+LastNameSeen=Sub
+LastSeenMounted=true
+
+[General]
+AutomountEnabled=true
+AutomountOnLogin=true
+AutomountOnPlugin=true
+AutomountUnknownDevices=true

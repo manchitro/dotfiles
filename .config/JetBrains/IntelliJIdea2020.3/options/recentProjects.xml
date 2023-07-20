@@ -1,0 +1,43 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/orion/proxy-us/source/proxy-voting/Client">
+          <value>
+            <RecentProjectMetaInfo frameTitle="proxy-voting-client" projectWorkspaceId="2B3H2nAvrz6cZPjoRQCIf6E0zQ9">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IU-203.8084.24" />
+              <option name="buildTimestamp" value="1619508224219" />
+              <frame x="0" y="0" width="1920" height="1038" extendedState="6" />
+              <option name="productionCode" value="IU" />
+              <option name="projectOpenTimestamp" value="1689676222125" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/orion/proxy-us/source/proxy-voting/ShareHolderPortal/Service">
+          <value>
+            <RecentProjectMetaInfo frameTitle="share-holder-portal-service-app – build.gradle" opened="true" projectWorkspaceId="2B3FvwIq4cgHLCVKdZ1Syegmqnw">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IU-203.8084.24" />
+              <option name="buildTimestamp" value="1619508222981" />
+              <frame x="0" y="0" width="1280" height="692" extendedState="6" />
+              <option name="productionCode" value="IU" />
+              <option name="projectOpenTimestamp" value="1689679053018" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/orion/proxy-us/source/proxy-voting/ShareHolderPortal/Client">
+          <value>
+            <RecentProjectMetaInfo opened="true" projectWorkspaceId="2C4FEV1hBRFqbdcqsTKhOI6Rt9p">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IU-203.8084.24" />
+              <option name="buildTimestamp" value="1619508222981" />
+              <option name="productionCode" value="IU" />
+              <option name="projectOpenTimestamp" value="1689679053018" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</application>

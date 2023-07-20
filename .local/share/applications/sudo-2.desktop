@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=sudo isw -b off
+Name=sudo isw -b off
+NoDisplay=true
+StartupNotify=false
+Type=Application
+X-KDE-GlobalAccel-CommandShortcut=true

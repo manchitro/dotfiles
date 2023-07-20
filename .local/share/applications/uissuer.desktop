@@ -1,0 +1,6 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Issuer Portal (Proxy-US) | uissuer
+Exec=intellij-idea-ultimate /home/s/orion/proxy-us/source/proxy-voting/IssuerPortal/
+Icon=/snap/intellij-idea-ultimate/current/bin/idea.png

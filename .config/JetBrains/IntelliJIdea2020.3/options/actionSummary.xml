@@ -1,0 +1,244 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="$SearchWeb">
+      <i c="1" l="1689657545095" />
+    </e>
+    <e n="AcceptTabnineInlineCompletionAction">
+      <i c="20" l="1689680217239" />
+    </e>
+    <e n="ActivateBuildToolWindow">
+      <i c="7" l="1689671937336" />
+    </e>
+    <e n="ActivateDebugToolWindow">
+      <i c="4" l="1689680557961" />
+    </e>
+    <e n="ActivateVersionControlToolWindow">
+      <i c="4" l="1689671003018" />
+    </e>
+    <e n="AutoIndentLines">
+      <i c="3" l="1689679850827" />
+    </e>
+    <e n="CloseContent">
+      <i c="2" l="1689677741906" />
+    </e>
+    <e n="CloudConfigAction">
+      <i c="1" l="1689630541245" />
+    </e>
+    <e n="CloudConfigSilentlyAction">
+      <i c="1" l="1689658086951" />
+    </e>
+    <e n="CollapseRegion">
+      <i c="2" l="1689631222026" />
+    </e>
+    <e n="CommentByLineComment">
+      <i c="2" l="1689676187894" />
+    </e>
+    <e n="Compare.Selected">
+      <i c="1" l="1689680040811" />
+    </e>
+    <e n="ConsoleView.ClearAll">
+      <i c="7" l="1689680534354" />
+    </e>
+    <e n="Debug">
+      <i c="14" l="1689680570472" />
+    </e>
+    <e n="EditCustomProperties">
+      <i c="1" l="1689622275974" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="74" l="1689680356834" />
+    </e>
+    <e n="EditorChooseLookupItem">
+      <i c="13" l="1689680202186" />
+    </e>
+    <e n="EditorChooseLookupItemReplace">
+      <i c="1" l="1689680164290" />
+    </e>
+    <e n="EditorCopy">
+      <i c="1" l="1689630716655" />
+    </e>
+    <e n="EditorDeleteToWordStart">
+      <i c="2" l="1689670529092" />
+    </e>
+    <e n="EditorDown">
+      <i c="1" l="1689679843937" />
+    </e>
+    <e n="EditorEnter">
+      <i c="3" l="1689678706233" />
+    </e>
+    <e n="EditorEscape">
+      <i c="1" l="1689676316606" />
+    </e>
+    <e n="EditorPaste">
+      <i c="4" l="1689680192661" />
+    </e>
+    <e n="EditorTab">
+      <i c="1" l="1689680111482" />
+    </e>
+    <e n="EvaluateExpression">
+      <i c="5" l="1689677895976" />
+    </e>
+    <e n="ExternalSystem.ProjectRefreshAction">
+      <i c="13" l="1689676327064" />
+    </e>
+    <e n="ExternalSystem.RefreshAllProjects">
+      <i c="4" l="1689672862732" />
+    </e>
+    <e n="FindInPath">
+      <i c="10" l="1689680337057" />
+    </e>
+    <e n="Git.Branches">
+      <i c="1" l="1689670968757" />
+    </e>
+    <e n="Git.Configure.Remotes">
+      <i c="1" l="1689670975433" />
+    </e>
+    <e n="Git.Log.Branches.Change.Branch.Filter">
+      <i c="1" l="1689671010765" />
+    </e>
+    <e n="GotoDeclaration">
+      <i c="8" l="1689680060492" />
+    </e>
+    <e n="GotoImplementation">
+      <i c="2" l="1689679639684" />
+    </e>
+    <e n="GotoNextError">
+      <i c="6" l="1689679715362" />
+    </e>
+    <e n="InvalidateCaches">
+      <i c="2" l="1689675399890" />
+    </e>
+    <e n="PasteMultiple">
+      <i c="1" l="1689679771119" />
+    </e>
+    <e n="Resume">
+      <i c="14" l="1689679521506" />
+    </e>
+    <e n="SearchEverywhere">
+      <i c="17" l="1689677649456" />
+    </e>
+    <e n="ShowIntentionActions">
+      <i c="1" l="1689679697916" />
+    </e>
+    <e n="ShowSettings">
+      <i c="5" l="1689670709462" />
+    </e>
+    <e n="StepOver">
+      <i c="39" l="1689679443718" />
+    </e>
+    <e n="Stop">
+      <i c="1" l="1689679690454" />
+    </e>
+    <e n="Switcher">
+      <i c="7" l="1689680114372" />
+    </e>
+    <e n="Table-selectNextRow">
+      <i c="2" l="1689680045498" />
+    </e>
+    <e n="Table-selectPreviousRow">
+      <i c="1" l="1689680044128" />
+    </e>
+    <e n="ToggleLineBreakpoint">
+      <i c="4" l="1689677818481" />
+    </e>
+    <e n="Vcs.UpdateProject">
+      <i c="1" l="1689670936472" />
+    </e>
+    <e n="WelcomeScreen.Plugins">
+      <i c="3" l="1689670530912" />
+    </e>
+    <e n="XDebugger.MuteBreakpoints">
+      <i c="8" l="1689679520447" />
+    </e>
+    <e n="com.intellij.docker.DockerFileDetector$Notifier$1">
+      <i c="1" l="1689657511304" />
+    </e>
+    <e n="com.intellij.execution.actions.RunConfigurationsComboBoxAction$SelectConfigAction">
+      <i c="2" l="1689677492899" />
+    </e>
+    <e n="com.intellij.execution.actions.StopProcessAction">
+      <i c="7" l="1689675241759" />
+    </e>
+    <e n="com.intellij.execution.impl.ConsoleViewImpl$BackSpaceHandler">
+      <i c="6" l="1689680002639" />
+    </e>
+    <e n="com.intellij.execution.impl.ConsoleViewImpl$TabHandler">
+      <i c="1" l="1689678479614" />
+    </e>
+    <e n="com.intellij.find.impl.FindPopupPanel$MyEnterAction">
+      <i c="7" l="1689680340200" />
+    </e>
+    <e n="com.intellij.ide.ReopenProjectAction">
+      <i c="6" l="1689675413146" />
+    </e>
+    <e n="com.intellij.ide.plugins.newui.PluginDetailsPageComponent$EnableDisableAction">
+      <i c="1" l="1689670545195" />
+    </e>
+    <e n="com.intellij.ide.plugins.newui.PluginDetailsPageComponent$UninstallAction">
+      <i c="2" l="1689670737461" />
+    </e>
+    <e n="com.intellij.ide.plugins.newui.TabbedPaneHeaderComponent$3">
+      <i c="3" l="1689670736465" />
+    </e>
+    <e n="com.intellij.notification.NotificationAction$Simple">
+      <i c="2" l="1689679044152" />
+    </e>
+    <e n="com.intellij.openapi.actionSystem.EmptyAction$MyDelegatingAction">
+      <i c="64" l="1689680356833" />
+    </e>
+    <e n="com.intellij.openapi.externalSystem.util.ExternalSystemUtil$2$3$1">
+      <i c="1" l="1689675245428" />
+    </e>
+    <e n="com.intellij.openapi.keymap.impl.ui.KeymapPanel$10">
+      <i c="1" l="1689658107178" />
+    </e>
+    <e n="com.intellij.openapi.project.DumbAwareAction$SimpleDumbAwareAction">
+      <i c="26" l="1689677917567" />
+    </e>
+    <e n="com.intellij.openapi.ui.DialogWrapper$5">
+      <i c="5" l="1689675401828" />
+    </e>
+    <e n="com.intellij.openapi.ui.impl.DialogWrapperPeerImpl$AnCancelAction">
+      <i c="1" l="1689658097756" />
+    </e>
+    <e n="com.intellij.openapi.updateSettings.impl.UpdateChecker$showUpdateResult$5$2">
+      <i c="1" l="1689670521637" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.ToolWindowHeader$HideAction">
+      <i c="7" l="1689680546848" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.welcomeScreen.WelcomeScreenComponentFactory$3">
+      <i c="2" l="1689622272304" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.welcomeScreen.WelcomeScreenComponentFactory$4">
+      <i c="2" l="1689622222043" />
+    </e>
+    <e n="com.intellij.ui.ScrollingUtil$12">
+      <i c="3" l="1689680339696" />
+    </e>
+    <e n="com.intellij.ui.ScrollingUtil$6">
+      <i c="23" l="1689676177573" />
+    </e>
+    <e n="com.intellij.ui.ScrollingUtil$7">
+      <i c="8" l="1689631234234" />
+    </e>
+    <e n="com.intellij.xdebugger.impl.breakpoints.RemoveBreakpointGutterIconAction">
+      <i c="2" l="1689679235746" />
+    </e>
+    <e n="com.maddyhome.idea.vim.group.NotificationService$notifyAboutShortcutConflict$1">
+      <i c="4" l="1689679770101" />
+    </e>
+    <e n="com.maddyhome.idea.vim.ui.ex.ExShortcutKeyAction">
+      <i c="1" l="1689657802989" />
+    </e>
+    <e n="com.tabnine.lifecycle.pushtosignin.PresentationsKt$presentNotification$1">
+      <i c="2" l="1689674404007" />
+    </e>
+    <e n="editRunConfigurations">
+      <i c="9" l="1689677495125" />
+    </e>
+    <e n="git4idea.ui.branch.dashboard.BranchesDashboardActions$UpdateSelectedBranchAction">
+      <i c="1" l="1689671012357" />
+    </e>
+  </component>
+</application>

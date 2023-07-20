@@ -1,0 +1,33 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js", "vendor/jquery/dist/jquery.js", "vendor/Caret.js/src/jquery.caret.js", "vendor/jquery.atwho/dist/js/jquery.atwho.js", "vendor/jquery-autosize/jquery.autosize.js", "vendor/jquery-touchswipe/jquery.touchSwipe.js", "vendor/device.js/lib/device.js", "js/avro.min.js", "js/main.js", "js/misc.js", "js/options.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "128": "images/i128.png",
+         "16": "images/i16.png",
+         "32": "images/i32.png"
+      },
+      "default_popup": "index.html",
+      "default_title": "Avro"
+   },
+   "content_scripts": [ {
+      "js": [ "js/fontfix.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Avro extension for chrome . Write bangla instantly.",
+   "icons": {
+      "128": "images/i128.png",
+      "16": "images/i16.png",
+      "32": "images/i32.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiyHpQ5WX5zLfvJci5aliFNtQINKYU/eobWkYdHQZsTjbuzCSKT0dcx60RtOVE/bGQ16PhWXXIrCwgp1EDRCPHLZ+lBTa8n61xd6tNq3UvMAZe9WhFaC6AqOICzv7Xn7vT7mt33jIpFRTH6ynFSPARTcVP7pDQugyvyuScdBOPCJEDlBW8g/K1OTHeFQI51juKVpc+XpGbOBtICrFVg46Y2FZ4xiUvznMTAcfRyeEVwd9SDPWWm7nIVu8ZzahlpJTCBYJ8H03MbEFVZQuYeSHXd8acWOpMLL/RDhpAPYqO8rd+1uXMEID+yPG3TvYxBOd9e3En9qvikr6xhFLZgh5lwIDAQAB",
+   "manifest_version": 2,
+   "name": "Avro (অভ্র) for Chrome",
+   "permissions": [ "storage", "activeTab" ],
+   "short_name": "Avro(অভ্র)",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.2.7"
+}
