@@ -1,0 +1,46 @@
+127.0.0.1	localhost
+127.0.1.1	theStation
+
+# The following lines are desirable for IPv6 capable hosts
+::1     localhost ip6-localhost ip6-loopback
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+
+35.231.78.104    app.nuarcavoting.com
+35.231.78.104    web.nuarcavoting.com
+35.231.78.104   admin.nuarcaproxy.com
+35.231.78.104    issuerportal.nuarcavoting.com
+
+# AST-QAT env
+10.10.250.87 qa-proxyadmin.astfinancial.com
+10.10.250.87 qa-vote.proxyonline.com
+10.10.250.90 qa-proxy.astfinancial.com
+10.10.250.88 qa-proxyservice.astfinancial.com
+10.10.250.91 devispsso.amstock.com
+
+#Santiago Local QA
+34.70.224.178 sqa.app.proxyvoting.com
+34.70.224.178 sqa.admin.proxyvoting.com
+34.70.224.178 sqa.web.proxyvoting.com
+34.70.224.178 sqa.issuerportal.proxyvoting.com
+
+52.117.5.169 qa.app.proxyvoting.com
+52.117.5.169 qa.admin.proxyvoting.com
+52.117.5.169 qa.web.proxyvoting.com
+52.117.5.169 qa.issuerportal.proxyvoting.com
+
+10.40.9.10 mydefense.qa-cgw.ezshield.net 
+
+# Local AST-QA env
+52.117.5.169 qa.app.proxyvoting.com
+52.117.5.169 qa.admin.proxyvoting.com
+52.117.5.169 qa.web.proxyvoting.com
+52.117.5.169 qa.issuerportal.proxyvoting.com
+
+# Local-AST DEMO
+52.117.1.191 app.proxyvoting.com
+52.117.1.191 admin.proxyvoting.com
+52.117.1.191 web.proxyvoting.com
+52.117.1.191 issuerportal.proxyvoting.com
+

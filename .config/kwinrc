@@ -19,6 +19,9 @@ Rows=1
 desktopchangeosdEnabled=true
 tilegapsEnabled=false
 
+[Script-desktopchangeosd]
+TextOnly=true
+
 [Script-tilegaps]
 gapBottom=12
 gapLeft=12

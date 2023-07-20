@@ -1,1 +1,0 @@
-(()=>{"use strict";var e={p:"/"};e.p,e.p,e.p;console.log("This is the background page."),console.log("Put the background scripts here.")})();

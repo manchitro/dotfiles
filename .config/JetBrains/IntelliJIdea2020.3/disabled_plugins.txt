@@ -1,4 +1,0 @@
-
-org.jetbrains.android
-org.jetbrains.kotlin
-tslint

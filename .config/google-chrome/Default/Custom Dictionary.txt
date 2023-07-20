@@ -1,4 +1,0 @@
-Kallyanpur
-Witcher
-assistantship
-checksum_v1 = fd1cebe98179fd9ad10ca2e6f34ce02b

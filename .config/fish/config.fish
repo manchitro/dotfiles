@@ -27,7 +27,7 @@ end
 abbr -a rd 'ranger ~/Downloads/'
 abbr -a rn 'ranger ~/Notes/'
 abbr -a fd 'fd -a -d 20'
-abbr -a da '/usr/bin/git --git-dir=/home/s/.dots/ --work-tree=/home/s add .config/{autostart,fish,flameshot,fontconfig,gtk-3.0,gtk-4.0,kde.org,kdedefaults,kitty,neofetch,nvim,ranger,xsettingsd,bluedevilglobalrc,gtkrc,gtkrc-2.0,kwinrc,mimeapps.list,plasma-org.kde.plasma.desktop-appletsrc,plasmarc,powermanagementprofilesrc,touchpadxlibinputrc,user-dirs.dirs} .bashrc .ideavimrc .keynavrc .profile .Xmodmap .vimrc .vim/ scripts/ .local/share/applications .icons/ .fonts/'
+abbr -a da '/usr/bin/git --git-dir=/home/s/.dots/ --work-tree=/home/s add .config/{autostart,fish,flameshot,fontconfig,gtk-3.0,gtk-4.0,kde.org,kdedefaults,kitty,neofetch,nvim,ranger,xsettingsd,bluedevilglobalrc,gtkrc,gtkrc-2.0,kwinrc,mimeapps.list,plasma-org.kde.plasma.desktop-appletsrc,plasmarc,powermanagementprofilesrc,touchpadxlibinputrc,user-dirs.dirs} .bashrc .ideavimrc .keynavrc .profile .Xmodmap .vimrc .vim/ scripts/ .local/share/applications .icons/ .fonts/ dotroot/'
 abbr -a nvidia-smi 'watch -n 1 nvidia-smi'
 abbr -a r 'ranger'
 abbr -a rh 'ranger ~/'
