@@ -1,6 +1,6 @@
 [KFileDialog Settings]
-Recent Files[$e]=autostart.sh,file:$HOME/autostart.sh
-Recent URLs[$e]=file:$HOME/
+Recent Files[$e]=autostart.sh,file:$HOME/scripts/wifi-switch.sh,file:$HOME/scripts/wifi-toggle.sh,file:$HOME/scripts/confedit.sh,file:$HOME/baks/shortcut_scheme_kde_20_07_23.kksrc,file:$HOME/wallpapers/Sundarbans_web_cropped.jpg,file:$HOME/Downloads/sazid.jpg,file:$HOME/autostart.sh
+Recent URLs[$e]=file:$HOME/,file:$HOME/wallpapers/,file:$HOME/Downloads/,file:$HOME/Documents/,file:$HOME/baks/,file:$HOME/scripts/
 detailViewIconSize=16
 
 [KPropertiesDialog]
@@ -11,18 +11,17 @@ detailViewIconSize=16
 ActiveView=systemsettings_icon_mode
 
 [MainWindow]
-1707x960 screen: Height=890
-1707x960 screen: Width=1122
-1707x960 screen: Window-Maximized=true
-1707x960 screen: XPosition=445
-1707x960 screen: YPosition=33
+1707x960 screen: Height=773
+1707x960 screen: Width=1129
+1707x960 screen: XPosition=359
+1707x960 screen: YPosition=134
 1920x1080 screen: Height=770
 1920x1080 screen: Width=1122
 1920x1080 screen: Window-Maximized=true
 1920x1080 screen: XPosition=450
 1920x1080 screen: YPosition=184
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAABqsAAANMAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAABGkAAALXAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 eDP-1=eDP-1
 

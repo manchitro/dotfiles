@@ -1,3 +1,6 @@
+[Actions]
+ReplayActionInHistory=true
+
 [General]
 IgnoreImages=false
 MaxClipItems=1000

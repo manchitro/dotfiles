@@ -9,31 +9,64 @@ ColumnState=AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa0AAAACAQAAAQAA
 Number of Actions=0
 
 [KFileDialog Settings]
-Recent Files[$e]=Sundarbans_web_cropped.jpg,file:$HOME/wallpapers/Sundarbans_web_cropped.jpg
-Recent URLs[$e]=file:$HOME/wallpapers/
+Recent Files[$e]=Sundarbans_web_cropped.jpg,file:$HOME/previous-java-alternatives.txt,file:$HOME/Pictures/kisspng-windows-xp-logo-microsoft-windows-1-0-windows-logos-5ab719f60d8a52.0845334915219491740555.png,file:$HOME/Pictures/output-onlinepngtools.png,file:$HOME/Pictures/png-transparent-windows-xp-icon-windows-xp-logo-microsoft-windows-1-windows-logos-angle-orange-computer-wallpaper.png,file:$HOME/wallpapers/Sundarbans_web_cropped.jpg
+Recent URLs[$e]=file:$HOME/wallpapers/,file:$HOME/Pictures/,file:$HOME/,file:$HOME/Documents/
 detailViewIconSize=16
 
 [KPropertiesDialog]
-1920x1080 screen: Height=649
-1920x1080 screen: Width=842
+1920x1080 screen: Height=591
+1920x1080 screen: Width=485
 
 [PlasmaTransientsConfig]
 PreloadWeight=0
+
+[PlasmaViews][Panel 117]
+panelOpacity=1
+
+[PlasmaViews][Panel 117][Defaults]
+thickness=38
 
 [PlasmaViews][Panel 2][Defaults]
 thickness=44
 
 [PlasmaViews][Panel 27]
-panelOpacity=0
+floating=0
+panelOpacity=1
 
 [PlasmaViews][Panel 27][Defaults]
 maxLength=1920
 minLength=1920
-thickness=42
+thickness=36
 
 [PlasmaViews][Panel 27][Horizontal1920]
 maxLength=1920
 minLength=1920
+
+[PlasmaViews][Panel 67]
+panelOpacity=2
+
+[PlasmaViews][Panel 67][Defaults]
+thickness=30
+
+[PlasmaViews][Panel 71]
+alignment=132
+panelVisibility=1
+
+[PlasmaViews][Panel 71][Defaults]
+thickness=44
+
+[PlasmaViews][Panel 99]
+alignment=132
+
+[PlasmaViews][Panel 99][Defaults]
+maxLength=2560
+minLength=2560
+offset=0
+thickness=29
+
+[PlasmaViews][Panel 99][Horizontal1920]
+maxLength=2560
+minLength=2560
 
 [Updates]
 performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_migrate_font_settings.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/klipper_clear_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/mediaframe_migrate_useBackground_setting.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/no_middle_click_paste_on_panels.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/systemloadviewer_systemmonitor.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/unlock_widgets.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/containmentactions_middlebutton.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/keyboardlayout_remove_shortcut.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/keyboardlayout_migrateiconsetting.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/maintain_existing_desktop_icon_sizes.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_rename_timezonedisplay_key.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/move_desktop_layout_config.js

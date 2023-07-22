@@ -1027,6 +1027,7 @@ Theme[$d]
 [KDE]
 AnimationDurationFactor[$d]
 LookAndFeelPackage[$d]
+ShowDeleteCommand[$d]
 SingleClick[$d]
 widgetStyle[$d]
 

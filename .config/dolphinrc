@@ -3,6 +3,9 @@ MenuBar=Disabled
 [$Version]
 update_info=dolphin_detailsmodesettings.upd:rename-leading-padding
 
+[ContextMenu]
+ShowCopyMoveMenu=true
+
 [DetailsMode]
 SidePadding=0
 
@@ -25,3 +28,6 @@ ToolBarsMovable=Disabled
 
 [PreviewSettings]
 Plugins=svgthumbnail,windowsexethumbnail,imagethumbnail,fontthumbnail,appimagethumbnail,cursorthumbnail,comicbookthumbnail,windowsimagethumbnail,opendocumentthumbnail,audiothumbnail,kraorathumbnail,djvuthumbnail,exrthumbnail,jpegthumbnail,ebookthumbnail,gsthumbnail,webarchivethumbnail,ffmpegthumbs,blenderthumbnail,mobithumbnail,directorythumbnail,rawthumbnail
+
+[Search]
+What=Content

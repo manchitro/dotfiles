@@ -1,2 +1,47 @@
 [$Version]
 update_info=kwinrules.upd:replace-placement-string-to-enum,kwinrules.upd:use-virtual-desktop-ids
+
+[049c4422-47bc-4893-99af-91fc53747312]
+Description=Intellij IDEA on DEV
+desktops=9c124c8d-3ec2-4e5c-906d-1e9211cd1de1
+desktopsrule=3
+wmclass=jetbrains-idea
+wmclassmatch=1
+
+[0a01fa0f-e6c5-4905-bf53-dcae8374f40a]
+Description=Kuro appear as a dropdows
+position=0,0
+positionrule=2
+size=700,700
+sizerule=2
+wmclass=kuro
+wmclasscomplete=true
+wmclassmatch=1
+
+[1]
+Description=Intellij IDEA on DEV
+desktops=9c124c8d-3ec2-4e5c-906d-1e9211cd1de1
+desktopsrule=3
+wmclass=jetbrains-idea
+wmclassmatch=1
+
+[2]
+Description=Kuro appear as a dropdows
+position=0,0
+positionrule=2
+size=700,700
+sizerule=2
+wmclass=kuro
+wmclasscomplete=true
+wmclassmatch=1
+
+[General]
+count=2
+rules=1,2
+
+[c9cc983d-dbf9-4180-afd3-24607d7a7220]
+Description=Panle Transparecy
+opacityactiverule=2
+opacityinactiverule=2
+types=4
+wmclassmatch=1

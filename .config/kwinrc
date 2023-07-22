@@ -1,5 +1,8 @@
 [$Version]
-update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed,kwin.upd:desktop-grid-click-behavior,kwin.upd:no-swap-encourage,kwin.upd:make-translucency-effect-disabled-by-default,kwin.upd:remove-flip-switch-effect,kwin.upd:remove-cover-switch-effect,kwin.upd:remove-cubeslide-effect,kwin.upd:remove-xrender-backend,kwin.upd:enable-scale-effect-by-default,kwin.upd:overview-group-plugin-id,kwin.upd:animation-speed-cleanup,kwin.upd:replace-cascaded-zerocornered
+update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed,kwin.upd:desktop-grid-click-behavior,kwin.upd:no-swap-encourage,kwin.upd:make-translucency-effect-disabled-by-default,kwin.upd:remove-flip-switch-effect,kwin.upd:remove-cover-switch-effect,kwin.upd:remove-cubeslide-effect,kwin.upd:remove-xrender-backend,kwin.upd:enable-scale-effect-by-default,kwin.upd:overview-group-plugin-id,kwin.upd:animation-speed-cleanup,kwin.upd:replace-cascaded-zerocornered,bismuth_new_logger.upd:bismuth-new-logger
+
+[Compositing]
+LatencyPolicy=Low
 
 [Desktops]
 Id_1=ae5b6a20-1ad0-4aa8-ba47-a8b7db5161ad
@@ -15,9 +18,23 @@ Name_5=ETC
 Number=5
 Rows=1
 
+[ModifierOnlyShortcuts]
+Meta=org.kde.kglobalaccel,/component/org_kde_krunner_desktop,org.kde.kglobalaccel.Component,invokeShortcut,_launch
+
 [Plugins]
+blurEnabled=false
 desktopchangeosdEnabled=true
+mousemarkEnabled=true
 tilegapsEnabled=false
+
+[Script-bismuth]
+layoutPerActivity=false
+noTileBorder=true
+screenGapBottom=10
+screenGapLeft=10
+screenGapRight=10
+screenGapTop=10
+tileLayoutGap=5
 
 [Script-desktopchangeosd]
 TextOnly=true
@@ -44,9 +61,3 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 
 [Windows]
 RollOverDesktops=true
-
-[org.kde.kdecoration2]
-BorderSize=NoSides
-BorderSizeAuto=false
-library=org.kde.kwin.aurorae
-theme=__aurorae__svg__Layan

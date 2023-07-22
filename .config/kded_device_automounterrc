@@ -16,6 +16,12 @@ Icon=application-vnd.snap
 LastNameSeen=intellij-idea-ultimate_293.snap
 LastSeenMounted=true
 
+[Devices][/org/freedesktop/UDisks2/block_devices/loop2]
+EverMounted=true
+Icon=application-vnd.snap
+LastNameSeen=kuro-desktop_60.snap
+LastSeenMounted=true
+
 [Devices][/org/freedesktop/UDisks2/block_devices/nvme0n1p1]
 EverMounted=true
 Icon=drive-harddisk
@@ -37,6 +43,14 @@ EverMounted=true
 Icon=drive-harddisk
 LastNameSeen=Sub
 LastSeenMounted=true
+
+[Devices][/org/freedesktop/UDisks2/block_devices/sdb1]
+Icon=drive-removable-media-usb
+LastNameSeen=Pednrive
+
+[Devices][/org/freedesktop/UDisks2/block_devices/sdb2]
+Icon=drive-removable-media-usb
+LastNameSeen=9.3 MiB Removable Media
 
 [General]
 AutomountEnabled=true

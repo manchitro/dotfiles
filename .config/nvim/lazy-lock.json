@@ -27,6 +27,7 @@
   "telescope.nvim": { "branch": "master", "commit": "47c755d737702df7a39b640c8d9c473a728be1df" },
   "transparent.nvim": { "branch": "main", "commit": "f6a0f8387fbea5fbc2b78137444a9de4fdd02459" },
   "ui": { "branch": "v2.0", "commit": "5545a7ef32cec4147c75156e59afd293305f639d" },
+  "vim-renamer": { "branch": "master", "commit": "9c6346eb4556cf2d8ca55de6969247ab14fe2383" },
   "vim-startify": { "branch": "master", "commit": "81e36c352a8deea54df5ec1e2f4348685569bed2" },
   "which-key.nvim": { "branch": "main", "commit": "38b990f6eabf62014018b4aae70a97d7a6c2eb88" }
 }

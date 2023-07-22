@@ -3,4 +3,4 @@ GroupSplitterSizes=49,49
 PreviewSplitterSizes=49,49
 
 [Runner Dialog]
-DontShowFinishedMsg=false
+DontShowFinishedMsg=true

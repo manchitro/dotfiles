@@ -1,2 +1,8 @@
 [Applications][google-chrome]
 Seen=true
+
+[Applications][org.gnome.baobab]
+Seen=true
+
+[Notifications]
+PopupPosition=TopRight

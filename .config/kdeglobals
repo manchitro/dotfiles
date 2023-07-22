@@ -151,8 +151,9 @@ smallestReadableFont=Noto Sans,9,-1,5,50,0,0,0,0,0
 toolBarFont=Noto Sans,11,-1,5,50,0,0,0,0,0
 
 [KDE]
-AnimationDurationFactor=0.35355339059327373
+AnimationDurationFactor=0
 LookAndFeelPackage=org.kde.breezedark.desktop
+ShowDeleteCommand=true
 SingleClick=false
 
 [KFileDialog Settings]
@@ -180,7 +181,7 @@ ScaleFactor=1.125
 ScreenScaleFactors=eDP-1=1.125;DP-1=1.125;HDMI-1=1.125;HDMI-2=1.125;
 
 [KShortcutsDialog Settings]
-Dialog Size=600,480
+Dialog Size=936,543
 
 [PreviewSettings]
 MaximumRemoteSize=0

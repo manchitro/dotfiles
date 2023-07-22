@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=/home/s/scripts/wifi-switch.sh
+Name=/home/s/scripts/wifi-switch.sh
+NoDisplay=true
+StartupNotify=false
+Type=Application
+X-KDE-GlobalAccel-CommandShortcut=true
