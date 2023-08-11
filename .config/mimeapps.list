@@ -1,6 +1,7 @@
 [Added Associations]
 application/x-desktop=nvim.desktop;
 inode/directory=org.kde.dolphin.desktop;
+text/csv=libreoffice-calc.desktop;
 x-scheme-handler/geo=google-maps-geo-handler.desktop;
 x-scheme-handler/http=firefox-esr.desktop;
 x-scheme-handler/https=firefox-esr.desktop;
@@ -9,12 +10,13 @@ x-scheme-handler/tel=org.kde.kdeconnect.handler.desktop;
 
 [Default Applications]
 application/x-desktop=nvim.desktop;
+image/jpeg=qimgv.desktop
+image/jpg=qimgv.desktop
+image/png=qimgv.desktop
 inode/directory=org.kde.dolphin.desktop;
+text/csv=libreoffice-calc.desktop;
 x-scheme-handler/geo=google-maps-geo-handler.desktop;
 x-scheme-handler/http=firefox-esr.desktop;
 x-scheme-handler/https=firefox-esr.desktop;
 x-scheme-handler/mailto=org.kde.kmail2.desktop;
 x-scheme-handler/tel=org.kde.kdeconnect.handler.desktop;
-image/png=qimgv.desktop
-image/jpeg=qimgv.desktop
-image/jpg=qimgv.desktop

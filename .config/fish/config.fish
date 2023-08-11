@@ -1,7 +1,8 @@
 fish_add_path /home/s/scripts
 
 if status is-interactive
-    # Commands to run in interactive sessions can go here
+and not set -q TMUX
+    exec tmux
 end
 alias dots='/usr/bin/git --git-dir=/home/s/.dots/ --work-tree=/home/s'
 
@@ -27,7 +28,7 @@ end
 abbr -a rd 'ranger ~/Downloads/'
 abbr -a rn 'ranger ~/Notes/'
 abbr -a fd 'fd -a -d 20'
-abbr -a da '/usr/bin/git --git-dir=/home/s/.dots/ --work-tree=/home/s add .config/{autostart,fish,flameshot,fontconfig,gtk-3.0,gtk-4.0,kde.org,kdedefaults,kitty,neofetch,nvim,ranger,xsettingsd,bluedevilglobalrc,gtkrc,gtkrc-2.0,kwinrc,mimeapps.list,plasma-org.kde.plasma.desktop-appletsrc,plasmarc,powermanagementprofilesrc,touchpadxlibinputrc,user-dirs.dirs} .bashrc .ideavimrc .keynavrc .profile .Xmodmap .vimrc .vim/ scripts/ .local/share/applications .icons/ .fonts/ dotroot/'
+abbr -a da '/usr/bin/git --git-dir=/home/s/.dots/ --work-tree=/home/s add .config/{autostart,fish,flameshot,fontconfig,gtk-3.0,gtk-4.0,kde.org,kdedefaults,kitty,neofetch,nvim,ranger,xsettingsd,bluedevilglobalrc,gtkrc,gtkrc-2.0,kwinrc,mimeapps.list,plasma-org.kde.plasma.desktop-appletsrc,plasmarc,powermanagementprofilesrc,touchpadxlibinputrc,user-dirs.dirs,dconf,dolphinrc,filetypesrc,flameshotrc,gwenviewrc,katerc,kde*,kglobalshortcutsrc,khotkeysrc,okularpartrc,okularrc,plasmanotifyrc,plasmashellrc,systemsettingsrc,kwinrulesrc,tmux} .bashrc .ideavimrc .keynavrc .profile .Xmodmap .vimrc .vim/ scripts/ .local/share/applications .icons/ .fonts/ dotroot/ .tmux/' 
 abbr -a nvidia-smi 'watch -n 1 nvidia-smi'
 abbr -a r 'ranger'
 abbr -a rh 'ranger ~/'
@@ -58,10 +59,20 @@ abbr -a marl '/home/s/Downloads/ms/CVPR/repo/MARL-CBIS/'
 abbr -a gm 'git commit -m "'
 abbr -a gd 'git diff'
 abbr -a fan 'sudo python3 /home/s/repo/MSI-Dragon-Center-for-Linux/set_fan.py'
+abbr -a f0 'sudo python3 /home/s/repo/MSI-Dragon-Center-for-Linux/set_fan.py 100'
+abbr -a f1 'sudo python3 /home/s/repo/MSI-Dragon-Center-for-Linux/set_fan.py 110'
+abbr -a f2 'sudo python3 /home/s/repo/MSI-Dragon-Center-for-Linux/set_fan.py 120'
+abbr -a f3 'sudo python3 /home/s/repo/MSI-Dragon-Center-for-Linux/set_fan.py 130'
+abbr -a f4 'sudo python3 /home/s/repo/MSI-Dragon-Center-for-Linux/set_fan.py 140'
+abbr -a f5 'sudo python3 /home/s/repo/MSI-Dragon-Center-for-Linux/set_fan.py 150'
+abbr -a f9 'sudo python3 /home/s/repo/MSI-Dragon-Center-for-Linux/set_fan.py 90'
+abbr -a f8 'sudo python3 /home/s/repo/MSI-Dragon-Center-for-Linux/set_fan.py 80'
+abbr -a f7 'sudo python3 /home/s/repo/MSI-Dragon-Center-for-Linux/set_fan.py 70'
 abbr -a rl 'ranger ~/.local'
 abbr -a ga 'git add .'
 abbr -a tv 'sudo teamviewer --daemon start'
 abbr -a tvs 'sudo teamviewer --daemon stop'
+abbr -a update 'sudo apt update'
 #Abbrevs end
 
 ## >>> conda initialize >>>

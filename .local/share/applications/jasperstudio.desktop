@@ -1,0 +1,20 @@
+[Desktop Entry]
+Categories=Office
+Comment[en_US]=
+Comment=
+Exec='/opt/tibco/TIB_js-studiocomm_6.6.0/Jaspersoft Studio'
+GenericName[en_US]=
+GenericName=
+Icon=/opt/tibco/TIB_js-studiocomm_6.6.0/icon.xpm
+MimeType=
+Name[en_US]=Jaspersoft Studio Community 6.6.0
+Name=Jaspersoft Studio Community 6.6.0
+Path=/opt/tibco/TIB_js-studiocomm_6.6.0
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=1.0
+X-KDE-RunOnDiscreteGpu=false
+X-KDE-SubstituteUID=false
+X-KDE-Username=

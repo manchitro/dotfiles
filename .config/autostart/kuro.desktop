@@ -1,0 +1,9 @@
+[Desktop Entry]
+Categories=Office;
+Comment=Kuro is an unofficial, featureful, open source, community-driven, free Microsoft To-Do app, used by people in more than 120 countries. (Ao fork)
+Exec=/opt/Kuro/kuro %U
+Icon=kuro
+Name=Kuro
+StartupWMClass=Kuro
+Terminal=false
+Type=Application

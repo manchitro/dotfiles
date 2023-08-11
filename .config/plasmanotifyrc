@@ -1,7 +1,13 @@
 [Applications][google-chrome]
 Seen=true
 
+[Applications][kuro]
+Seen=true
+
 [Applications][org.gnome.baobab]
+Seen=true
+
+[Applications][spotify_spotify]
 Seen=true
 
 [Notifications]

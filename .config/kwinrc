@@ -18,14 +18,29 @@ Name_5=ETC
 Number=5
 Rows=1
 
+[Effect-windowview]
+BorderActivateAll=9
+
 [ModifierOnlyShortcuts]
 Meta=org.kde.kglobalaccel,/component/org_kde_krunner_desktop,org.kde.kglobalaccel.Component,invokeShortcut,_launch
 
+[No Group]
+Duration=200
+
 [Plugins]
+ShimmerEnabled=true
 blurEnabled=false
+contrastEnabled=true
 desktopchangeosdEnabled=true
+diminactiveEnabled=true
+forceblurEnabled=false
+kwin4_effect_dimscreenEnabled=true
+kwin4_effect_minimizescale_outexpoEnabled=true
+kwin4_effect_squashEnabled=false
+last-Used-DesktopEnabled=true
 mousemarkEnabled=true
 tilegapsEnabled=false
+zoomEnabled=false
 
 [Script-bismuth]
 layoutPerActivity=false
@@ -39,6 +54,9 @@ tileLayoutGap=5
 [Script-desktopchangeosd]
 TextOnly=true
 
+[Script-forceblur]
+patterns=yakuake\nurxvt\nkeepassxc\nkitty
+
 [Script-tilegaps]
 gapBottom=12
 gapLeft=12
@@ -49,6 +67,9 @@ panelBottom=true
 panelLeft=true
 panelRight=true
 panelTop=true
+
+[TabBox]
+LayoutName=ClassicKde
 
 [Tiling]
 padding=4
@@ -61,3 +82,7 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 
 [Windows]
 RollOverDesktops=true
+
+[org.kde.kdecoration2]
+library=org.kde.kwin.aurorae
+theme=__aurorae__svg__Bluish-Dark-Aurorae

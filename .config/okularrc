@@ -7,28 +7,31 @@ FullScreen=false
 1707x960 screen: Window-Maximized=true
 1707x960 screen: XPosition=0
 1707x960 screen: YPosition=33
-State=AAAA/wAAAAD9AAAAAAAABqsAAAMwAAAABAAAAAQAAAAIAAAACPwAAAADAAAAAQAAAAEAAAAsAHEAdQBpAGMAawBBAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHICAAAAAP////8AAAAAAAAAAAAAAAIAAAABAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAAAIAAAABAAAAIgBhAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAA==
+State=AAAA/wAAAAD9AAAAAAAABqsAAAM0AAAABAAAAAQAAAAIAAAACPwAAAADAAAAAQAAAAEAAAAsAHEAdQBpAGMAawBBAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHICAAAAAP////8AAAAAAAAAAAAAAAIAAAABAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAAAIAAAABAAAAIgBhAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAA==
 ToolBarsMovable=Disabled
 eDP-1=eDP-1
 
 [Recent Files]
-File1[$e]=$HOME/Downloads/robin/paper/wheat/applsci-13-05801-v2.pdf
-File10[$e]=$HOME/Downloads/robin/paper/generic/plants-08-00468-v3.pdf
-File2[$e]=$HOME/Downloads/robin/paper/wheat/fpls-11-558126.pdf
-File3[$e]=$HOME/Downloads/robin/paper/wheat/jiang2021.pdf
-File4[$e]=$HOME/Downloads/robin/paper/wheat/s10462-023-10517-0 (1).pdf
-File5[$e]=$HOME/Downloads/robin/paper/wheat/S2214785321051105.pdf
-File6[$e]=$HOME/Downloads/robin/paper/wheat/sood2020.pdf
-File7[$e]=$HOME/Downloads/robin/paper/generic/applalanaidu2021.pdf
-File8[$e]=$HOME/Downloads/robin/paper/generic/ferentinos2018.pdf
-File9[$e]=$HOME/Downloads/robin/paper/generic/fpls-14-1158933.pdf
-Name1[$e]=applsci-13-05801-v2.pdf
-Name10[$e]=plants-08-00468-v3.pdf
-Name2[$e]=fpls-11-558126.pdf
-Name3[$e]=jiang2021.pdf
-Name4[$e]=s10462-023-10517-0 (1).pdf
-Name5[$e]=S2214785321051105.pdf
-Name6[$e]=sood2020.pdf
-Name7[$e]=applalanaidu2021.pdf
-Name8[$e]=ferentinos2018.pdf
-Name9[$e]=fpls-14-1158933.pdf
+File1[$e]=$HOME/Downloads/robin/paper/generic/applalanaidu2021.pdf
+File10[$e]=$HOME/orion/NPD-474/reports/Test Security-900 Tabulation 08.11.2023.pdf
+File2[$e]=$HOME/Downloads/robin/paper/generic/ferentinos2018.pdf
+File3[$e]=$HOME/Downloads/robin/paper/generic/fpls-14-1158933.pdf
+File4[$e]=$HOME/Downloads/robin/paper/generic/plants-08-00468-v3.pdf
+File5[$e]=$HOME/orion/docs/Referer whitelist test with Postman.pdf
+File6[$e]=$HOME/Downloads/JD-YOLO Dataset/disesase diagrams/Jute Diseases  Diagnosis and Management.pdf
+File7[$e]=$HOME/Notes/Image Processing/Conditional Infilling GANs for Data Augmentation in Mammogram Classification.pdf
+File8[$e]=$HOME/orion/NPD-474/reports/Test Sakib Tabulation-800 Tabulation 08.10.2023.pdf
+File9[$e]=$HOME/orion/NPD-474/reports/NuArca Demo - Proposal 4 - Tabulation - 08.10.2023.pdf
+Name1[$e]=applalanaidu2021.pdf
+Name10[$e]=Test Security-900 Tabulation 08.11.2023.pdf
+Name2[$e]=ferentinos2018.pdf
+Name3[$e]=fpls-14-1158933.pdf
+Name4[$e]=plants-08-00468-v3.pdf
+Name5[$e]=Referer whitelist test with Postman.pdf
+Name6[$e]=Jute Diseases  Diagnosis and Management.pdf
+Name7[$e]=Conditional Infilling GANs for Data Augmentation in Mammogram Classification.pdf
+Name8[$e]=Test Sakib Tabulation-800 Tabulation 08.10.2023.pdf
+Name9[$e]=NuArca Demo - Proposal 4 - Tabulation - 08.10.2023.pdf
+
+[UiSettings]
+ColorScheme=Glassy

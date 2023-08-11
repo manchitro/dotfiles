@@ -32,6 +32,7 @@ declare -a options=(
 "deadd config - .config/deadd/deadd.yml"
 "deadd css - .config/deadd/deadd.css"
 "ranger config - .config/ranger/rc.conf"
+"ranger scope config - .config/ranger/scope.sh"
 "pac installed - .installed-packages-pac"
 "aur installed - .installed-packages-aur"
 "libinput gestures - .config/libinput-gestures.conf"
@@ -43,6 +44,8 @@ declare -a options=(
 "gtk3 config - .config/gtk-3.0/settings.ini"
 "neovim config - .config/nvim/init.lua"
 "mpv config - .config/mpv/mpv.conf"
+"autostart - autostart.sh"
+"tmux - .config/tmux/tmux.conf"
 "quit"
 )
 
@@ -54,7 +57,11 @@ if [[ "$choice" == "quit" ]]; then
 
 elif [ "$choice" ]; then
     cfg=$(echo "$choice" | awk '{print $NF}')
-    $terminal -- $editor "$cfg"
+    if command -v tmux &>/dev/null; then
+        tmux split-window -h "$editor $cfg"
+    else 
+        $terminal -- $editor "$cfg"
+    fi
     echo "cfg=$cfg"
 else
     echo "Program Terminated" && exit 1

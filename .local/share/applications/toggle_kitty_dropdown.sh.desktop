@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=/home/s/scripts/toggle_kitty_dropdown.sh
+Name=/home/s/scripts/toggle_kitty_dropdown.sh
+NoDisplay=true
+StartupNotify=false
+Type=Application
+X-KDE-GlobalAccel-CommandShortcut=true

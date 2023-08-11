@@ -9,19 +9,21 @@ ColumnState=AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa0AAAACAQAAAQAA
 Number of Actions=0
 
 [KFileDialog Settings]
-Recent Files[$e]=Sundarbans_web_cropped.jpg,file:$HOME/previous-java-alternatives.txt,file:$HOME/Pictures/kisspng-windows-xp-logo-microsoft-windows-1-0-windows-logos-5ab719f60d8a52.0845334915219491740555.png,file:$HOME/Pictures/output-onlinepngtools.png,file:$HOME/Pictures/png-transparent-windows-xp-icon-windows-xp-logo-microsoft-windows-1-windows-logos-angle-orange-computer-wallpaper.png,file:$HOME/wallpapers/Sundarbans_web_cropped.jpg
+Recent Files[$e]=Sundarbans_web_cropped.jpg,file:$HOME/Pictures/kisspng-windows-xp-logo-microsoft-windows-1-0-windows-logos-5ab719f60d8a52.0845334915219491740555.png,file:$HOME/wallpapers/wallpaperflare.com_wallpaper(4).jpg,file:$HOME/previous-java-alternatives.txt,file:$HOME/Pictures/output-onlinepngtools.png,file:$HOME/Pictures/png-transparent-windows-xp-icon-windows-xp-logo-microsoft-windows-1-windows-logos-angle-orange-computer-wallpaper.png,file:$HOME/wallpapers/Sundarbans_web_cropped.jpg
 Recent URLs[$e]=file:$HOME/wallpapers/,file:$HOME/Pictures/,file:$HOME/,file:$HOME/Documents/
 detailViewIconSize=16
 
 [KPropertiesDialog]
-1920x1080 screen: Height=591
-1920x1080 screen: Width=485
+1920x1080 screen: Height=544
+1920x1080 screen: Width=510
 
 [PlasmaTransientsConfig]
 PreloadWeight=0
 
 [PlasmaViews][Panel 117]
-panelOpacity=1
+floating=0
+panelOpacity=0
+panelVisibility=0
 
 [PlasmaViews][Panel 117][Defaults]
 thickness=38

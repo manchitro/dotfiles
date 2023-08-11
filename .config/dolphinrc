@@ -14,20 +14,23 @@ GlobalViewProps=false
 Version=202
 ViewPropsTimestamp=2023,7,18,1,1,5.567
 
+[IconsMode]
+PreviewSize=208
+
 [KFileDialog Settings]
 Places Icons Auto-resize=false
 Places Icons Static Size=22
 
 [KPropertiesDialog]
-1707x960 screen: Height=672
-1707x960 screen: Width=493
+1707x960 screen: Height=622
+1707x960 screen: Width=497
 
 [MainWindow]
-MenuBar=Disabled
 ToolBarsMovable=Disabled
 
 [PreviewSettings]
 Plugins=svgthumbnail,windowsexethumbnail,imagethumbnail,fontthumbnail,appimagethumbnail,cursorthumbnail,comicbookthumbnail,windowsimagethumbnail,opendocumentthumbnail,audiothumbnail,kraorathumbnail,djvuthumbnail,exrthumbnail,jpegthumbnail,ebookthumbnail,gsthumbnail,webarchivethumbnail,ffmpegthumbs,blenderthumbnail,mobithumbnail,directorythumbnail,rawthumbnail
 
 [Search]
+Location=Everywhere
 What=Content

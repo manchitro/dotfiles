@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=SoapUI-5.7.0
+Exec="/home/s/Downloads/software/SmartBear/SoapUI-5.7.0/bin/SoapUI-5.7.0" %U
+Icon=/home/s/Downloads/software/SmartBear/SoapUI-5.7.0/.install4j/SoapUI-5.7.0.png
+Categories=Application;
+StartupWMClass=install4j-com-eviware-soapui-SoapUI

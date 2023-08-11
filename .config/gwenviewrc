@@ -3,22 +3,37 @@ update_info=gwenview.upd:SideBar_StatusBar_Rename,gwenview.upd:ImageView_AlphaBa
 
 [General]
 LastUsedVersion=210800
+SideBarPage=operations
 
 [KFileDialog Settings]
 Places Icons Auto-resize=false
 Places Icons Static Size=32
 
 [MainWindow]
+1707x960 screen: Height=839
+1707x960 screen: Width=723
 1707x960 screen: XPosition=533
-1707x960 screen: YPosition=236
+1707x960 screen: YPosition=83
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAAAoAAAAGyAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAAAtMAAAMhAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 eDP-1=eDP-1
 
 [Recent Files]
 File1[$e]=$HOME/wallpapers/Sundarbans_web_cropped.jpg
+File2[$e]=$HOME/Pictures/kisspng-windows-xp-logo-microsoft-windows-1-0-windows-logos-5ab719f60d8a52.0845334915219491740555.png
+File3[$e]=$HOME/Downloads/papers/MARL-CBIS IEEE/figures/annotation.jpg
+File4[$e]=$HOME/Downloads/MLNN/datasets/Malignant Lymphoma Classification/MCL/sj-05-901-R1_010.tif
+File5[$e]=$HOME/Downloads/MLNN/datasets/Malignant Lymphoma Classification/MCL/sj-05-901-R1_009.tif
+File6[$e]=$HOME/Downloads/MLNN/datasets/Malignant Lymphoma Classification/FL/sj-05-894-R3_014.tif
 Name1[$e]=Sundarbans_web_cropped.jpg
+Name2[$e]=kisspng-windows-xp-logo-microsoft-windows-1-0-windows-logos-5ab719f60d8a52.0845334915219491740555.png
+Name3[$e]=annotation.jpg
+Name4[$e]=sj-05-901-R1_010.tif
+Name5[$e]=sj-05-901-R1_009.tif
+Name6[$e]=sj-05-894-R3_014.tif
 
 [SideBar]
-InformationSplitterSizes=0,0
+InformationSplitterSizes=218,257
+IsVisible ViewMode=true
+SideBarSplitterSizes=236,480

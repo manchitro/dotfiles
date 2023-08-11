@@ -1,8 +1,9 @@
 local plugins = {
-  {"mhinz/vim-startify",          lazy=false},
-  {"xiyaowong/transparent.nvim",  lazy=false},
-  {"lambdalisue/suda.vim",        lazy=false},
-  {"Exafunction/codeium.vim",     lazy=false},
-  {"qpkorr/vim-renamer",          lazy=false},
+  {"mhinz/vim-startify",                lazy=false},
+  {"xiyaowong/transparent.nvim",        lazy=false},
+  {"lambdalisue/suda.vim",              lazy=false},
+  {"Exafunction/codeium.vim",           lazy=false},
+  {"qpkorr/vim-renamer",                lazy=false},
+  {"christoomey/vim-tmux-navigator",    lazy=false}
 }
 return plugins
