@@ -9,7 +9,7 @@ Id_1=ae5b6a20-1ad0-4aa8-ba47-a8b7db5161ad
 Id_2=9c124c8d-3ec2-4e5c-906d-1e9211cd1de1
 Id_3=7273fdc1-47c0-4f59-ba10-e03e3f7c95b3
 Id_4=c0ecce56-3537-4462-8075-2cd5bae3d0f2
-Id_5=b724f598-795a-4389-be75-bad83fce1a0d
+Id_5=e55fd756-ccb3-422a-8e60-4f26a5c6d5dd
 Name_1=WWW
 Name_2=DEV
 Name_3=TXT
@@ -19,7 +19,7 @@ Number=5
 Rows=1
 
 [Effect-windowview]
-BorderActivateAll=9
+BorderActivateAll=3
 
 [ModifierOnlyShortcuts]
 Meta=org.kde.kglobalaccel,/component/org_kde_krunner_desktop,org.kde.kglobalaccel.Component,invokeShortcut,_launch
@@ -81,6 +81,8 @@ tiles={"layoutDirection":"horizontal","tiles":[{"layoutDirection":"vertical","ti
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Windows]
+ElectricBorderCooldown=100
+ElectricBorderDelay=50
 RollOverDesktops=true
 
 [org.kde.kdecoration2]

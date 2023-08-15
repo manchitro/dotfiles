@@ -98,3 +98,31 @@ vnoremap <silent> # :<C-U>
 
 autocmd BufNewFile,BufRead * setlocal formatoptions=
 
+" Enable line and character visual mode after pressing Shift+S
+xnoremap S :<C-U>call SurroundWith()<CR>
+
+function! SurroundWith()
+    " Get the user input for the surrounding string
+    let surround_string = input("Enter the string to surround with: ")
+
+    " Store the original register and clear it for pasting later
+    let reg_save = @"
+    let @" = ''
+
+    " Yank the selected text into the unnamed register
+    normal! gv"xy
+
+    " Build the final replacement command with double escaping
+    let replacement = surround_string . @"
+    let replacement .= substitute(substitute(@" , '\n', '\\\\n', 'g'), '"', '\\\\"', 'g')
+    let replacement .= surround_string
+
+    " Perform the replacement
+    execute "normal! gv" . replacement
+
+    " Restore the original register
+    let @" = reg_save
+
+    " Clear the register used for yanking
+    let @x = ''
+endfunction

@@ -178,12 +178,20 @@ favoritesPortedToKAstats=true
 icon=/home/s/Pictures/kisspng-windows-xp-logo-microsoft-windows-1-0-windows-logos-5ab719f60d8a52.0845334915219491740555.png
 systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 
+[Containments][117][Applets][161]
+immutability=1
+plugin=SimplePager
+
+[Containments][117][Applets][161][Configuration][ConfigDialog]
+DialogHeight=660
+DialogWidth=880
+
 [Containments][117][ConfigDialog]
 DialogHeight=93
 DialogWidth=1920
 
 [Containments][117][General]
-AppletOrder=157;142;147;144;148;152;156;153;149;146;121;122;145;143;136
+AppletOrder=157;142;147;144;148;152;156;153;149;161;146;121;122;145;143;136
 
 [Containments][117][Shortcuts]
 global=Meta+A
@@ -270,7 +278,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][123][Applets][139][Configuration]
-PreloadWeight=90
+PreloadWeight=95
 
 [Containments][123][Applets][139][Configuration][General]
 showPercentage=true

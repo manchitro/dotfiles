@@ -46,6 +46,7 @@ declare -a options=(
 "mpv config - .config/mpv/mpv.conf"
 "autostart - autostart.sh"
 "tmux - .config/tmux/tmux.conf"
+"obsidian vimrc - /home/s/Notes/.obsidian.vimrc"
 "quit"
 )
 

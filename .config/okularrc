@@ -12,26 +12,26 @@ ToolBarsMovable=Disabled
 eDP-1=eDP-1
 
 [Recent Files]
-File1[$e]=$HOME/Downloads/robin/paper/generic/applalanaidu2021.pdf
-File10[$e]=$HOME/orion/NPD-474/reports/Test Security-900 Tabulation 08.11.2023.pdf
-File2[$e]=$HOME/Downloads/robin/paper/generic/ferentinos2018.pdf
-File3[$e]=$HOME/Downloads/robin/paper/generic/fpls-14-1158933.pdf
-File4[$e]=$HOME/Downloads/robin/paper/generic/plants-08-00468-v3.pdf
-File5[$e]=$HOME/orion/docs/Referer whitelist test with Postman.pdf
+File1[$e]=$HOME/orion/docs/Referer whitelist test with Postman.pdf
+File10[$e]=$HOME/Notes/Image Processing/MammoGANesis: Controlled Generation of High-Resolution Mammograms for Radiology Education.pdf
+File2[$e]=$HOME/Notes/Image Processing/Conditional Infilling GANs for Data Augmentation in Mammogram Classification.pdf
+File3[$e]=$HOME/orion/NPD-474/reports/Test Sakib Tabulation-800 Tabulation 08.10.2023.pdf
+File4[$e]=$HOME/orion/NPD-474/reports/NuArca Demo - Proposal 4 - Tabulation - 08.10.2023.pdf
+File5[$e]=$HOME/orion/NPD-474/reports/Test Security-900 Tabulation 08.11.2023.pdf
 File6[$e]=$HOME/Downloads/JD-YOLO Dataset/disesase diagrams/Jute Diseases  Diagnosis and Management.pdf
-File7[$e]=$HOME/Notes/Image Processing/Conditional Infilling GANs for Data Augmentation in Mammogram Classification.pdf
-File8[$e]=$HOME/orion/NPD-474/reports/Test Sakib Tabulation-800 Tabulation 08.10.2023.pdf
-File9[$e]=$HOME/orion/NPD-474/reports/NuArca Demo - Proposal 4 - Tabulation - 08.10.2023.pdf
-Name1[$e]=applalanaidu2021.pdf
-Name10[$e]=Test Security-900 Tabulation 08.11.2023.pdf
-Name2[$e]=ferentinos2018.pdf
-Name3[$e]=fpls-14-1158933.pdf
-Name4[$e]=plants-08-00468-v3.pdf
-Name5[$e]=Referer whitelist test with Postman.pdf
+File7[$e]=$HOME/Downloads/JD-YOLO Dataset/disesase diagrams/87750-224902-2-PB Indian farming 2019.pdf
+File8[$e]=$HOME/orion/NPD-474/reports/Prueba series 280723 - Proposal 4 - Tabulation - 08.13.2023.pdf
+File9[$e]=$HOME/Documents/bKash_2023.pdf
+Name1[$e]=Referer whitelist test with Postman.pdf
+Name10[$e]=MammoGANesis: Controlled Generation of High-Resolution Mammograms for Radiology Education.pdf
+Name2[$e]=Conditional Infilling GANs for Data Augmentation in Mammogram Classification.pdf
+Name3[$e]=Test Sakib Tabulation-800 Tabulation 08.10.2023.pdf
+Name4[$e]=NuArca Demo - Proposal 4 - Tabulation - 08.10.2023.pdf
+Name5[$e]=Test Security-900 Tabulation 08.11.2023.pdf
 Name6[$e]=Jute Diseases  Diagnosis and Management.pdf
-Name7[$e]=Conditional Infilling GANs for Data Augmentation in Mammogram Classification.pdf
-Name8[$e]=Test Sakib Tabulation-800 Tabulation 08.10.2023.pdf
-Name9[$e]=NuArca Demo - Proposal 4 - Tabulation - 08.10.2023.pdf
+Name7[$e]=87750-224902-2-PB Indian farming 2019.pdf
+Name8[$e]=Prueba series 280723 - Proposal 4 - Tabulation - 08.13.2023.pdf
+Name9[$e]=bKash_2023.pdf
 
 [UiSettings]
 ColorScheme=Glassy
