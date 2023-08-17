@@ -12,26 +12,26 @@ ToolBarsMovable=Disabled
 eDP-1=eDP-1
 
 [Recent Files]
-File1[$e]=$HOME/orion/docs/Referer whitelist test with Postman.pdf
-File10[$e]=$HOME/Notes/Image Processing/MammoGANesis: Controlled Generation of High-Resolution Mammograms for Radiology Education.pdf
-File2[$e]=$HOME/Notes/Image Processing/Conditional Infilling GANs for Data Augmentation in Mammogram Classification.pdf
-File3[$e]=$HOME/orion/NPD-474/reports/Test Sakib Tabulation-800 Tabulation 08.10.2023.pdf
-File4[$e]=$HOME/orion/NPD-474/reports/NuArca Demo - Proposal 4 - Tabulation - 08.10.2023.pdf
-File5[$e]=$HOME/orion/NPD-474/reports/Test Security-900 Tabulation 08.11.2023.pdf
-File6[$e]=$HOME/Downloads/JD-YOLO Dataset/disesase diagrams/Jute Diseases  Diagnosis and Management.pdf
-File7[$e]=$HOME/Downloads/JD-YOLO Dataset/disesase diagrams/87750-224902-2-PB Indian farming 2019.pdf
-File8[$e]=$HOME/orion/NPD-474/reports/Prueba series 280723 - Proposal 4 - Tabulation - 08.13.2023.pdf
-File9[$e]=$HOME/Documents/bKash_2023.pdf
-Name1[$e]=Referer whitelist test with Postman.pdf
-Name10[$e]=MammoGANesis: Controlled Generation of High-Resolution Mammograms for Radiology Education.pdf
-Name2[$e]=Conditional Infilling GANs for Data Augmentation in Mammogram Classification.pdf
-Name3[$e]=Test Sakib Tabulation-800 Tabulation 08.10.2023.pdf
-Name4[$e]=NuArca Demo - Proposal 4 - Tabulation - 08.10.2023.pdf
-Name5[$e]=Test Security-900 Tabulation 08.11.2023.pdf
-Name6[$e]=Jute Diseases  Diagnosis and Management.pdf
-Name7[$e]=87750-224902-2-PB Indian farming 2019.pdf
-Name8[$e]=Prueba series 280723 - Proposal 4 - Tabulation - 08.13.2023.pdf
-Name9[$e]=bKash_2023.pdf
+File1[$e]=$HOME/Notes/Image Processing/Conditional Infilling GANs for Data Augmentation in Mammogram Classification.pdf
+File10[$e]=$HOME/Notes/Image Processing/papers/Breast_cancer_GAN.pdf
+File2[$e]=$HOME/orion/NPD-474/reports/Test Sakib Tabulation-800 Tabulation 08.10.2023.pdf
+File3[$e]=$HOME/orion/NPD-474/reports/NuArca Demo - Proposal 4 - Tabulation - 08.10.2023.pdf
+File4[$e]=$HOME/orion/NPD-474/reports/Test Security-900 Tabulation 08.11.2023.pdf
+File5[$e]=$HOME/Downloads/JD-YOLO Dataset/disesase diagrams/Jute Diseases  Diagnosis and Management.pdf
+File6[$e]=$HOME/Downloads/JD-YOLO Dataset/disesase diagrams/87750-224902-2-PB Indian farming 2019.pdf
+File7[$e]=$HOME/orion/NPD-474/reports/Prueba series 280723 - Proposal 4 - Tabulation - 08.13.2023.pdf
+File8[$e]=$HOME/Documents/bKash_2023.pdf
+File9[$e]=$HOME/Notes/Image Processing/MammoGANesis: Controlled Generation of High-Resolution Mammograms for Radiology Education.pdf
+Name1[$e]=Conditional Infilling GANs for Data Augmentation in Mammogram Classification.pdf
+Name10[$e]=Breast_cancer_GAN.pdf
+Name2[$e]=Test Sakib Tabulation-800 Tabulation 08.10.2023.pdf
+Name3[$e]=NuArca Demo - Proposal 4 - Tabulation - 08.10.2023.pdf
+Name4[$e]=Test Security-900 Tabulation 08.11.2023.pdf
+Name5[$e]=Jute Diseases  Diagnosis and Management.pdf
+Name6[$e]=87750-224902-2-PB Indian farming 2019.pdf
+Name7[$e]=Prueba series 280723 - Proposal 4 - Tabulation - 08.13.2023.pdf
+Name8[$e]=bKash_2023.pdf
+Name9[$e]=MammoGANesis: Controlled Generation of High-Resolution Mammograms for Radiology Education.pdf
 
 [UiSettings]
 ColorScheme=Glassy

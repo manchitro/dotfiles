@@ -31,13 +31,13 @@ LastSeenMounted=true
 [Devices][/org/freedesktop/UDisks2/block_devices/loop4]
 EverMounted=true
 Icon=application-vnd.snap
-LastNameSeen=gnome-3-38-2004_143.snap
+LastNameSeen=gtk-common-themes_1535.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/loop5]
 EverMounted=true
 Icon=application-vnd.snap
-LastNameSeen=gtk-common-themes_1535.snap
+LastNameSeen=gnome-3-38-2004_143.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/loop6]
@@ -53,6 +53,12 @@ LastNameSeen=postman_211.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/loop8]
+EverMounted=true
+Icon=application-vnd.snap
+LastNameSeen=postman_213.snap
+LastSeenMounted=true
+
+[Devices][/org/freedesktop/UDisks2/block_devices/loop9]
 EverMounted=true
 Icon=application-vnd.snap
 LastNameSeen=spotify_67.snap

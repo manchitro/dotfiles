@@ -1,4 +1,5 @@
-fish_add_path /home/s/scripts
+fish_add_path /home/s/scripts -g
+fish_add_path /home/s/.local/bin/ -g
 
 if status is-interactive
 and not set -q TMUX
@@ -28,7 +29,7 @@ end
 abbr -a rd 'ranger ~/Downloads/'
 abbr -a rn 'ranger ~/Notes/'
 abbr -a fd 'fd -a -d 20'
-abbr -a da '/usr/bin/git --git-dir=/home/s/.dots/ --work-tree=/home/s add .config/{autostart,fish,flameshot,fontconfig,gtk-3.0,gtk-4.0,kde.org,kdedefaults,kitty,neofetch,nvim,ranger,xsettingsd,bluedevilglobalrc,gtkrc,gtkrc-2.0,kwinrc,mimeapps.list,plasma-org.kde.plasma.desktop-appletsrc,plasmarc,powermanagementprofilesrc,touchpadxlibinputrc,user-dirs.dirs,dconf,dolphinrc,filetypesrc,flameshotrc,gwenviewrc,katerc,kde*,kglobalshortcutsrc,khotkeysrc,okularpartrc,okularrc,plasmanotifyrc,plasmashellrc,systemsettingsrc,kwinrulesrc,tmux} .bashrc .ideavimrc .keynavrc .profile .Xmodmap .vimrc .vim/ scripts/ .local/share/applications .icons/ .fonts/ dotroot/ .tmux/' 
+abbr -a da '/usr/bin/git --git-dir=/home/s/.dots/ --work-tree=/home/s add .config/{autostart,fish,flameshot,fontconfig,gtk-3.0,gtk-4.0,kde.org,kdedefaults,kitty,neofetch,nvim,ranger,xsettingsd,bluedevilglobalrc,gtkrc,gtkrc-2.0,kwinrc,mimeapps.list,plasma-org.kde.plasma.desktop-appletsrc,plasmarc,powermanagementprofilesrc,touchpadxlibinputrc,user-dirs.dirs,dconf,dolphinrc,filetypesrc,flameshotrc,gwenviewrc,katerc,kde*,kglobalshortcutsrc,khotkeysrc,okularpartrc,okularrc,plasmanotifyrc,plasmashellrc,systemsettingsrc,kwinrulesrc,tmux, qtile, deadd} .bashrc .ideavimrc .keynavrc .profile .Xmodmap .vimrc .vim/ scripts/ .local/share/{applications,rofi,plasma} .icons/ .fonts/ dotroot/ .tmux/' 
 abbr -a nvidia-smi 'watch -n 1 nvidia-smi'
 abbr -a r 'ranger'
 abbr -a rh 'ranger ~/'

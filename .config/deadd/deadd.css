@@ -1,0 +1,138 @@
+
+/* Notification center */
+
+.blurredBG, #main_window, .blurredBG.low, .blurredBG.normal {
+    background: rgba(69, 71, 90, 0.3);
+}
+
+.noti-center.time {
+    font-size: 32px;
+}
+
+/* Notifications */
+
+.title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.appname {
+    font-size: 12px;
+}
+
+.notificationInCenter.notification.appname {
+    margin-right: 5px;
+}
+
+.time {
+    font-size: 12px;
+}
+
+.blurredBG.notification {
+    background:  rgba(69,71,90, 0.9);
+}
+
+.blurredBG.notification.critical {
+    background: rgba(255, 0, 0, 0.9);
+}
+
+.notificationInCenter.critical {
+    background: rgba(255, 0, 0, 0.9);
+    border-radius: 10px;
+}
+
+/* Labels */
+
+label {
+    color: #cdd6f4;
+}
+
+label.notification {
+    color: #cdd6f4;
+}
+label.critical {
+    color: white;
+}
+.notificationInCenter label.critical {
+    color: white;
+}
+
+
+/* Buttons */
+
+button {
+    background: transparent;
+    color: #cdd6f4;
+    border-radius: 5px;
+    border: 0px solid #89b4fa;
+    background-position: 0px 0px;
+    text-shadow: none;
+}
+
+button:hover {
+    border-radius: 3px;
+    background: rgba(0, 20, 20, 0.2);
+    border: 1px solid #89b4fa;
+    border-top: transparent;
+    color: #fee;
+}
+
+
+/* Custom Buttons */
+
+.userbutton {
+    background: rgba(137, 180, 250, 0.5);
+    padding: 5px;
+}
+
+.userbuttonlabel {
+    color: #cdd6f4;
+    font-size: 16px;
+}
+
+.userbutton:hover {
+    background: rgba(49, 50, 68, 0.2);
+}
+
+.userbuttonlabel:hover {
+    color: #111;
+}
+
+button.buttonState1 {
+    background: rgba(20,0,0,0.5);
+}
+
+.userbuttonlabel.buttonState1 {
+    color: #fff;
+}
+
+button.buttonState1:hover {
+    background: rgba(20,0,0, 0.4);
+}
+
+.userbuttonlabel.buttonState1:hover {
+    color: #111;
+}
+
+button.buttonState2 {
+    background: rgba(255,255,255,0.3);
+}
+
+.userbuttonlabel.buttonState2 {
+    color: #111;
+}
+
+button.buttonState2:hover {
+    background: rgba(20,0,0, 0.3);
+}
+
+.userbuttonlabel.buttonState2:hover {
+    color: #000;
+}
+
+
+/* Images */
+
+image.deadd-noti-center.notification.image {
+    margin-left: 20px;
+}

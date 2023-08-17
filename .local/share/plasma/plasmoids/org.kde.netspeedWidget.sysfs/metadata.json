@@ -1,0 +1,25 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "me@donjajo.com",
+                "Name": "James John"
+            }
+        ],
+        "Category": "System Information",
+        "Description": "Displays the currently used network bandwidth using Sysfs",
+        "Icon": "network-connect",
+        "Id": "org.kde.netspeedWidget.sysfs",
+        "License": "GPL2",
+        "Name": "Netspeed Widget (sysfs)",
+        "ServiceTypes": [
+            "Plasma/Applet"
+        ],
+        "Version": "1.9",
+        "Website": "https://github.com/dfaust/plasma-applet-netspeed-widget"
+    },
+    "X-KDE-ParentApp": "",
+    "X-Plasma-API": "declarativeappletscript",
+    "X-Plasma-MainScript": "ui/main.qml",
+    "X-Plasma-RemoteLocation": ""
+}
