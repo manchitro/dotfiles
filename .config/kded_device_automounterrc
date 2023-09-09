@@ -16,52 +16,76 @@ Icon=application-vnd.snap
 LastNameSeen=core_15511.snap
 LastSeenMounted=true
 
+[Devices][/org/freedesktop/UDisks2/block_devices/loop10]
+EverMounted=true
+Icon=application-vnd.snap
+LastNameSeen=postman_215.snap
+LastSeenMounted=true
+
+[Devices][/org/freedesktop/UDisks2/block_devices/loop11]
+EverMounted=true
+Icon=application-vnd.snap
+LastNameSeen=postman_217.snap
+LastSeenMounted=true
+
+[Devices][/org/freedesktop/UDisks2/block_devices/loop12]
+EverMounted=true
+Icon=application-vnd.snap
+LastNameSeen=spotify_67.snap
+LastSeenMounted=true
+
+[Devices][/org/freedesktop/UDisks2/block_devices/loop13]
+EverMounted=true
+Icon=application-vnd.snap
+LastNameSeen=spotify_68.snap
+LastSeenMounted=true
+
 [Devices][/org/freedesktop/UDisks2/block_devices/loop2]
 EverMounted=true
 Icon=application-vnd.snap
-LastNameSeen=core18_2785.snap
+LastNameSeen=core_15925.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/loop3]
 EverMounted=true
 Icon=application-vnd.snap
-LastNameSeen=core20_1974.snap
+LastNameSeen=core18_2785.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/loop4]
 EverMounted=true
 Icon=application-vnd.snap
-LastNameSeen=gtk-common-themes_1535.snap
+LastNameSeen=core18_2790.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/loop5]
 EverMounted=true
 Icon=application-vnd.snap
-LastNameSeen=gnome-3-38-2004_143.snap
+LastNameSeen=core20_1974.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/loop6]
 EverMounted=true
 Icon=application-vnd.snap
-LastNameSeen=intellij-idea-ultimate_293.snap
+LastNameSeen=core20_2015.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/loop7]
 EverMounted=true
 Icon=application-vnd.snap
-LastNameSeen=postman_211.snap
+LastNameSeen=gnome-3-38-2004_143.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/loop8]
 EverMounted=true
 Icon=application-vnd.snap
-LastNameSeen=postman_213.snap
+LastNameSeen=gtk-common-themes_1535.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/loop9]
 EverMounted=true
 Icon=application-vnd.snap
-LastNameSeen=spotify_67.snap
+LastNameSeen=intellij-idea-ultimate_293.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/nvme0n1p1]

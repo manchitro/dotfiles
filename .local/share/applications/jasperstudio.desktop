@@ -2,13 +2,13 @@
 Categories=Office
 Comment[en_US]=
 Comment=
-Exec='/opt/tibco/TIB_js-studiocomm_6.6.0/Jaspersoft Studio'
+Exec=/opt/jaspersoft/js-studiocomm_6.20.5/runjss.sh
 GenericName[en_US]=
 GenericName=
 Icon=/opt/tibco/TIB_js-studiocomm_6.6.0/icon.xpm
 MimeType=
-Name[en_US]=Jaspersoft Studio Community 6.6.0
-Name=Jaspersoft Studio Community 6.6.0
+Name[en_US]=Jaspersoft Studio Community 6.20.0
+Name=Jaspersoft Studio Community 6.20.0
 Path=/opt/tibco/TIB_js-studiocomm_6.6.0
 StartupNotify=true
 Terminal=false

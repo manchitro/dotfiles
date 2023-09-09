@@ -1,24 +1,26 @@
 [Added Associations]
 application/x-desktop=nvim.desktop;
 application/x-shellscript=nvim.desktop;
+audio/mpeg=vlc.desktop;
 inode/directory=org.kde.dolphin.desktop;
 text/csv=libreoffice-calc.desktop;
 x-scheme-handler/geo=google-maps-geo-handler.desktop;
-x-scheme-handler/http=firefox-esr.desktop;
-x-scheme-handler/https=firefox-esr.desktop;
+x-scheme-handler/http=google-chrome.desktop;firefox-esr.desktop;
+x-scheme-handler/https=google-chrome.desktop;firefox-esr.desktop;
 x-scheme-handler/mailto=org.kde.kmail2.desktop;
 x-scheme-handler/tel=org.kde.kdeconnect.handler.desktop;
 
 [Default Applications]
 application/x-desktop=nvim.desktop;
 application/x-shellscript=nvim.desktop;
+audio/mpeg=vlc.desktop;
 image/jpeg=qimgv.desktop
 image/jpg=qimgv.desktop
 image/png=qimgv.desktop
 inode/directory=org.kde.dolphin.desktop;
 text/csv=libreoffice-calc.desktop;
 x-scheme-handler/geo=google-maps-geo-handler.desktop;
-x-scheme-handler/http=firefox-esr.desktop;
-x-scheme-handler/https=firefox-esr.desktop;
+x-scheme-handler/http=google-chrome.desktop;
+x-scheme-handler/https=google-chrome.desktop;
 x-scheme-handler/mailto=org.kde.kmail2.desktop;
 x-scheme-handler/tel=org.kde.kdeconnect.handler.desktop;

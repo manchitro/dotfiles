@@ -29,14 +29,14 @@ Duration=200
 
 [Plugins]
 ShimmerEnabled=true
-blurEnabled=false
+blurEnabled=true
 contrastEnabled=true
 desktopchangeosdEnabled=true
-diminactiveEnabled=true
 forceblurEnabled=false
 kwin4_effect_dimscreenEnabled=true
 kwin4_effect_minimizescale_outexpoEnabled=true
 kwin4_effect_squashEnabled=false
+kwin4_effect_translucencyEnabled=true
 last-Used-DesktopEnabled=true
 mousemarkEnabled=true
 tilegapsEnabled=false
@@ -77,6 +77,9 @@ padding=4
 [Tiling][213a9620-187e-58a6-b80b-85d8fb95dfce]
 tiles={"layoutDirection":"horizontal","tiles":[{"layoutDirection":"vertical","tiles":[{"height":0.5},{"height":0.5}],"width":0.4},{"width":0.6}]}
 
+[Tiling][6dbfdb1c-0d23-5013-9b2c-a432872102bb]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][9480fc14-055f-54a8-bbbb-7f3f74ede976]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
@@ -85,6 +88,9 @@ ElectricBorderCooldown=100
 ElectricBorderDelay=50
 RollOverDesktops=true
 
+[Xwayland]
+Scale=1
+
 [org.kde.kdecoration2]
 library=org.kde.kwin.aurorae
-theme=__aurorae__svg__Bluish-Dark-Aurorae
+theme=__aurorae__svg__Relax-Aurorae

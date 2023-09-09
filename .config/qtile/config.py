@@ -23,7 +23,7 @@ slash = "mod5"
 
 #apps
 terminal = "kitty"
-browser = "firefox"
+browser = "google-chrome"
 filemanager = "dolphin"
 
 #commands

@@ -7,6 +7,7 @@ update_info=dolphin_detailsmodesettings.upd:rename-leading-padding
 ShowCopyMoveMenu=true
 
 [DetailsMode]
+PreviewSize=64
 SidePadding=0
 
 [General]
@@ -15,7 +16,7 @@ Version=202
 ViewPropsTimestamp=2023,7,18,1,1,5.567
 
 [IconsMode]
-PreviewSize=208
+PreviewSize=240
 
 [KFileDialog Settings]
 Places Icons Auto-resize=false
@@ -23,7 +24,7 @@ Places Icons Static Size=22
 
 [KPropertiesDialog]
 1707x960 screen: Height=622
-1707x960 screen: Width=497
+1707x960 screen: Width=506
 
 [MainWindow]
 ToolBarsMovable=Disabled
@@ -32,5 +33,4 @@ ToolBarsMovable=Disabled
 Plugins=svgthumbnail,windowsexethumbnail,imagethumbnail,fontthumbnail,appimagethumbnail,cursorthumbnail,comicbookthumbnail,windowsimagethumbnail,opendocumentthumbnail,audiothumbnail,kraorathumbnail,djvuthumbnail,exrthumbnail,jpegthumbnail,ebookthumbnail,gsthumbnail,webarchivethumbnail,ffmpegthumbs,blenderthumbnail,mobithumbnail,directorythumbnail,rawthumbnail
 
 [Search]
-Location=Everywhere
 What=Content

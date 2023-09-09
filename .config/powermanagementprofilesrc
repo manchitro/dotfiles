@@ -9,7 +9,7 @@ lockBeforeTurnOff=0
 idleTime=300000
 
 [AC][HandleButtonEvents]
-lidAction=0
+lidAction=1
 powerButtonAction=0
 powerDownAction=16
 triggerLidActionWhenExternalMonitorPresent=false
@@ -30,7 +30,7 @@ lockBeforeTurnOff=0
 idleTime=120000
 
 [Battery][HandleButtonEvents]
-lidAction=0
+lidAction=1
 powerButtonAction=0
 powerDownAction=16
 triggerLidActionWhenExternalMonitorPresent=false
@@ -54,7 +54,7 @@ lockBeforeTurnOff=0
 idleTime=60000
 
 [LowBattery][HandleButtonEvents]
-lidAction=0
+lidAction=1
 powerButtonAction=0
 powerDownAction=16
 triggerLidActionWhenExternalMonitorPresent=false

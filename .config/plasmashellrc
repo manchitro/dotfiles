@@ -9,13 +9,16 @@ ColumnState=AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa0AAAACAQAAAQAA
 Number of Actions=0
 
 [KFileDialog Settings]
-Recent Files[$e]=Sundarbans_web_cropped.jpg,file:$HOME/Pictures/kisspng-windows-xp-logo-microsoft-windows-1-0-windows-logos-5ab719f60d8a52.0845334915219491740555.png,file:$HOME/wallpapers/wallpaperflare.com_wallpaper(4).jpg,file:$HOME/previous-java-alternatives.txt,file:$HOME/Pictures/output-onlinepngtools.png,file:$HOME/Pictures/png-transparent-windows-xp-icon-windows-xp-logo-microsoft-windows-1-windows-logos-angle-orange-computer-wallpaper.png,file:$HOME/wallpapers/Sundarbans_web_cropped.jpg
+Recent Files[$e]=Sundarbans_web_cropped.jpg,file:$HOME/Pictures/winxpresize.png,file:$HOME/Pictures/kisspng-windows-xp-logo-microsoft-windows-1-0-windows-logos-5ab719f60d8a52.0845334915219491740555.png,file:$HOME/wallpapers/wallpaperflare.com_wallpaper(4).jpg,file:$HOME/previous-java-alternatives.txt,file:$HOME/Pictures/output-onlinepngtools.png,file:$HOME/Pictures/png-transparent-windows-xp-icon-windows-xp-logo-microsoft-windows-1-windows-logos-angle-orange-computer-wallpaper.png,file:$HOME/wallpapers/Sundarbans_web_cropped.jpg
 Recent URLs[$e]=file:$HOME/wallpapers/,file:$HOME/Pictures/,file:$HOME/,file:$HOME/Documents/
 detailViewIconSize=16
 
 [KPropertiesDialog]
 1920x1080 screen: Height=544
-1920x1080 screen: Width=510
+1920x1080 screen: Width=505
+
+[PlasmaTransientsConfig]
+PreloadWeight=18
 
 [PlasmaViews][Panel 117]
 floating=0

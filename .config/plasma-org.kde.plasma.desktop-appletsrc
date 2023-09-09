@@ -24,9 +24,11 @@ DialogWidth=960
 [Containments][116][General]
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=465
+alignment=1
+arrangement=1
 
 [Containments][116][Wallpaper][org.kde.image][General]
-Image=/home/s/wallpapers/wallpaperflare.com_wallpaper(4).jpg
+Image=/home/s/wallpapers/Sundarbans_web_cropped.jpg
 SlidePaths=/home/s/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][117]
@@ -59,7 +61,7 @@ immutability=1
 plugin=org.kde.plasma.eventcalendar
 
 [Containments][117][Applets][142][Configuration]
-PreloadWeight=85
+PreloadWeight=100
 
 [Containments][117][Applets][142][Configuration][ConfigDialog]
 DialogHeight=720
@@ -67,7 +69,7 @@ DialogWidth=960
 
 [Containments][117][Applets][142][Configuration][General]
 clockMaxHeight=16
-clockTimeFormat1=h:mm:ss AP - ddd - dd, MMM(MM), yyyy
+clockTimeFormat1=h:mm AP / ddd / dd-MMM(MM)-yy
 clockTimeFormat2=MMMM d, yyyy
 v71Migration=true
 v72Migration=true
@@ -101,7 +103,7 @@ DialogHeight=720
 DialogWidth=960
 
 [Containments][117][Applets][144][Configuration][General]
-fontSize=75
+fontSize=80
 swapDownUp=true
 updateInterval=1.5
 
@@ -167,15 +169,17 @@ plugin=org.kde.plasma.kickoff
 [Containments][117][Applets][157][Configuration]
 PreloadWeight=100
 popupHeight=574
-popupWidth=753
+popupWidth=745
 
 [Containments][117][Applets][157][Configuration][ConfigDialog]
 DialogHeight=660
 DialogWidth=880
 
 [Containments][117][Applets][157][Configuration][General]
+alphaSort=true
 favoritesPortedToKAstats=true
-icon=/home/s/Pictures/kisspng-windows-xp-logo-microsoft-windows-1-0-windows-logos-5ab719f60d8a52.0845334915219491740555.png
+icon=/home/s/Pictures/winxpresize.png
+menuLabel=Start
 systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 
 [Containments][117][Applets][161]
@@ -186,15 +190,31 @@ plugin=SimplePager
 DialogHeight=660
 DialogWidth=880
 
+[Containments][117][Applets][162]
+immutability=1
+plugin=com.github.zren.batterytime
+
+[Containments][117][Applets][162][Configuration][ConfigDialog]
+DialogHeight=660
+DialogWidth=880
+
+[Containments][117][Applets][162][Configuration][General]
+showTimeLeft=false
+timeLeftFormat=69m
+
+[Containments][117][Applets][165]
+immutability=1
+plugin=org.kde.plasma.marginsseparator
+
 [Containments][117][ConfigDialog]
 DialogHeight=93
 DialogWidth=1920
 
 [Containments][117][General]
-AppletOrder=157;142;147;144;148;152;156;153;149;161;146;121;122;145;143;136
+AppletOrder=157;142;147;144;148;152;156;153;149;161;146;121;122;165;162;145;143;136
 
 [Containments][117][Shortcuts]
-global=Meta+A
+global=
 
 [Containments][123]
 activityId=
@@ -267,18 +287,21 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][123][Applets][137][Configuration]
-PreloadWeight=0
+PreloadWeight=5
 
 [Containments][123][Applets][138]
 immutability=1
 plugin=org.kde.plasma.nightcolorcontrol
+
+[Containments][123][Applets][138][Configuration]
+PreloadWeight=42
 
 [Containments][123][Applets][139]
 immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][123][Applets][139][Configuration]
-PreloadWeight=95
+PreloadWeight=100
 
 [Containments][123][Applets][139][Configuration][General]
 showPercentage=true
@@ -303,10 +326,11 @@ DialogWidth=960
 
 [Containments][123][General]
 extraItems=org.kde.plasma.nightcolorcontrol,org.kde.plasma.battery,org.kde.plasma.vault,org.kde.plasma.manage-inputmethod,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.plasma.keyboardindicator,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardlayout,org.kde.kupapplet,org.kde.plasma.printmanager,org.kde.kdeconnect,org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.kscreen
-hiddenItems=Discover Notifier_org.kde.DiscoverNotifier
+hiddenItems=Discover Notifier_org.kde.DiscoverNotifier,org.kde.plasma.battery
 knownItems=org.kde.plasma.nightcolorcontrol,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.vault,org.kde.plasma.manage-inputmethod,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.plasma.keyboardindicator,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardlayout,org.kde.kupapplet,org.kde.plasma.printmanager,org.kde.kdeconnect,org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.kscreen
 scaleIconsToFit=true
 shownItems=org.kde.plasma.bluetooth
 
 [ScreenMapping]
 itemsOnDisabledScreens=
+screenMapping=desktop:/trash-can.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55,desktop:/network.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55,desktop:/user-home.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55,desktop:/computer.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55
