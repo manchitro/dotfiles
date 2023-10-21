@@ -1,5 +1,10 @@
 [EmbedSettings]
+embed-application/epub+zip=false
+embed-application/vnd.ms-excel.sheet.macroEnabled.12=false
 embed-application/x-desktop=false
+embed-application/x-ipynb+json=false
 embed-application/x-shellscript=false
 embed-audio/mpeg=false
 embed-text/csv=false
+embed-text/html=false
+embed-video/x-matroska=false

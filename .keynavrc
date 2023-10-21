@@ -56,7 +56,7 @@ ctrl+k warp,click 3
 
 # Zoom to the current window
 w windowzoom
-c cursorzoom 100 100
+c cursorzoom 25 25
 #ctrl+w windowzoom
 
 # Handy for holding ctrl while using keynav:

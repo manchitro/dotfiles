@@ -1,5 +1,8 @@
-fish_add_path /home/s/scripts -g
-fish_add_path /home/s/.local/bin/ -g
+fish_add_path ~/scripts -g
+fish_add_path ~/.local/bin/ -g
+
+set -U fish_user_paths /usr/local/cuda/include $fish_user_paths
+set -Ux LD_LIBRARY_PATH /home/s/Downloads/Compressed/TensorRT-8.6.1.6/lib
 
 if status is-interactive
 and not set -q TMUX
@@ -9,7 +12,7 @@ alias dots='/usr/bin/git --git-dir=/home/s/.dots/ --work-tree=/home/s'
 
 # tabtab source for jhipster package
 # uninstall by removing these lines or running `tabtab uninstall jhipster`
-[ -f /home/s/orion/proxy-us/source/proxy-voting/Client/node_modules/tabtab/.completions/jhipster.fish ]; and . /home/s/orion/proxy-us/source/proxy-voting/Client/node_modules/tabtab/.completions/jhipster.fish
+[ -f ~/orion/proxy-us/source/proxy-voting/Client/node_modules/tabtab/.completions/jhipster.fish ]; and . ~/orion/proxy-us/source/proxy-voting/Client/node_modules/tabtab/.completions/jhipster.fish
 
 
 #fish-command-timer variables
@@ -34,14 +37,14 @@ abbr -a nvidia-smi 'watch -n 1 nvidia-smi'
 abbr -a r 'ranger'
 abbr -a rh 'ranger ~/'
 abbr -a rr 'ranger /'
-abbr -a eap 'bash scripts/eap.sh'
+abbr -a eap 'bash ~/scripts/eap.sh'
 abbr -a enable 'sudo systemctl enable'
 abbr -a disable 'sudo systemctl disable'
 abbr -a start 'sudo systemctl start'
 abbr -a stop 'sudo systemctl stop'
 abbr -a v 'nvim'
 abbr -a rs 'ranger /media/s/Sub/'
-abbr -a rms 'ranger /home/s/Downloads/ms/'
+abbr -a rms 'ranger ~/Downloads/MS-materials/'
 abbr -a i 'sudo apt install'
 abbr -a isntall 'sudo apt install'
 abbr -a install 'sudo apt install'
@@ -54,21 +57,21 @@ abbr -a ru 'ranger ~/orion/proxy-us/source/proxy-voting/'
 abbr -a ri 'ranger ~/orion/proxy-international/source/proxy-voting/'
 abbr -a ys 'yarn start'
 abbr -a yb 'yarn build'
-abbr -a rcbis 'ranger /home/s/Downloads/ms/CVPR/repo/MARL-CBIS/resources/downloaded/cbis/jpeg/'
-abbr -a rmarl 'ranger /home/s/Downloads/ms/CVPR/repo/MARL-CBIS/'
-abbr -a marl '/home/s/Downloads/ms/CVPR/repo/MARL-CBIS/'
+abbr -a rcbis 'ranger ~/Downloads/ms/CVPR/repo/MARL-CBIS/resources/downloaded/cbis/jpeg/'
+abbr -a rmarl 'ranger ~/Downloads/ms/CVPR/repo/MARL-CBIS/'
+abbr -a marl '~/Downloads/ms/CVPR/repo/MARL-CBIS/'
 abbr -a gm 'git commit -m "'
 abbr -a gd 'git diff'
-abbr -a fan 'sudo python3 /home/s/repo/MSI-Dragon-Center-for-Linux/set_fan.py'
-abbr -a f0 'sudo python3 /home/s/repo/MSI-Dragon-Center-for-Linux/set_fan.py 100'
-abbr -a f1 'sudo python3 /home/s/repo/MSI-Dragon-Center-for-Linux/set_fan.py 110'
-abbr -a f2 'sudo python3 /home/s/repo/MSI-Dragon-Center-for-Linux/set_fan.py 120'
-abbr -a f3 'sudo python3 /home/s/repo/MSI-Dragon-Center-for-Linux/set_fan.py 130'
-abbr -a f4 'sudo python3 /home/s/repo/MSI-Dragon-Center-for-Linux/set_fan.py 140'
-abbr -a f5 'sudo python3 /home/s/repo/MSI-Dragon-Center-for-Linux/set_fan.py 150'
-abbr -a f9 'sudo python3 /home/s/repo/MSI-Dragon-Center-for-Linux/set_fan.py 90'
-abbr -a f8 'sudo python3 /home/s/repo/MSI-Dragon-Center-for-Linux/set_fan.py 80'
-abbr -a f7 'sudo python3 /home/s/repo/MSI-Dragon-Center-for-Linux/set_fan.py 70'
+abbr -a fan 'sudo python3 ~/repo/MSI-Dragon-Center-for-Linux/set_fan.py'
+abbr -a f0 'sudo python3 ~/repo/MSI-Dragon-Center-for-Linux/set_fan.py 100'
+abbr -a f1 'sudo python3 ~/repo/MSI-Dragon-Center-for-Linux/set_fan.py 110'
+abbr -a f2 'sudo python3 ~/repo/MSI-Dragon-Center-for-Linux/set_fan.py 120'
+abbr -a f3 'sudo python3 ~/repo/MSI-Dragon-Center-for-Linux/set_fan.py 130'
+abbr -a f4 'sudo python3 ~/repo/MSI-Dragon-Center-for-Linux/set_fan.py 140'
+abbr -a f5 'sudo python3 ~/repo/MSI-Dragon-Center-for-Linux/set_fan.py 150'
+abbr -a f9 'sudo python3 ~/repo/MSI-Dragon-Center-for-Linux/set_fan.py 90'
+abbr -a f8 'sudo python3 ~/repo/MSI-Dragon-Center-for-Linux/set_fan.py 80'
+abbr -a f7 'sudo python3 ~/repo/MSI-Dragon-Center-for-Linux/set_fan.py 70'
 abbr -a rl 'ranger ~/.local'
 abbr -a ga 'git add .'
 abbr -a tv 'sudo teamviewer --daemon start'
@@ -78,8 +81,8 @@ abbr -a update 'sudo apt update'
 
 ## >>> conda initialize >>>
 ## !! Contents within this block are managed by 'conda init' !!
-#if test -f /home/s/Downloads/ms/CVPR/miniconda3/bin/conda
-#    eval /home/s/Downloads/ms/CVPR/miniconda3/bin/conda "shell.fish" "hook" $argv | source
+#if test -f ~/Downloads/ms/CVPR/miniconda3/bin/conda
+#    eval ~/Downloads/ms/CVPR/miniconda3/bin/conda "shell.fish" "hook" $argv | source
 #end
 #mkdir -p $CONDA_PREFIX/etc/conda/activate.d
 #echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/' > $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh

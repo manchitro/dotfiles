@@ -59,6 +59,10 @@ _launch=Meta+Shift+C,none,/home/s/scripts/confedit.sh code
 _k_friendly_name=confedit.sh nvim
 _launch=Meta+C,none,/home/s/scripts/confedit.sh nvim
 
+[firefox-esr.desktop]
+_k_friendly_name=Firefox ESR
+_launch=none,none,Firefox ESR
+
 [flameshot.desktop]
 _k_friendly_name=flameshot gui
 _launch=Print,none,flameshot gui
@@ -66,7 +70,7 @@ _launch=Print,none,flameshot gui
 [google-chrome.desktop]
 _k_friendly_name=Chrome Work
 _launch=Meta+B,none,Chrome Work
-new-private-window=Meta+Alt+B,none,New Incognito Window
+new-private-window=none,none,New Incognito Window
 new-window=none,none,New Window
 
 [kaccess]
@@ -98,7 +102,7 @@ decrease_microphone_volume=Microphone Volume Down,Microphone Volume Down,Decreas
 decrease_volume=Volume Down\tMeta+Ctrl+Alt+J,Volume Down,Decrease Volume
 increase_microphone_volume=Microphone Volume Up,Microphone Volume Up,Increase Microphone Volume
 increase_volume=Meta+Ctrl+Alt+K\tVolume Up,Volume Up,Increase Volume
-mic_mute=Microphone Mute\tMeta+Volume Mute,Microphone Mute\tMeta+Volume Mute,Mute Microphone
+mic_mute=Meta+Ctrl+Alt+M\tMicrophone Mute\tMeta+Volume Mute,Microphone Mute\tMeta+Volume Mute,Mute Microphone
 mute=Volume Mute,Volume Mute,Mute
 
 [knotes]
@@ -280,11 +284,11 @@ view_zoom_out=Meta+-,Meta+-,Zoom Out
 
 [mediacontrol]
 _k_friendly_name=Media Controller
-mediavolumedown=none,,Media volume down
-mediavolumeup=none,,Media volume up
+mediavolumedown=none,none,Media volume down
+mediavolumeup=none,none,Media volume up
 nextmedia=Media Next,Media Next,Media playback next
 pausemedia=Media Pause,Media Pause,Pause media playback
-playmedia=none,,Play media playback
+playmedia=none,none,Play media playback
 playpausemedia=Media Play,Media Play,Play/Pause media playback
 previousmedia=Media Previous,Media Previous,Media playback previous
 stopmedia=Media Stop,Media Stop,Stop media playback

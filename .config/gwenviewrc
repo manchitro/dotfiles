@@ -26,12 +26,18 @@ File3[$e]=$HOME/Downloads/papers/MARL-CBIS IEEE/figures/annotation.jpg
 File4[$e]=$HOME/Downloads/MLNN/datasets/Malignant Lymphoma Classification/MCL/sj-05-901-R1_010.tif
 File5[$e]=$HOME/Downloads/MLNN/datasets/Malignant Lymphoma Classification/MCL/sj-05-901-R1_009.tif
 File6[$e]=$HOME/Downloads/MLNN/datasets/Malignant Lymphoma Classification/FL/sj-05-894-R3_014.tif
+File7[$e]=$HOME/Downloads/priya CV.psd
+File8[$e]=$HOME/repo/cbis-marl/out/original_exp_out/animated_gif.gif
+File9[$e]=$HOME/Downloads/steps.gif
 Name1[$e]=Sundarbans_web_cropped.jpg
 Name2[$e]=kisspng-windows-xp-logo-microsoft-windows-1-0-windows-logos-5ab719f60d8a52.0845334915219491740555.png
 Name3[$e]=annotation.jpg
 Name4[$e]=sj-05-901-R1_010.tif
 Name5[$e]=sj-05-901-R1_009.tif
 Name6[$e]=sj-05-894-R3_014.tif
+Name7[$e]=priya CV.psd
+Name8[$e]=animated_gif.gif
+Name9[$e]=steps.gif
 
 [SideBar]
 InformationSplitterSizes=218,257

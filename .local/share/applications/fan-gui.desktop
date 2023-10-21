@@ -1,0 +1,5 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Fan Control GUI
+Exec=sudo python3 ~/repo/MSI-Dragon-Center-for-Linux/GUI-MSI-DC-L.py

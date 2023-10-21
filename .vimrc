@@ -4,7 +4,9 @@ set termguicolors
 imap kj <Esc>
 
 "tab to 4 spaces
-set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
+set tabstop=4       " Number of spaces a <Tab> in the file counts for
+set shiftwidth=4    " Number of spaces to use for each level of indentation
+set expandtab       " Convert tabs to spaces
 
 "copy from and to clipboard
 vnoremap <C-c> "*y :let @+=@*<CR>

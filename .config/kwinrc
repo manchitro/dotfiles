@@ -29,14 +29,13 @@ Duration=200
 
 [Plugins]
 ShimmerEnabled=true
-blurEnabled=true
+blurEnabled=false
 contrastEnabled=true
 desktopchangeosdEnabled=true
 forceblurEnabled=false
 kwin4_effect_dimscreenEnabled=true
 kwin4_effect_minimizescale_outexpoEnabled=true
 kwin4_effect_squashEnabled=false
-kwin4_effect_translucencyEnabled=true
 last-Used-DesktopEnabled=true
 mousemarkEnabled=true
 tilegapsEnabled=false
@@ -69,7 +68,7 @@ panelRight=true
 panelTop=true
 
 [TabBox]
-LayoutName=ClassicKde
+LayoutName=MediumRoundedDark
 
 [Tiling]
 padding=4

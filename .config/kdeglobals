@@ -135,10 +135,10 @@ Show Inline Previews=true
 Show Preview=false
 Show Speedbar=true
 Show hidden files=true
-Sort by=Name
+Sort by=Date
 Sort directories first=true
 Sort hidden files last=false
-Sort reversed=false
+Sort reversed=true
 Speedbar Width=175
 View Style=DetailTree
 
@@ -147,7 +147,7 @@ ScaleFactor=1.125
 ScreenScaleFactors=eDP-1=1.125;DP-1=1.125;HDMI-1=1.125;HDMI-2=1.125;
 
 [KShortcutsDialog Settings]
-Dialog Size=936,543
+Dialog Size=1129,543
 
 [PreviewSettings]
 MaximumRemoteSize=0

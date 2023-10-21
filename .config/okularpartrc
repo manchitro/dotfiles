@@ -7,9 +7,6 @@ RenderMode=InvertLumaSymmetric
 [General]
 ttsVoice=English (America, New York City)+grandma
 
-[Main View]
-ShowLeftPanel=false
-
 [PageView]
 MouseMode=TextSelect
 

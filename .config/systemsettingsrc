@@ -4,17 +4,17 @@ Recent URLs[$e]=file:$HOME/,file:$HOME/wallpapers/,file:$HOME/Downloads/,file:$H
 detailViewIconSize=16
 
 [KPropertiesDialog]
-1707x960 screen: Height=569
-1707x960 screen: Width=427
+1707x960 screen: Height=521
+1707x960 screen: Width=467
 
 [Main]
 ActiveView=systemsettings_icon_mode
 
 [MainWindow]
-1707x960 screen: Height=885
-1707x960 screen: Width=846
+1707x960 screen: Height=770
+1707x960 screen: Width=1131
 1707x960 screen: Window-Maximized=true
-1707x960 screen: XPosition=4
+1707x960 screen: XPosition=-440
 1707x960 screen: YPosition=36
 1920x1080 screen: Height=840
 1920x1080 screen: Width=1224

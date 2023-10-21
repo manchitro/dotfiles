@@ -18,7 +18,7 @@ detailViewIconSize=16
 1920x1080 screen: Width=505
 
 [PlasmaTransientsConfig]
-PreloadWeight=18
+PreloadWeight=0
 
 [PlasmaViews][Panel 117]
 floating=0

@@ -2,15 +2,15 @@
 FullScreen=false
 
 [KFileDialog Settings]
-Recent Files[$e]=Cambridge_IELTS_13_Academic.pdf,file:$HOME/IELTS/CAMBRIDGE_IELTS_ACADEMIC_13/Cambridge_IELTS_13_Academic.pdf
-Recent URLs[$e]=file:$HOME/IELTS/CAMBRIDGE_IELTS_ACADEMIC_13/
+Recent Files[$e]=Cambridge_IELTS_13_Academic.pdf,file:$HOME/Downloads/papers/MARL-CBIS IEEE/MARL-CBIS_IEEE_by_Md_Sazid_Uddin.pdf,file:$HOME/Documents/academic cv samples/resume-1.pdf,file:$HOME/IELTS/CAMBRIDGE_IELTS_ACADEMIC_13/Cambridge_IELTS_13_Academic.pdf
+Recent URLs[$e]=file:$HOME/IELTS/CAMBRIDGE_IELTS_ACADEMIC_13/,file:$HOME/Documents/academic cv samples/,file:$HOME/Downloads/papers/MARL-CBIS IEEE/
 detailViewIconSize=16
 
 [MainWindow]
-1707x960 screen: Height=886
-1707x960 screen: Width=846
+1707x960 screen: Height=890
+1707x960 screen: Width=1707
 1707x960 screen: Window-Maximized=true
-1707x960 screen: XPosition=430
+1707x960 screen: XPosition=0
 1707x960 screen: YPosition=36
 RestorePositionForNextInstance=false
 State=AAAA/wAAAAD9AAAAAAAABqsAAAM0AAAABAAAAAQAAAAIAAAACPwAAAADAAAAAQAAAAEAAAAsAHEAdQBpAGMAawBBAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHICAAAAAP////8AAAAAAAAAAAAAAAIAAAABAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAAAIAAAABAAAAIgBhAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAA==
@@ -18,26 +18,26 @@ ToolBarsMovable=Disabled
 eDP-1=eDP-1
 
 [Recent Files]
-File1[$e]=$HOME/Notes/MastersApplication/GeorgeMason/AY23-24_Tuition_and_Fee_Rates_Annual.pdf
-File10[$e]=$HOME/IELTS/ielts-writing-task-2-science-2020.pdf
-File2[$e]=$HOME/IELTS/CAMBRIDGE_IELTS_ACADEMIC_15/Cambridge_IELTS_15_Academic.pdf
-File3[$e]=$HOME/orion/NPD-474/reports/Tabulation_fund_and_security_2023-09-03-090537518.pdf
-File4[$e]=$HOME/orion/NPD-474/reports/Voting Report 09.04.2023.pdf
-File5[$e]=$HOME/orion/NPD-474/reports/Tabulation by Shareholder 09.04.2023.pdf
-File6[$e]=$HOME/Documents/PriyaPassport.pdf
-File7[$e]=$HOME/orion/NPD-474/reports/Serie A-876        Voting Progress 09.05.2023.pdf
-File8[$e]=$HOME/IELTS/ielts_writing_band_descriptors.pdf
-File9[$e]=$HOME/IELTS/CAMBRIDGE_IELTS_ACADEMIC_13/Cambridge_IELTS_13_Academic.pdf
-Name1[$e]=AY23-24_Tuition_and_Fee_Rates_Annual.pdf
-Name10[$e]=ielts-writing-task-2-science-2020.pdf
-Name2[$e]=Cambridge_IELTS_15_Academic.pdf
-Name3[$e]=Tabulation_fund_and_security_2023-09-03-090537518.pdf
-Name4[$e]=Voting Report 09.04.2023.pdf
-Name5[$e]=Tabulation by Shareholder 09.04.2023.pdf
-Name6[$e]=PriyaPassport.pdf
-Name7[$e]=Serie A-876        Voting Progress 09.05.2023.pdf
-Name8[$e]=ielts_writing_band_descriptors.pdf
-Name9[$e]=Cambridge_IELTS_13_Academic.pdf
+File1[$e]=$HOME/Downloads/MS-materials/NLP/NLP Link for materials.pdf
+File10[$e]=$HOME/Notes/Thesis/Segmentation Lit/11-Real-Time-Multiple-Guava-Leaf-Disease-Detection-from-a-Single-Leaf-Using-Hybrid-Deep-Learning-Technique.pdf
+File2[$e]=$HOME/Downloads/MS-materials/NLP/collected/icslp-red.pdf
+File3[$e]=$HOME/Downloads/MS-materials/NLP/Collected Papers/2210.00465.pdf
+File4[$e]=$HOME/Notes/Thesis/Segmentation Lit/FruitDet_agronomy-11-02440-v2.pdf
+File5[$e]=$HOME/Downloads/MS-materials/NLP/tasks/23-92896-1_naive-bayes.pdf
+File6[$e]=$HOME/23-92896-1_naive-bayes.pdf
+File7[$e]=$HOME/Downloads/MS-materials/AOS/Abraham-Silberschatz-Operating-System-Concepts-10th-2018.pdf
+File8[$e]=$HOME/Notes/Thesis/Segmentation Lit/12-Rapid-Segmentation-and-Diagnosis-of-Breast-Tumor.pdf
+File9[$e]=$HOME/Notes/Thesis/Segmentation Lit/weldon.pdf
+Name1[$e]=NLP Link for materials.pdf
+Name10[$e]=11-Real-Time-Multiple-Guava-Leaf-Disease-Detection-from-a-Single-Leaf-Using-Hybrid-Deep-Learning-Technique.pdf
+Name2[$e]=icslp-red.pdf
+Name3[$e]=2210.00465.pdf
+Name4[$e]=FruitDet_agronomy-11-02440-v2.pdf
+Name5[$e]=23-92896-1_naive-bayes.pdf
+Name6[$e]=23-92896-1_naive-bayes.pdf
+Name7[$e]=Abraham-Silberschatz-Operating-System-Concepts-10th-2018.pdf
+Name8[$e]=12-Rapid-Segmentation-and-Diagnosis-of-Breast-Tumor.pdf
+Name9[$e]=weldon.pdf
 
 [UiSettings]
 ColorScheme=Glassy

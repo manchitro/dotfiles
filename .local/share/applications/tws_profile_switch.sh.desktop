@@ -1,6 +1,6 @@
 [Desktop Entry]
-Exec=/home/s/scripts/tws_profile_switch.sh
-Name=/home/s/scripts/tws_profile_switch.sh
+Exec=/home/s/scripts/capsule_profile_switch.sh
+Name=/home/s/scripts/capsule_profile_switch.sh
 NoDisplay=true
 StartupNotify=false
 Type=Application

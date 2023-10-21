@@ -1,41 +1,19 @@
 #!/bin/bash
 
-# Bluetooth device address (replace with your device's address)
-device_address="84:AC:60:10:E4:DE"
-
-# Function to show a Zenity progress dialog
-show_progress() {
-    (
-        echo "10"
-        echo "# Performing Bluetooth operation..."
-        
-        # Check if the device is currently connected
-        connected=$(bluetoothctl info $device_address | grep "Connected: yes")
-
-        if [ -n "$connected" ]; then
-            # If connected, disconnect
-            bluetoothctl <<EOF
-            disconnect $device_address
-            exit
-EOF
-            echo "50"
-            echo "# Disconnecting..."
-        else
-            # If not connected, connect
-            bluetoothctl <<EOF
-            connect $device_address
-            exit
-EOF
-            echo "50"
-            echo "# Connecting..."
-        fi
-
-        sleep 2
-        echo "100"
-    ) | zenity --progress --pulsate --auto-close --width=400 --title="Capsule On/Off"
+# Function to show a pulsating Zenity popup
+show_pulsating_popup() {
+  (zenity --progress --window-icon="info" --text=$1 --title="Capsule connections" --pulsate --width=400 --timeout=3) &
+  pulsate_pid=$!
 }
 
-# Show the progress dialog
-show_progress &
+# Bluetooth device address (replace with your device's address)
+device_address="84:AC:60:10:E4:DE"
+if bluetoothctl info $device_address | grep "Connected: yes"; then
+    show_pulsating_popup "Disconnecting..."
+    bluetoothctl disconnect $device_address
+else
+    show_pulsating_popup "Connecting..."
+    bluetoothctl connect $device_address
+fi
 
 exit 0

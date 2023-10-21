@@ -6,6 +6,9 @@ wheel:Vertical;NoModifier=org.kde.switchdesktop
 [ActionPlugins][1]
 RightButton;NoModifier=org.kde.contextmenu
 
+[AppletGlobals][org.kde.plasma.comic]
+lastUpdate=2023,9,14,14,2,47.741
+
 [Containments][116]
 ItemGeometries-1920x1080=
 ItemGeometriesHorizontal=
@@ -169,7 +172,7 @@ plugin=org.kde.plasma.kickoff
 [Containments][117][Applets][157][Configuration]
 PreloadWeight=100
 popupHeight=574
-popupWidth=745
+popupWidth=753
 
 [Containments][117][Applets][157][Configuration][ConfigDialog]
 DialogHeight=660
@@ -243,7 +246,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][123][Applets][127][Configuration]
-PreloadWeight=85
+PreloadWeight=95
 
 [Containments][123][Applets][128]
 immutability=1
@@ -252,6 +255,9 @@ plugin=org.kde.plasma.keyboardindicator
 [Containments][123][Applets][129]
 immutability=1
 plugin=org.kde.plasma.devicenotifier
+
+[Containments][123][Applets][129][Configuration]
+PreloadWeight=100
 
 [Containments][123][Applets][130]
 immutability=1
@@ -287,7 +293,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][123][Applets][137][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][123][Applets][138]
 immutability=1
@@ -333,4 +339,4 @@ shownItems=org.kde.plasma.bluetooth
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/trash-can.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55,desktop:/network.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55,desktop:/user-home.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55,desktop:/computer.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55
+screenMapping=desktop:/user-home.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55,desktop:/network.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55,desktop:/trash-can.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55,desktop:/computer.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55

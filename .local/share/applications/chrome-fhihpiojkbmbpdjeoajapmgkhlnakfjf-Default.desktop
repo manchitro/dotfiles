@@ -4,6 +4,6 @@ Version=1.0
 Terminal=false
 Type=Application
 Name=Sheets
-Exec=/opt/google/chrome/google-chrome --user-data-dir=/home/s/.chrome-school --profile-directory=Default --app-id=fhihpiojkbmbpdjeoajapmgkhlnakfjf
+Exec=/opt/google/chrome/google-chrome --profile-directory=Default --app-id=fhihpiojkbmbpdjeoajapmgkhlnakfjf
 Icon=chrome-fhihpiojkbmbpdjeoajapmgkhlnakfjf-Default
 StartupWMClass=crx_fhihpiojkbmbpdjeoajapmgkhlnakfjf

@@ -1,9 +1,18 @@
-#!/usr/bin/env bash
+#!/bin/bash
+
+show_pulsating_popup() {
+  (zenity --progress --window-icon="info" --text=$1 --title="ProtonVPN" --pulsate --width=400) &
+  pulsate_pid=$!
+}
 
 if protonvpn-cli status | grep -q 'Country'; then
-	protonvpn-cli d
+  show_pulsating_popup "Disconnecting..."
+  protonvpn-cli disconnect
+  kill -KILL $pulsate_pid
 else
-	protonvpn-cli r
+  show_pulsating_popup "Reconnecting..."
+  protonvpn-cli reconnect
+  kill -KILL $pulsate_pid
 fi
 
-exit 1;
+exit 0
