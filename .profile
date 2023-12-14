@@ -25,3 +25,9 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
+if [ -z "$TMUX" ]; then
+    tmux new-session -d -s dropdown
+    tmux attach -t dropdown
+fi
+

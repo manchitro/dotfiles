@@ -1,0 +1,2 @@
+[General]
+commands="@ByteArray({\"_ab9d4802_4607_4334_8270_a567f293a7c6_\":{\"command\":\"ip addr show | grep -oP 'inet \\\\K(192\\\\.168\\\\.\\\\d+\\\\.\\\\d+|10\\\\.\\\\d+\\\\.\\\\d+\\\\.\\\\d+|172\\\\.(1[6-9]|2[0-9]|3[0-1])\\\\.\\\\d+\\\\.\\\\d+)' | xclip -selection clipboard\",\"name\":\"IP Add\"}})"

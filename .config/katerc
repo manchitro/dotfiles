@@ -128,6 +128,7 @@ Search History=Ping,ping ,ping,update-issuer-user,REST request to update a user 
 1707x960 screen: Height=885
 1707x960 screen: Width=391
 1707x960 screen: Window-Maximized=true
+1920x1080 screen: Window-Maximized=true
 
 [filetree]
 editShade=31,81,106

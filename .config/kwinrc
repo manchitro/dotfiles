@@ -73,8 +73,14 @@ LayoutName=MediumRoundedDark
 [Tiling]
 padding=4
 
+[Tiling][174ce882-9422-5015-ab64-fe4f599a66cb]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][213a9620-187e-58a6-b80b-85d8fb95dfce]
 tiles={"layoutDirection":"horizontal","tiles":[{"layoutDirection":"vertical","tiles":[{"height":0.5},{"height":0.5}],"width":0.4},{"width":0.6}]}
+
+[Tiling][62261753-29cb-53cf-accd-e89748ddc013]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][6dbfdb1c-0d23-5013-9b2c-a432872102bb]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}

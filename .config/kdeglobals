@@ -94,8 +94,8 @@ ForegroundPositive=163,190,140
 ForegroundVisited=143,188,187
 
 [DirSelect Dialog]
-DirSelectDialog Size=1076,640
-History Items[$e]=file:$HOME/screenshots
+DirSelectDialog Size=851,588
+History Items[$e]=mtp:/M2012K11AG/Internal shared storage,file:$HOME,file:$HOME/screenshots
 
 [General]
 BrowserApplication=google-chrome.desktop
@@ -143,8 +143,7 @@ Speedbar Width=175
 View Style=DetailTree
 
 [KScreen]
-ScaleFactor=1.125
-ScreenScaleFactors=eDP-1=1.125;DP-1=1.125;HDMI-1=1.125;HDMI-2=1.125;
+ScreenScaleFactors=eDP-1=1;DP-1=1;HDMI-1=1;HDMI-2=1;
 
 [KShortcutsDialog Settings]
 Dialog Size=1129,543

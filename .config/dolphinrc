@@ -6,6 +6,9 @@ update_info=dolphin_detailsmodesettings.upd:rename-leading-padding
 [ContextMenu]
 ShowCopyMoveMenu=true
 
+[CreateDialog]
+LastMimeType=application/zip
+
 [DetailsMode]
 PreviewSize=64
 SidePadding=0
@@ -13,7 +16,9 @@ SidePadding=0
 [ExtractDialog]
 1707x960 screen: Height=582
 1707x960 screen: Width=1138
-DirHistory[$e]=$HOME/Cauliflower Datasets/,$HOME/repo/Sazid - resume (jakes)/,$HOME/repo/cbis-marl/
+1920x1080 screen: Height=582
+1920x1080 screen: Width=1280
+DirHistory[$e]=$HOME/Downloads/Datasets/,$HOME/Cauliflower Datasets/,$HOME/repo/Sazid - resume (jakes)/,$HOME/repo/cbis-marl/
 
 [General]
 GlobalViewProps=false
@@ -25,20 +30,31 @@ PreviewSize=240
 
 [KFileDialog Settings]
 Places Icons Auto-resize=false
-Places Icons Static Size=22
-Recent Files[$e]=file:$HOME
-Recent URLs[$e]=file:$HOME/repo/cbis-marl/,file:$HOME/repo/Sazid - resume (jakes)/,file:$HOME/Cauliflower Datasets/
+Places Icons Static Size=32
+Recent Files[$e]=file:$HOME,file:$HOME/repo/W-Net-master
+Recent URLs[$e]=file:$HOME/repo/cbis-marl/,file:$HOME/repo/Sazid - resume (jakes)/,file:$HOME/Cauliflower Datasets/,file:$HOME/Downloads/Datasets/
 detailViewIconSize=16
 
 [KPropertiesDialog]
 1707x960 screen: Height=457
 1707x960 screen: Width=469
+1920x1080 screen: Height=622
+1920x1080 screen: Width=513
 
 [MainWindow]
 ToolBarsMovable=Disabled
+
+[PlacesPanel]
+IconSize=32
 
 [PreviewSettings]
 Plugins=svgthumbnail,windowsexethumbnail,imagethumbnail,fontthumbnail,appimagethumbnail,cursorthumbnail,comicbookthumbnail,windowsimagethumbnail,opendocumentthumbnail,audiothumbnail,kraorathumbnail,djvuthumbnail,exrthumbnail,jpegthumbnail,ebookthumbnail,gsthumbnail,webarchivethumbnail,ffmpegthumbs,blenderthumbnail,mobithumbnail,directorythumbnail,rawthumbnail
 
 [Search]
 What=Content
+
+[kuick-copy]
+Paths[$e]=$HOME/
+
+[kuick-move]
+Paths[$e]=mtp:/M2012K11AG/Internal shared storage

@@ -26,9 +26,9 @@ DialogWidth=960
 
 [Containments][116][General]
 ToolBoxButtonState=topcenter
-ToolBoxButtonX=465
-alignment=1
-arrangement=1
+ToolBoxButtonX=383
+iconSize=2
+previews=false
 
 [Containments][116][Wallpaper][org.kde.image][General]
 Image=/home/s/wallpapers/Sundarbans_web_cropped.jpg
@@ -153,18 +153,6 @@ plugin=org.kde.plasma.panelspacer
 immutability=1
 plugin=org.kde.plasma.panelspacer
 
-[Containments][117][Applets][156]
-immutability=1
-plugin=org.kde.plasma.icontasks
-
-[Containments][117][Applets][156][Configuration][ConfigDialog]
-DialogHeight=720
-DialogWidth=960
-
-[Containments][117][Applets][156][Configuration][General]
-groupingStrategy=0
-launchers=
-
 [Containments][117][Applets][157]
 immutability=1
 plugin=org.kde.plasma.kickoff
@@ -209,12 +197,24 @@ timeLeftFormat=69m
 immutability=1
 plugin=org.kde.plasma.marginsseparator
 
+[Containments][117][Applets][168]
+immutability=1
+plugin=org.kde.plasma.taskmanager
+
+[Containments][117][Applets][168][Configuration][ConfigDialog]
+DialogHeight=720
+DialogWidth=960
+
+[Containments][117][Applets][168][Configuration][General]
+groupingStrategy=0
+launchers=
+
 [Containments][117][ConfigDialog]
-DialogHeight=93
+DialogHeight=91
 DialogWidth=1920
 
 [Containments][117][General]
-AppletOrder=157;142;147;144;148;152;156;153;149;161;146;121;122;165;162;145;143;136
+AppletOrder=157;142;147;144;148;152;168;153;149;161;146;121;122;165;162;145;143;136
 
 [Containments][117][Shortcuts]
 global=
@@ -246,11 +246,14 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][123][Applets][127][Configuration]
-PreloadWeight=95
+PreloadWeight=100
 
 [Containments][123][Applets][128]
 immutability=1
 plugin=org.kde.plasma.keyboardindicator
+
+[Containments][123][Applets][128][Configuration]
+PreloadWeight=55
 
 [Containments][123][Applets][129]
 immutability=1
@@ -258,6 +261,10 @@ plugin=org.kde.plasma.devicenotifier
 
 [Containments][123][Applets][129][Configuration]
 PreloadWeight=100
+
+[Containments][123][Applets][129][Configuration][General]
+allDevices=true
+removableDevices=false
 
 [Containments][123][Applets][130]
 immutability=1
@@ -288,6 +295,9 @@ migrated=true
 immutability=1
 plugin=org.kde.kscreen
 
+[Containments][123][Applets][134][Configuration]
+PreloadWeight=60
+
 [Containments][123][Applets][137]
 immutability=1
 plugin=org.kde.plasma.mediacontroller
@@ -300,14 +310,14 @@ immutability=1
 plugin=org.kde.plasma.nightcolorcontrol
 
 [Containments][123][Applets][138][Configuration]
-PreloadWeight=42
+PreloadWeight=18
 
 [Containments][123][Applets][139]
 immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][123][Applets][139][Configuration]
-PreloadWeight=100
+PreloadWeight=92
 
 [Containments][123][Applets][139][Configuration][General]
 showPercentage=true
@@ -337,6 +347,15 @@ knownItems=org.kde.plasma.nightcolorcontrol,org.kde.plasma.notifications,org.kde
 scaleIconsToFit=true
 shownItems=org.kde.plasma.bluetooth
 
+[Containments][166]
+activityId=9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55
+formfactor=0
+immutability=1
+lastScreen=1
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/user-home.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55,desktop:/network.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55,desktop:/trash-can.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55,desktop:/computer.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55
+screenMapping=desktop:/computer.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55,desktop:/network.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55,desktop:/trash-can.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55,desktop:/user-home.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55

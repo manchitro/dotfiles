@@ -1,5 +1,5 @@
 function fish_greeting
     #colorscript random
-    neofetch
+    # neofetch
 end
 

@@ -7,6 +7,9 @@ RenderMode=InvertLumaSymmetric
 [General]
 ttsVoice=English (America, New York City)+grandma
 
+[Main View]
+SplitterSizes=361,1552
+
 [PageView]
 MouseMode=TextSelect
 

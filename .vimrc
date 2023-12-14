@@ -7,6 +7,7 @@ imap kj <Esc>
 set tabstop=4       " Number of spaces a <Tab> in the file counts for
 set shiftwidth=4    " Number of spaces to use for each level of indentation
 set expandtab       " Convert tabs to spaces
+set background=dark
 
 "copy from and to clipboard
 vnoremap <C-c> "*y :let @+=@*<CR>

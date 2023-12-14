@@ -77,6 +77,11 @@ abbr -a ga 'git add .'
 abbr -a tv 'sudo teamviewer --daemon start'
 abbr -a tvs 'sudo teamviewer --daemon stop'
 abbr -a update 'sudo apt update'
+abbr -a logout 'qdbus org.kde.Shutdown /Shutdown logout'
+abbr -a reboot 'qdbus org.kde.Shutdown /Shutdown logoutAndReboot'
+abbr -a shutdown 'qdbus org.kde.Shutdown /Shutdown logoutAndShutdown'
+abbr -a cool 'sudo isw -b on'
+abbr -a hot 'sudo isw -b off'
 #Abbrevs end
 
 ## >>> conda initialize >>>

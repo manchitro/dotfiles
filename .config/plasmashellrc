@@ -14,8 +14,8 @@ Recent URLs[$e]=file:$HOME/wallpapers/,file:$HOME/Pictures/,file:$HOME/,file:$HO
 detailViewIconSize=16
 
 [KPropertiesDialog]
-1920x1080 screen: Height=544
-1920x1080 screen: Width=505
+1920x1080 screen: Height=521
+1920x1080 screen: Width=489
 
 [PlasmaTransientsConfig]
 PreloadWeight=0

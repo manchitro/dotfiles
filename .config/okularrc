@@ -7,37 +7,45 @@ Recent URLs[$e]=file:$HOME/IELTS/CAMBRIDGE_IELTS_ACADEMIC_13/,file:$HOME/Documen
 detailViewIconSize=16
 
 [MainWindow]
-1707x960 screen: Height=890
-1707x960 screen: Width=1707
+1707x960 screen: Height=577
+1707x960 screen: Width=1131
 1707x960 screen: Window-Maximized=true
-1707x960 screen: XPosition=0
+1707x960 screen: XPosition=4
 1707x960 screen: YPosition=36
-RestorePositionForNextInstance=false
-State=AAAA/wAAAAD9AAAAAAAABqsAAAM0AAAABAAAAAQAAAAIAAAACPwAAAADAAAAAQAAAAEAAAAsAHEAdQBpAGMAawBBAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHICAAAAAP////8AAAAAAAAAAAAAAAIAAAABAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAAAIAAAABAAAAIgBhAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAA==
+1920x1080 screen: Height=1006
+1920x1080 screen: Width=1920
+1920x1080 screen: Window-Maximized=true
+1920x1080 screen: XPosition=0
+1920x1080 screen: YPosition=36
+2 screens: Window-Maximized=true
+State=AAAA/wAAAAD9AAAAAAAAB4AAAAOoAAAABAAAAAQAAAAIAAAACPwAAAADAAAAAQAAAAEAAAAsAHEAdQBpAGMAawBBAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHICAAAAAP////8AAAAAAAAAAAAAAAIAAAABAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAAAIAAAABAAAAIgBhAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAA==
 ToolBarsMovable=Disabled
 eDP-1=eDP-1
 
 [Recent Files]
-File1[$e]=$HOME/Downloads/MS-materials/NLP/NLP Link for materials.pdf
-File10[$e]=$HOME/Notes/Thesis/Segmentation Lit/11-Real-Time-Multiple-Guava-Leaf-Disease-Detection-from-a-Single-Leaf-Using-Hybrid-Deep-Learning-Technique.pdf
-File2[$e]=$HOME/Downloads/MS-materials/NLP/collected/icslp-red.pdf
-File3[$e]=$HOME/Downloads/MS-materials/NLP/Collected Papers/2210.00465.pdf
-File4[$e]=$HOME/Notes/Thesis/Segmentation Lit/FruitDet_agronomy-11-02440-v2.pdf
-File5[$e]=$HOME/Downloads/MS-materials/NLP/tasks/23-92896-1_naive-bayes.pdf
-File6[$e]=$HOME/23-92896-1_naive-bayes.pdf
-File7[$e]=$HOME/Downloads/MS-materials/AOS/Abraham-Silberschatz-Operating-System-Concepts-10th-2018.pdf
-File8[$e]=$HOME/Notes/Thesis/Segmentation Lit/12-Rapid-Segmentation-and-Diagnosis-of-Breast-Tumor.pdf
-File9[$e]=$HOME/Notes/Thesis/Segmentation Lit/weldon.pdf
-Name1[$e]=NLP Link for materials.pdf
-Name10[$e]=11-Real-Time-Multiple-Guava-Leaf-Disease-Detection-from-a-Single-Leaf-Using-Hybrid-Deep-Learning-Technique.pdf
-Name2[$e]=icslp-red.pdf
-Name3[$e]=2210.00465.pdf
-Name4[$e]=FruitDet_agronomy-11-02440-v2.pdf
-Name5[$e]=23-92896-1_naive-bayes.pdf
-Name6[$e]=23-92896-1_naive-bayes.pdf
-Name7[$e]=Abraham-Silberschatz-Operating-System-Concepts-10th-2018.pdf
-Name8[$e]=12-Rapid-Segmentation-and-Diagnosis-of-Breast-Tumor.pdf
-Name9[$e]=weldon.pdf
+File1[$e]=$HOME/Downloads/MS-materials/AOS/OneDrive_1_11-12-2023/Ch6 - Synchronization.pdf
+File10[$e]=$HOME/orion/Orion Informatics Ltd visiting cards..pdf
+File2[$e]=$HOME/Downloads/MS-materials/AOS/OneDrive_1_11-12-2023/31.Semaphore.pdf
+File3[$e]=$HOME/Downloads/MS-materials/AOS/OneDrive_1_11-12-2023/08.Scheduling_The_Multi-level_Feedback_queue.pdf
+File4[$e]=$HOME/Downloads/MS-materials/AOS/Ch5 - CPU Scheduling.pdf
+File5[$e]=$HOME/Downloads/MS-materials/AOS/OneDrive_1_11-12-2023/07.Scheduling_Introduction.pdf
+File6[$e]=$HOME/Downloads/MS-materials/AOS/OneDrive_1_11-12-2023/706950058.pdf
+File7[$e]=$HOME/Downloads/MS-materials/NLP/final project/23-92896-1_and_23-92891-1_Proposal.pdf
+File8[$e]=$HOME/Books/CS/Valliappa Lakshmanan, Martin Görner, Ryan Gillard - Practical Machine Learning for Computer Vision_ End-to-End Machine Learning for Images-O'Reilly Media (2021).pdf
+File9[$e]=$HOME/Downloads/MS-materials/AOS/OneDrive_1_11-12-2023/26.Concurrency_An_Introduction.pdf
+Name1[$e]=Ch6 - Synchronization.pdf
+Name10[$e]=Orion Informatics Ltd visiting cards..pdf
+Name2[$e]=31.Semaphore.pdf
+Name3[$e]=08.Scheduling_The_Multi-level_Feedback_queue.pdf
+Name4[$e]=Ch5 - CPU Scheduling.pdf
+Name5[$e]=07.Scheduling_Introduction.pdf
+Name6[$e]=706950058.pdf
+Name7[$e]=23-92896-1_and_23-92891-1_Proposal.pdf
+Name8[$e]=Valliappa Lakshmanan, Martin Görner, Ryan Gillard - Practical Machine Learning for Computer Vision_ End-to-End Machine Learning for Images-O'Reilly Media (2021).pdf
+Name9[$e]=26.Concurrency_An_Introduction.pdf
+
+[Shortcut Schemes]
+Current Scheme=Default
 
 [UiSettings]
 ColorScheme=Glassy

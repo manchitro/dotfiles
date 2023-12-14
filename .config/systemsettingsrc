@@ -1,11 +1,13 @@
 [KFileDialog Settings]
-Recent Files[$e]=autostart.sh,file:$HOME/wallpapers/Sundarbans_web_cropped.jpg,file:$HOME/scripts/tws_profile_switch.sh,file:$HOME/scripts/protonvpn.sh,file:$HOME/scripts/toggle_kitty_dropdown.sh,file:$HOME/scripts/tws_switch.sh,file:$HOME/wallpapers/wallpaperflare.com_wallpaper(4).jpg,file:$HOME/scripts/wifi-switch.sh,file:$HOME/scripts/wifi-toggle.sh,file:$HOME/scripts/confedit.sh,file:$HOME/baks/shortcut_scheme_kde_20_07_23.kksrc,file:$HOME/Downloads/sazid.jpg,file:$HOME/autostart.sh
-Recent URLs[$e]=file:$HOME/,file:$HOME/wallpapers/,file:$HOME/Downloads/,file:$HOME/Documents/,file:$HOME/baks/,file:$HOME/scripts/
+Recent Files[$e]=autostart.sh,file:$HOME/scripts/autostart.sh,file:///usr/bin/keynav,file:///usr/bin/krfb,file:$HOME/wallpapers/Sundarbans_web_cropped.jpg,file:$HOME/scripts/protonvpn.sh,file:$HOME/scripts/toggle_kitty_dropdown.sh,file:$HOME/scripts/tws_switch.sh,file:$HOME/wallpapers/wallpaperflare.com_wallpaper(4).jpg,file:$HOME/scripts/wifi-switch.sh,file:$HOME/scripts/wifi-toggle.sh,file:$HOME/scripts/confedit.sh,file:$HOME/baks/shortcut_scheme_kde_20_07_23.kksrc,file:$HOME/Downloads/sazid.jpg
+Recent URLs[$e]=file:$HOME/,file:$HOME/wallpapers/,file:$HOME/Downloads/,file:$HOME/Documents/,file:$HOME/baks/,file:$HOME/scripts/,file:///usr/bin/
 detailViewIconSize=16
 
 [KPropertiesDialog]
 1707x960 screen: Height=521
 1707x960 screen: Width=467
+1920x1080 screen: Height=521
+1920x1080 screen: Width=462
 
 [Main]
 ActiveView=systemsettings_icon_mode
@@ -18,10 +20,15 @@ ActiveView=systemsettings_icon_mode
 1707x960 screen: YPosition=36
 1920x1080 screen: Height=840
 1920x1080 screen: Width=1224
-1920x1080 screen: XPosition=215
-1920x1080 screen: YPosition=177
+1920x1080 screen: XPosition=262
+1920x1080 screen: YPosition=113
+2 screens: Height=770
+2 screens: Width=1122
+2 screens: XPosition=337
+2 screens: YPosition=125
+HDMI-2 eDP-1=eDP-1
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAABqsAAANUAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAABMgAAAMiAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 eDP-1=eDP-1
 
