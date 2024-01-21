@@ -7,13 +7,13 @@ LastSeenMounted=true
 [Devices][/org/freedesktop/UDisks2/block_devices/loop0]
 EverMounted=true
 Icon=application-vnd.snap
-LastNameSeen=bare_5.snap
+LastNameSeen=core_16091.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/loop1]
 EverMounted=true
 Icon=application-vnd.snap
-LastNameSeen=core_16091.snap
+LastNameSeen=bare_5.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/loop10]
@@ -55,13 +55,13 @@ LastSeenMounted=true
 [Devices][/org/freedesktop/UDisks2/block_devices/loop16]
 EverMounted=true
 Icon=application-vnd.snap
-LastNameSeen=postman_231.snap
+LastNameSeen=postman_236.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/loop17]
 EverMounted=true
 Icon=application-vnd.snap
-LastNameSeen=postman_234.snap
+LastNameSeen=postman_238.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/loop18]
@@ -91,7 +91,7 @@ LastSeenMounted=true
 [Devices][/org/freedesktop/UDisks2/block_devices/loop21]
 EverMounted=true
 Icon=application-vnd.snap
-LastNameSeen=core20_2105.snap
+LastNameSeen=postman_238.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/loop3]
@@ -103,13 +103,13 @@ LastSeenMounted=true
 [Devices][/org/freedesktop/UDisks2/block_devices/loop4]
 EverMounted=true
 Icon=application-vnd.snap
-LastNameSeen=core18_2812.snap
+LastNameSeen=core20_2015.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/loop5]
 EverMounted=true
 Icon=application-vnd.snap
-LastNameSeen=core20_2015.snap
+LastNameSeen=core18_2812.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/loop6]
@@ -154,8 +154,8 @@ LastNameSeen=476.0 GiB Encrypted Drive
 
 [Devices][/org/freedesktop/UDisks2/block_devices/sda1]
 EverMounted=true
-Icon=drive-harddisk
-LastNameSeen=Sub
+Icon=drive-removable-media-usb
+LastNameSeen=DEBIAN 12_2
 
 [Devices][/org/freedesktop/UDisks2/block_devices/sdb1]
 Icon=drive-removable-media-usb

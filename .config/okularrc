@@ -23,26 +23,26 @@ ToolBarsMovable=Disabled
 eDP-1=eDP-1
 
 [Recent Files]
-File1[$e]=$HOME/Downloads/MS-materials/AOS/OneDrive_1_11-12-2023/Ch6 - Synchronization.pdf
-File10[$e]=$HOME/orion/Orion Informatics Ltd visiting cards..pdf
-File2[$e]=$HOME/Downloads/MS-materials/AOS/OneDrive_1_11-12-2023/31.Semaphore.pdf
-File3[$e]=$HOME/Downloads/MS-materials/AOS/OneDrive_1_11-12-2023/08.Scheduling_The_Multi-level_Feedback_queue.pdf
-File4[$e]=$HOME/Downloads/MS-materials/AOS/Ch5 - CPU Scheduling.pdf
-File5[$e]=$HOME/Downloads/MS-materials/AOS/OneDrive_1_11-12-2023/07.Scheduling_Introduction.pdf
-File6[$e]=$HOME/Downloads/MS-materials/AOS/OneDrive_1_11-12-2023/706950058.pdf
-File7[$e]=$HOME/Downloads/MS-materials/NLP/final project/23-92896-1_and_23-92891-1_Proposal.pdf
-File8[$e]=$HOME/Books/CS/Valliappa Lakshmanan, Martin Görner, Ryan Gillard - Practical Machine Learning for Computer Vision_ End-to-End Machine Learning for Images-O'Reilly Media (2021).pdf
-File9[$e]=$HOME/Downloads/MS-materials/AOS/OneDrive_1_11-12-2023/26.Concurrency_An_Introduction.pdf
-Name1[$e]=Ch6 - Synchronization.pdf
-Name10[$e]=Orion Informatics Ltd visiting cards..pdf
-Name2[$e]=31.Semaphore.pdf
-Name3[$e]=08.Scheduling_The_Multi-level_Feedback_queue.pdf
-Name4[$e]=Ch5 - CPU Scheduling.pdf
-Name5[$e]=07.Scheduling_Introduction.pdf
-Name6[$e]=706950058.pdf
-Name7[$e]=23-92896-1_and_23-92891-1_Proposal.pdf
-Name8[$e]=Valliappa Lakshmanan, Martin Görner, Ryan Gillard - Practical Machine Learning for Computer Vision_ End-to-End Machine Learning for Images-O'Reilly Media (2021).pdf
-Name9[$e]=26.Concurrency_An_Introduction.pdf
+File1[$e]=$HOME/Notes/Thesis/Cauli-Det Thesis Presentation.pdf
+File10[$e]=$HOME/orion/multi factor mockup/MFA Code review.pdf
+File2[$e]=$HOME/Documents/clsguide.pdf
+File3[$e]=$HOME/Documents/priya-Scanned-Documents.pdf
+File4[$e]=$HOME/Documents/113thdraw.pdf
+File5[$e]=$HOME/Notes/Thesis/ObjDet/drones-07-00304-v2.pdf
+File6[$e]=$HOME/Downloads/papers/cauli-det-frontier/coli-plag-check.pdf
+File7[$e]=$HOME/Documents/academic cv samples/resume-1.pdf
+File8[$e]=$HOME/Notes/Thesis/Segmentation Lit/FruitDet_agronomy-11-02440-v2.pdf
+File9[$e]=$HOME/Downloads/papers/cauli-det-frontier/frontiers.pdf
+Name1[$e]=Cauli-Det Thesis Presentation.pdf
+Name10[$e]=MFA Code review.pdf
+Name2[$e]=clsguide.pdf
+Name3[$e]=priya-Scanned-Documents.pdf
+Name4[$e]=113thdraw.pdf
+Name5[$e]=drones-07-00304-v2.pdf
+Name6[$e]=coli-plag-check.pdf
+Name7[$e]=resume-1.pdf
+Name8[$e]=FruitDet_agronomy-11-02440-v2.pdf
+Name9[$e]=frontiers.pdf
 
 [Shortcut Schemes]
 Current Scheme=Default

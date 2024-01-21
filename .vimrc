@@ -11,6 +11,8 @@ set background=dark
 
 "copy from and to clipboard
 vnoremap <C-c> "*y :let @+=@*<CR>
+"paste without replacing main register
+" xnoremap p pgvy  
 map <C-S-v> "+p
 
 "set toggle spellcheck

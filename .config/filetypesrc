@@ -7,4 +7,5 @@ embed-application/x-shellscript=false
 embed-audio/mpeg=false
 embed-text/csv=false
 embed-text/html=false
+embed-text/x-python=false
 embed-video/x-matroska=false

@@ -10,5 +10,8 @@ Seen=true
 [Applications][spotify_spotify]
 Seen=true
 
+[DoNotDisturb]
+Until=2024,1,8,22,48,0.291
+
 [Notifications]
 PopupPosition=TopRight

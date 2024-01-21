@@ -66,6 +66,9 @@ plugin=org.kde.plasma.eventcalendar
 [Containments][117][Applets][142][Configuration]
 PreloadWeight=100
 
+[Containments][117][Applets][142][Configuration][Agenda]
+twoColumns=false
+
 [Containments][117][Applets][142][Configuration][ConfigDialog]
 DialogHeight=720
 DialogWidth=960
@@ -296,7 +299,7 @@ immutability=1
 plugin=org.kde.kscreen
 
 [Containments][123][Applets][134][Configuration]
-PreloadWeight=60
+PreloadWeight=65
 
 [Containments][123][Applets][137]
 immutability=1
@@ -310,14 +313,14 @@ immutability=1
 plugin=org.kde.plasma.nightcolorcontrol
 
 [Containments][123][Applets][138][Configuration]
-PreloadWeight=18
+PreloadWeight=10
 
 [Containments][123][Applets][139]
 immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][123][Applets][139][Configuration]
-PreloadWeight=92
+PreloadWeight=100
 
 [Containments][123][Applets][139][Configuration][General]
 showPercentage=true
@@ -358,4 +361,4 @@ wallpaperplugin=org.kde.image
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/computer.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55,desktop:/network.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55,desktop:/trash-can.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55,desktop:/user-home.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55
+screenMapping=desktop:/user-home.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55,desktop:/computer.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55,desktop:/trash-can.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55,desktop:/network.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55

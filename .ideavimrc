@@ -9,6 +9,8 @@ set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
 
 "copy from and to clipboard
 vnoremap <C-c> "*y :let @+=@*<CR>
+xnoremap p pgvy
+
 map <C-S-v> "+p
 
 "set toggle spellcheck

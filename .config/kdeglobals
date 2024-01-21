@@ -94,8 +94,8 @@ ForegroundPositive=163,190,140
 ForegroundVisited=143,188,187
 
 [DirSelect Dialog]
-DirSelectDialog Size=851,588
-History Items[$e]=mtp:/M2012K11AG/Internal shared storage,file:$HOME,file:$HOME/screenshots
+DirSelectDialog Size=1272,649
+History Items[$e]=file:$HOME/Downloads/software/onnmdchfagapkggbhnnjkmllimegclnh,mtp:/M2012K11AG/Internal shared storage,file:$HOME,file:$HOME/screenshots
 
 [General]
 BrowserApplication=google-chrome.desktop
@@ -125,7 +125,7 @@ widgetStyle=kvantum-dark
 [KFileDialog Settings]
 Allow Expansion=false
 Automatically select filename extension=true
-Breadcrumb Navigation=true
+Breadcrumb Navigation=false
 Decoration position=2
 LocationCombo Completionmode=5
 PathCombo Completionmode=5
@@ -134,7 +134,7 @@ Show Full Path=false
 Show Inline Previews=true
 Show Preview=false
 Show Speedbar=true
-Show hidden files=true
+Show hidden files=false
 Sort by=Date
 Sort directories first=true
 Sort hidden files last=false

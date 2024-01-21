@@ -5,6 +5,10 @@ ColumnState=AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa0AAAACAQAAAQAA
 1920x1080 screen: Height=550
 1920x1080 screen: Width=886
 
+[ExtractDialog]
+1920x1080 screen: Height=582
+1920x1080 screen: Width=1280
+
 [General]
 Number of Actions=0
 
@@ -15,7 +19,7 @@ detailViewIconSize=16
 
 [KPropertiesDialog]
 1920x1080 screen: Height=521
-1920x1080 screen: Width=489
+1920x1080 screen: Width=469
 
 [PlasmaTransientsConfig]
 PreloadWeight=0

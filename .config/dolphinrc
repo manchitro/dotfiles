@@ -10,7 +10,7 @@ ShowCopyMoveMenu=true
 LastMimeType=application/zip
 
 [DetailsMode]
-PreviewSize=64
+PreviewSize=112
 SidePadding=0
 
 [ExtractDialog]
@@ -21,12 +21,8 @@ SidePadding=0
 DirHistory[$e]=$HOME/Downloads/Datasets/,$HOME/Cauliflower Datasets/,$HOME/repo/Sazid - resume (jakes)/,$HOME/repo/cbis-marl/
 
 [General]
-GlobalViewProps=false
 Version=202
 ViewPropsTimestamp=2023,7,18,1,1,5.567
-
-[IconsMode]
-PreviewSize=240
 
 [KFileDialog Settings]
 Places Icons Auto-resize=false
@@ -39,7 +35,7 @@ detailViewIconSize=16
 1707x960 screen: Height=457
 1707x960 screen: Width=469
 1920x1080 screen: Height=622
-1920x1080 screen: Width=513
+1920x1080 screen: Width=497
 
 [MainWindow]
 ToolBarsMovable=Disabled
@@ -48,10 +44,7 @@ ToolBarsMovable=Disabled
 IconSize=32
 
 [PreviewSettings]
-Plugins=svgthumbnail,windowsexethumbnail,imagethumbnail,fontthumbnail,appimagethumbnail,cursorthumbnail,comicbookthumbnail,windowsimagethumbnail,opendocumentthumbnail,audiothumbnail,kraorathumbnail,djvuthumbnail,exrthumbnail,jpegthumbnail,ebookthumbnail,gsthumbnail,webarchivethumbnail,ffmpegthumbs,blenderthumbnail,mobithumbnail,directorythumbnail,rawthumbnail
-
-[Search]
-What=Content
+Plugins=appimagethumbnail,audiothumbnail,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mobithumbnail,opendocumentthumbnail,gsthumbnail,rawthumbnail,svgthumbnail,ffmpegthumbs,webarchivethumbnail
 
 [kuick-copy]
 Paths[$e]=$HOME/
