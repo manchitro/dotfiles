@@ -23,26 +23,26 @@ ToolBarsMovable=Disabled
 eDP-1=eDP-1
 
 [Recent Files]
-File1[$e]=$HOME/Notes/Thesis/Cauli-Det Thesis Presentation.pdf
-File10[$e]=$HOME/orion/multi factor mockup/MFA Code review.pdf
-File2[$e]=$HOME/Documents/clsguide.pdf
-File3[$e]=$HOME/Documents/priya-Scanned-Documents.pdf
-File4[$e]=$HOME/Documents/113thdraw.pdf
-File5[$e]=$HOME/Notes/Thesis/ObjDet/drones-07-00304-v2.pdf
-File6[$e]=$HOME/Downloads/papers/cauli-det-frontier/coli-plag-check.pdf
-File7[$e]=$HOME/Documents/academic cv samples/resume-1.pdf
-File8[$e]=$HOME/Notes/Thesis/Segmentation Lit/FruitDet_agronomy-11-02440-v2.pdf
-File9[$e]=$HOME/Downloads/papers/cauli-det-frontier/frontiers.pdf
-Name1[$e]=Cauli-Det Thesis Presentation.pdf
-Name10[$e]=MFA Code review.pdf
-Name2[$e]=clsguide.pdf
-Name3[$e]=priya-Scanned-Documents.pdf
-Name4[$e]=113thdraw.pdf
-Name5[$e]=drones-07-00304-v2.pdf
-Name6[$e]=coli-plag-check.pdf
-Name7[$e]=resume-1.pdf
-Name8[$e]=FruitDet_agronomy-11-02440-v2.pdf
-Name9[$e]=frontiers.pdf
+File1[$e]=$HOME/Documents/clsguide.pdf
+File10[$e]=$HOME/Downloads/1373590_Manuscript.PDF
+File2[$e]=$HOME/Documents/priya-Scanned-Documents.pdf
+File3[$e]=$HOME/Documents/113thdraw.pdf
+File4[$e]=$HOME/Notes/Thesis/ObjDet/drones-07-00304-v2.pdf
+File5[$e]=$HOME/Downloads/papers/cauli-det-frontier/coli-plag-check.pdf
+File6[$e]=$HOME/Documents/academic cv samples/resume-1.pdf
+File7[$e]=$HOME/Notes/Thesis/Segmentation Lit/FruitDet_agronomy-11-02440-v2.pdf
+File8[$e]=$HOME/Downloads/papers/cauli-det-frontier/frontiers.pdf
+File9[$e]=$HOME/orion/multi factor mockup/MFA Code review.pdf
+Name1[$e]=clsguide.pdf
+Name10[$e]=1373590_Manuscript.PDF
+Name2[$e]=priya-Scanned-Documents.pdf
+Name3[$e]=113thdraw.pdf
+Name4[$e]=drones-07-00304-v2.pdf
+Name5[$e]=coli-plag-check.pdf
+Name6[$e]=resume-1.pdf
+Name7[$e]=FruitDet_agronomy-11-02440-v2.pdf
+Name8[$e]=frontiers.pdf
+Name9[$e]=MFA Code review.pdf
 
 [Shortcut Schemes]
 Current Scheme=Default
