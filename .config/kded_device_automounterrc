@@ -7,19 +7,19 @@ LastSeenMounted=true
 [Devices][/org/freedesktop/UDisks2/block_devices/loop0]
 EverMounted=true
 Icon=application-vnd.snap
-LastNameSeen=bare_5.snap
+LastNameSeen=core_16202.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/loop1]
 EverMounted=true
 Icon=application-vnd.snap
-LastNameSeen=core_16091.snap
+LastNameSeen=bare_5.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/loop10]
 EverMounted=true
 Icon=application-vnd.snap
-LastNameSeen=foliate_1578.snap
+LastNameSeen=foliate_1775.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/loop11]
@@ -55,13 +55,13 @@ LastSeenMounted=true
 [Devices][/org/freedesktop/UDisks2/block_devices/loop16]
 EverMounted=true
 Icon=application-vnd.snap
-LastNameSeen=postman_236.snap
+LastNameSeen=postman_238.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/loop17]
 EverMounted=true
 Icon=application-vnd.snap
-LastNameSeen=postman_238.snap
+LastNameSeen=postman_240.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/loop18]
@@ -79,7 +79,7 @@ LastSeenMounted=true
 [Devices][/org/freedesktop/UDisks2/block_devices/loop2]
 EverMounted=true
 Icon=application-vnd.snap
-LastNameSeen=core_16202.snap
+LastNameSeen=core_16574.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/loop20]
@@ -90,8 +90,8 @@ LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/loop21]
 EverMounted=true
-Icon=application-x-cd-image
-LastNameSeen=CCCOMA_X64FRE_EN-US_DV9
+Icon=application-vnd.snap
+LastNameSeen=postman_240.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/loop3]
@@ -103,7 +103,7 @@ LastSeenMounted=true
 [Devices][/org/freedesktop/UDisks2/block_devices/loop4]
 EverMounted=true
 Icon=application-vnd.snap
-LastNameSeen=core20_2105.snap
+LastNameSeen=core18_2812.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/loop5]
@@ -115,25 +115,25 @@ LastSeenMounted=true
 [Devices][/org/freedesktop/UDisks2/block_devices/loop6]
 EverMounted=true
 Icon=application-vnd.snap
-LastNameSeen=core18_2812.snap
+LastNameSeen=core20_2105.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/loop7]
 EverMounted=true
 Icon=application-vnd.snap
-LastNameSeen=core22_864.snap
+LastNameSeen=core22_1033.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/loop8]
 EverMounted=true
 Icon=application-vnd.snap
-LastNameSeen=core22_1033.snap
+LastNameSeen=core22_1122.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/loop9]
 EverMounted=true
 Icon=application-vnd.snap
-LastNameSeen=foliate_1557.snap
+LastNameSeen=foliate_1578.snap
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/nvme0n1p1]

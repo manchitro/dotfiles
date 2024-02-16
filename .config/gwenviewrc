@@ -25,26 +25,26 @@ ToolBarsMovable=Disabled
 eDP-1=eDP-1
 
 [Recent Files]
-File1[$e]=$HOME/repo/cbis-marl/out/original_exp_out/animated_gif.gif
-File10[$e]=$HOME/Documents/holud deco/stage.xcf
-File2[$e]=$HOME/Downloads/steps.gif
-File3[$e]=$HOME/Notes/Thesis/Cauliflower/images/41598_2023_45403_Fig1_HTML.webp
-File4[$e]=$HOME/Downloads/POSTER PSD FILE.psd
-File5[$e]=$HOME/Downloads/papers/cauli-det-frontier (2)/YM-logo.eps
-File6[$e]=$HOME/repo/vegnet-yolov8/saved_models/yolov8s_conv2_unfrozen_default_optim_hard_swish/P_curve.png
-File7[$e]=$HOME/Documents/wedding cards/vecteezy_bismillah-sulus-calligraphy-design_22054016.svg
-File8[$e]=$HOME/Documents/wedding cards/up f4dc1c9a6132c4c157893ca728e92080.xcf
-File9[$e]=$HOME/Documents/holud deco/floor-pattern.xcf
-Name1[$e]=animated_gif.gif
-Name10[$e]=stage.xcf
-Name2[$e]=steps.gif
-Name3[$e]=41598_2023_45403_Fig1_HTML.webp
-Name4[$e]=POSTER PSD FILE.psd
-Name5[$e]=YM-logo.eps
-Name6[$e]=P_curve.png
-Name7[$e]=vecteezy_bismillah-sulus-calligraphy-design_22054016.svg
-Name8[$e]=up f4dc1c9a6132c4c157893ca728e92080.xcf
-Name9[$e]=floor-pattern.xcf
+File1[$e]=$HOME/Downloads/steps.gif
+File10[$e]=$HOME/Documents/holud deco/panel.svg
+File2[$e]=$HOME/Notes/Thesis/Cauliflower/images/41598_2023_45403_Fig1_HTML.webp
+File3[$e]=$HOME/Downloads/POSTER PSD FILE.psd
+File4[$e]=$HOME/Downloads/papers/cauli-det-frontier (2)/YM-logo.eps
+File5[$e]=$HOME/repo/vegnet-yolov8/saved_models/yolov8s_conv2_unfrozen_default_optim_hard_swish/P_curve.png
+File6[$e]=$HOME/Documents/wedding cards/vecteezy_bismillah-sulus-calligraphy-design_22054016.svg
+File7[$e]=$HOME/Documents/wedding cards/up f4dc1c9a6132c4c157893ca728e92080.xcf
+File8[$e]=$HOME/Documents/holud deco/floor-pattern.xcf
+File9[$e]=$HOME/Documents/holud deco/stage.xcf
+Name1[$e]=steps.gif
+Name10[$e]=panel.svg
+Name2[$e]=41598_2023_45403_Fig1_HTML.webp
+Name3[$e]=POSTER PSD FILE.psd
+Name4[$e]=YM-logo.eps
+Name5[$e]=P_curve.png
+Name6[$e]=vecteezy_bismillah-sulus-calligraphy-design_22054016.svg
+Name7[$e]=up f4dc1c9a6132c4c157893ca728e92080.xcf
+Name8[$e]=floor-pattern.xcf
+Name9[$e]=stage.xcf
 
 [SideBar]
 InformationSplitterSizes=218,257
