@@ -10,3 +10,4 @@ image/png=google-chrome.desktop;
 image/webp=google-chrome.desktop;
 text/html=google-chrome.desktop;
 x-scheme-handler/mailto=google-chrome.desktop;
+x-scheme-handler/webcal=google-chrome.desktop;

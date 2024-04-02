@@ -28,7 +28,9 @@ DialogWidth=960
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=383
 iconSize=2
+positions={"1920x1080":["9"\\,"19"\\,"desktop:/trash-can.desktop"\\,"8"\\,"9"]}
 previews=false
+sortMode=-1
 
 [Containments][116][Wallpaper][org.kde.image][General]
 Image=/home/s/wallpapers/Sundarbans_web_cropped.jpg
@@ -320,7 +322,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][123][Applets][139][Configuration]
-PreloadWeight=92
+PreloadWeight=97
 
 [Containments][123][Applets][139][Configuration][General]
 showPercentage=true
@@ -361,4 +363,4 @@ wallpaperplugin=org.kde.image
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/network.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55,desktop:/computer.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55,desktop:/trash-can.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55,desktop:/user-home.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55
+screenMapping=desktop:/trash-can.desktop,0,9aca5e1c-fa6c-4f5a-9d3d-ed2b45635d55

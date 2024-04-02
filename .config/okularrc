@@ -18,32 +18,31 @@ detailViewIconSize=16
 1920x1080 screen: XPosition=0
 1920x1080 screen: YPosition=36
 2 screens: Window-Maximized=true
-RestorePositionForNextInstance=false
 State=AAAA/wAAAAD9AAAAAAAAB4AAAAOoAAAABAAAAAQAAAAIAAAACPwAAAADAAAAAQAAAAEAAAAsAHEAdQBpAGMAawBBAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHICAAAAAP////8AAAAAAAAAAAAAAAIAAAABAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAAAIAAAABAAAAIgBhAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAA==
 ToolBarsMovable=Disabled
 eDP-1=eDP-1
 
 [Recent Files]
-File1[$e]=$HOME/Documents/clsguide.pdf
-File10[$e]=$HOME/Downloads/1373590_Manuscript.PDF
-File2[$e]=$HOME/Documents/priya-Scanned-Documents.pdf
-File3[$e]=$HOME/Documents/113thdraw.pdf
-File4[$e]=$HOME/Notes/Thesis/ObjDet/drones-07-00304-v2.pdf
-File5[$e]=$HOME/Downloads/papers/cauli-det-frontier/coli-plag-check.pdf
-File6[$e]=$HOME/Documents/academic cv samples/resume-1.pdf
-File7[$e]=$HOME/Notes/Thesis/Segmentation Lit/FruitDet_agronomy-11-02440-v2.pdf
-File8[$e]=$HOME/Downloads/papers/cauli-det-frontier/frontiers.pdf
-File9[$e]=$HOME/orion/multi factor mockup/MFA Code review.pdf
-Name1[$e]=clsguide.pdf
+File1[$e]=$HOME/Downloads/BGDDV5CCB524MD000103.pdf
+File10[$e]=$HOME/Downloads/papers/cauli-det-frontier/1373590_Manuscript.PDF
+File2[$e]=$HOME/Documents/photo-specifiation (1).pdf
+File3[$e]=$HOME/Documents/SBIMU1709727160324.pdf
+File4[$e]=$HOME/repo/Sazid - resume (jakes)/Sazid - Resume.pdf
+File5[$e]=$HOME/repo/Sazid - Cover Letter/Sazid - Cover Letter.pdf
+File6[$e]=$HOME/repo/Cauli-Det/Cauli-Det.pdf
+File7[$e]=$HOME/Downloads/1-s2.0-S2352340922006199-main.pdf
+File8[$e]=$HOME/Downloads/papers/cauli-det-frontier/Review_Response_Letter_Cauli-det.pdf
+File9[$e]=$HOME/Downloads/papers/cauli-det-frontier/1373590reviewsupportingfile85045.PDF
+Name1[$e]=BGDDV5CCB524MD000103.pdf
 Name10[$e]=1373590_Manuscript.PDF
-Name2[$e]=priya-Scanned-Documents.pdf
-Name3[$e]=113thdraw.pdf
-Name4[$e]=drones-07-00304-v2.pdf
-Name5[$e]=coli-plag-check.pdf
-Name6[$e]=resume-1.pdf
-Name7[$e]=FruitDet_agronomy-11-02440-v2.pdf
-Name8[$e]=frontiers.pdf
-Name9[$e]=MFA Code review.pdf
+Name2[$e]=photo-specifiation (1).pdf
+Name3[$e]=SBIMU1709727160324.pdf
+Name4[$e]=Sazid - Resume.pdf
+Name5[$e]=Sazid - Cover Letter.pdf
+Name6[$e]=Cauli-Det.pdf
+Name7[$e]=1-s2.0-S2352340922006199-main.pdf
+Name8[$e]=Review_Response_Letter_Cauli-det.pdf
+Name9[$e]=1373590reviewsupportingfile85045.PDF
 
 [Shortcut Schemes]
 Current Scheme=Default

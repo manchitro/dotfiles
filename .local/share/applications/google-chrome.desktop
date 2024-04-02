@@ -222,4 +222,4 @@ Version=1.0
 X-KDE-RunOnDiscreteGpu=false
 X-KDE-SubstituteUID=false
 X-KDE-Username=
-MimeType=x-scheme-handler/mailto;text/html;image/webp;image/png;image/jpeg;image/gif;application/xml;application/xml;application/xhtml+xml;application/rss+xml;application/rdf+xml;application/pdf;
+MimeType=x-scheme-handler/webcal;x-scheme-handler/mailto;text/html;image/webp;image/png;image/jpeg;image/gif;application/xml;application/xml;application/xhtml+xml;application/rss+xml;application/rdf+xml;application/pdf;
