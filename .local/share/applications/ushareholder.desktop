@@ -2,5 +2,5 @@
 Version=1.0
 Type=Application
 Name=ShareHolder Portal (Proxy-US) | ushareholder
-Exec= intellij-idea-ultimate /home/s/orion/proxy-us/source/proxy-voting/ShareHolderPortal/Client/
+Exec= intellij-idea-ultimate /mnt/sdb1/home/s/orion/proxy-us/source/proxy-voting/ShareHolderPortal/Client/
 Icon=/snap/intellij-idea-ultimate/current/bin/idea.png

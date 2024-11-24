@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Service App (Proxy-US) | juservice | Java Update
+Exec=intellij-idea-ultimate /mnt/sdb1/home/s/orion/proxy-us-java/source/proxy-voting/ShareHolderPortal/Service/
+Icon=/snap/intellij-idea-ultimate/current/bin/idea.png
+
